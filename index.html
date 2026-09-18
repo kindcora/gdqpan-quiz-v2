@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0c0c0e">
+  <meta name="description" content="Ôn trắc nghiệm GDQPAN với 420 câu HP1, HP2. Luyện từng câu, thi thử và ôn lại câu sai.">
+  <title>GDQPAN · Ôn tập & Thi thử</title>
+  <link rel="stylesheet" href="css/app.css">
+  <link rel="stylesheet" href="css/offline.css">
+  <link rel="stylesheet" href="css/exam.css">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="apple-touch-icon" href="assets/icons/icon-192.png">
+</head>
+<body>
+  <a class="skip-link" href="#main">Đến nội dung ôn tập</a>
+  <div class="app">
+    <header class="nav">
+      <a class="mark" href="./" aria-label="Trang chủ">
+        <span class="mark-dot"></span>
+        <span class="mark-text">
+          <strong>GDQPAN</strong>
+          <em>Luyện trắc nghiệm</em>
+        </span>
+      </a>
+      <nav class="nav-links" aria-label="Môn học">
+        <a href="./" aria-current="page">Quốc phòng</a>
+        <a href="physics/index.html">Vật lý</a>
+      </nav>
+    </header>
+      <section class="filter-panel" aria-label="Phạm vi ôn tập">
+      <div class="section-label"><span class="eyebrow">PHẠM VI ÔN TẬP</span><span>Chọn nội dung bạn muốn luyện</span></div>
+      <div class="nav-filters">
+        <label class="field">
+          <span>Học phần</span>
+          <select id="sourceFilter">
+            <option value="ALL">Cả hai</option>
+            <option value="HP1">HP1 · 209 câu luyện</option>
+            <option value="HP2">HP2 · 210 câu luyện</option>
+          </select>
+        </label>
+        <label class="field field-wide">
+          <span>Bài</span>
+          <select id="lessonFilter">
+            <option value="ALL">Tất cả bài</option>
+          </select>
+        </label>
+      </div>
+      <div class="exam-fields">
+        <label>Tìm từ khóa<input id="keywordFilter" type="search" placeholder="Ví dụ: bien dao, an ninh…" maxlength="200"></label>
+        <label>Trạng thái học<select id="practiceFilter"><option value="all">Tất cả câu</option><option value="new">Chưa trả lời</option><option value="wrong">Sai ở lần gần nhất</option><option value="correct">Đúng ở lần gần nhất</option><option value="skipped">Đã bỏ trống</option></select></label>
+      </div>
+      <div class="exam-actions"><button class="btn btn-ghost" id="clearFilters">Xóa bộ lọc</button><span id="filterCount" class="exam-filter-count" role="status"></span></div>
+      <details class="exam-launch" id="examSetup"><summary>Tạo đề thi thử</summary>
+        <form id="examSetupForm" class="exam-form">
+          <p class="hint">Đề dùng phạm vi đang chọn ở trên. Các câu được lấy không trùng nhau.</p>
+          <div class="exam-presets"><button class="btn" type="button" data-exam-preset="10,10">10 câu · 10 phút</button><button class="btn" type="button" data-exam-preset="20,15">20 câu · 15 phút</button><button class="btn" type="button" data-exam-preset="40,30">40 câu · 30 phút</button></div>
+          <div class="exam-fields"><label>Số câu mong muốn<input id="examCount" type="number" min="1" max="419" value="20" required></label><label>Thời gian (phút)<input id="examMinutes" type="number" min="1" max="180" value="15" required></label><label class="full-field">Cách lấy câu<select id="examDistribution"><option value="balanced">Trải đều các bài có câu phù hợp</option><option value="random">Ngẫu nhiên toàn bộ</option></select></label></div>
+          <p class="exam-pool" id="examPreview" role="status"></p><button class="btn btn-primary" id="startConfiguredExam">Bắt đầu thi</button>
+        </form>
+      </details>
+      </section>
+
+    <details class="palette command-panel">
+      <summary>Lệnh nhanh <span>Tuần tự, từ khóa, đề tùy chỉnh…</span></summary>
+      <form id="commandForm">
+        <span class="palette-icon" aria-hidden="true"></span>
+        <input id="commandInput" type="text" aria-label="Nhập lệnh ôn tập" aria-describedby="commandHelp" autocomplete="off" placeholder="Ví dụ: đề 20 câu 15 phút">
+        <button type="submit" class="btn btn-primary">Chạy</button>
+      </form>
+      <p id="commandHelp" class="hint">Thử: từ câu 12 · chương biển đảo · xem lại câu 5</p>
+      <div class="chips">
+        <button type="button" class="chip" data-cmd="bắt đầu">Bắt đầu</button>
+        <button type="button" class="chip" data-cmd="tuần tự">Tuần tự</button>
+        <button type="button" class="chip" data-cmd="chỉ câu sai">Câu sai</button>
+        <button type="button" class="chip" data-cmd="còn bao nhiêu">Còn lại</button>
+        <button type="button" class="chip chip-quiet" data-cmd="dừng">Dừng</button>
+      </div>
+    </details>
+    <div class="quick-actions" aria-label="Thao tác ôn tập">
+      <button type="button" class="chip" data-cmd="bắt đầu">Luyện ngẫu nhiên</button>
+      <button type="button" class="chip" data-cmd="tuần tự">Theo thứ tự</button>
+      <button type="button" class="chip" id="openExamSetup">Tạo đề thi thử</button>
+      <button type="button" class="chip" data-cmd="chỉ câu sai">Ôn câu sai</button>
+      <button type="button" class="chip chip-quiet" data-cmd="dừng">Kết thúc</button>
+    </div>
+
+    <p id="statusLine" class="status" role="status"></p>
+    <main id="main" tabindex="-1"></main>
+    <footer class="site-footer"><span>GDQPAN / Không gian tự học</span><span>Đáp án theo ngân hàng gốc HP1 &amp; HP2</span></footer>
+  </div>
+
+  <script src="js/questions-data.js"></script>
+  <script src="js/exam-tools.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/pwa.js"></script>
+</body>
+</html>

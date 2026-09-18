@@ -1,0 +1,4354 @@
+{
+  "revision": "2026-09-12-pdf-1",
+  "date": "2026-09-12",
+  "count": 250,
+  "autograded": 233,
+  "conditional": 17,
+  "hashes": {
+    "physics/data/source-library.js": "8388d52b6bbf9824d3b532cc22b77ca9c9a7b0e3a91b45107bda7c2da081524a",
+    "physics/data/source-solutions.js": "009fb06792802dd5b464d983d587f9a61e44b6ee1d4521d21ab1505634c1b291",
+    "physics/data/solutions-ch01.js": "9822e7e2a034308c0ff6fe524d4b0ef8e366051cf4d2e772b9c27f92fd953e84",
+    "physics/data/solutions-ch02.js": "d99d9edaab5020d9813df60d747dec3ceb22df9fce04473d5932847f5799ef0e",
+    "physics/data/solutions-ch03.js": "c5d7fa66674691361a9a6dfc5b60e41a48f927acd06400020366671a09853139",
+    "physics/data/solutions-ch04.js": "a11082e254679dd58b36daa8a6ab4bba43fa451d34c6fd56cbea04904df70fa2",
+    "physics/data/solutions-ch05.js": "e6df80af3602d0b58d11035b2154e2fe64d5d43eb3f7535504f451e4b0ff0cfe",
+    "physics/data/solutions-ch06.js": "6017955de147fddb191f73d1a99ffb0058d35eadc5fee66d92958a9496a514f3"
+  },
+  "sources": [
+    [
+      "Coulomb và điện trường",
+      "https://openstax.org/books/university-physics-volume-2/pages/5-3-coulombs-law"
+    ],
+    [
+      "Năng lượng tụ điện",
+      "https://openstax.org/books/university-physics-volume-2/pages/8-3-energy-stored-in-a-capacitor"
+    ],
+    [
+      "Chuyển động điện tích trong từ trường",
+      "https://openstax.org/books/university-physics-volume-2/pages/11-3-motion-of-a-charged-particle-in-a-magnetic-field"
+    ],
+    [
+      "Faraday và điện trường cảm ứng",
+      "https://openstax.org/books/university-physics-volume-2/pages/13-4-induced-electric-fields"
+    ],
+    [
+      "Tự cảm và cuộn cảm",
+      "https://openstax.org/books/university-physics-volume-2/pages/14-2-self-inductance-and-inductors"
+    ],
+    [
+      "Dao động LC",
+      "https://openstax.org/books/university-physics-volume-2/pages/14-5-oscillations-in-an-lc-circuit"
+    ],
+    [
+      "Dao động RLC tắt dần",
+      "https://openstax.org/books/university-physics-volume-2/pages/14-6-rlc-series-circuits"
+    ],
+    [
+      "Giao thoa Young",
+      "https://openstax.org/books/university-physics-volume-3/pages/3-1-youngs-double-slit-interference"
+    ],
+    [
+      "Bản mỏng và độ lệch pha",
+      "https://openstax.org/books/university-physics-volume-3/pages/3-4-interference-in-thin-films"
+    ],
+    [
+      "Nhiễu xạ khe đơn",
+      "https://openstax.org/books/university-physics-volume-3/pages/4-1-single-slit-diffraction"
+    ],
+    [
+      "Phân cực và Malus",
+      "https://openstax.org/books/university-physics-volume-3/pages/1-7-polarization"
+    ],
+    [
+      "Bức xạ vật đen",
+      "https://openstax.org/books/university-physics-volume-3/pages/6-1-blackbody-radiation"
+    ],
+    [
+      "Phương trình quang điện",
+      "https://openstax.org/books/university-physics-volume-3/pages/6-2-photoelectric-effect"
+    ],
+    [
+      "Hằng số SI — NIST",
+      "https://www.nist.gov/si-redefinition/meet-constants"
+    ],
+    [
+      "Năng lượng photon trung bình của phổ Planck — MIT",
+      "https://web.mit.edu/8.286/www/quiz18/q3sols-euf18.pdf"
+    ],
+    [
+      "Phân chia dải UHF/SHF — ITU, Radio Regulations 2024",
+      "https://search.itu.int/history/HistoryDigitalCollectionDocLibrary/1.49.48.fr.201.pdf"
+    ]
+  ],
+  "records": [
+    {
+      "id": "source-ch01-001",
+      "chapter": "ch01",
+      "number": 1,
+      "key": "D",
+      "result": "F = k|q₁q₂|/(εr²).",
+      "steps": [
+        "Xét độ lớn lực giữa hai điện tích điểm trong điện môi đồng nhất, tuyến tính và đẳng hướng.",
+        "Định luật Coulomb có tích hai điện tích, trị tuyệt đối và khoảng cách bình phương.",
+        "D có đủ các yếu tố; lực hút hay đẩy xác định riêng từ dấu của q₁q₂."
+      ],
+      "pages": [
+        2
+      ],
+      "status": "solved"
+    },
+    {
+      "id": "source-ch01-002",
+      "chapter": "ch01",
+      "number": 2,
+      "key": "A",
+      "result": "F = 9,6 × 10⁻⁴ N, lực hút.",
+      "steps": [
+        "Đổi r = 15 cm = 0,15 m.",
+        "F = 9 × 10⁹ × |4 × 10⁻⁸ × (−6 × 10⁻⁸)|/0,15² = 0,00096 N.",
+        "Hai điện tích trái dấu hút nhau; độ lớn lực không âm. A ghi 96 × 10⁻⁵ N."
+      ],
+      "pages": [
+        2
+      ],
+      "status": "solved"
+    },
+    {
+      "id": "source-ch01-003",
+      "chapter": "ch01",
+      "number": 3,
+      "key": "C",
+      "result": "q′ = +2 × 10⁻⁷ C.",
+      "steps": [
+        "Ban đầu T₀ = mg = 0,0016 × 10 = 0,016 N. Giảm đi một phần tư nghĩa là T = 3T₀/4.",
+        "Lực điện phải hướng lên, có độ lớn mg/4 = 0,004 N; điện tích đặt phía dưới phải cùng dấu với quả cầu.",
+        "q′ = Fr²/(kq) = 0,004 × 0,30²/(9 × 10⁹ × 2 × 10⁻⁷) = 2 × 10⁻⁷ C."
+      ],
+      "pages": [
+        2
+      ],
+      "status": "solved"
+    },
+    {
+      "id": "source-ch01-004",
+      "chapter": "ch01",
+      "number": 4,
+      "key": "A",
+      "result": "Đơn vị của E là V/m, tương đương N/C.",
+      "steps": [
+        "Dùng E = F/q để suy ra N/C.",
+        "Trong điện trường đều, E = U/d nên cũng có đơn vị V/m.",
+        "C/m² là mật độ điện mặt; A/m là H và tesla là B."
+      ],
+      "pages": [
+        2
+      ],
+      "status": "solved"
+    },
+    {
+      "id": "source-ch01-005",
+      "chapter": "ch01",
+      "number": 5,
+      "key": "A",
+      "result": "E = k|Q|/(εr²).",
+      "steps": [
+        "Lực lên điện tích thử dương q₀ có độ lớn k|Q|q₀/(εr²).",
+        "Chia lực cho q₀ thu được cường độ điện trường.",
+        "Hướng ra xa Q dương, hướng về Q âm; A là độ lớn."
+      ],
+      "pages": [
+        2
+      ],
+      "status": "solved"
+    },
+    {
+      "id": "source-ch01-006",
+      "chapter": "ch01",
+      "number": 6,
+      "key": "B",
+      "result": "E = |σ|/(2εε₀).",
+      "steps": [
+        "Chọn mặt Gauss hình trụ xuyên qua một mặt phẳng tích điện không dẫn, môi trường như nhau hai phía.",
+        "Thông lượng qua hai đáy là 2ES; điện tích nằm trong trụ là σS.",
+        "2εε₀ES = |σ|S ⇒ E = |σ|/(2εε₀)."
+      ],
+      "pages": [
+        2
+      ],
+      "status": "solved"
+    },
+    {
+      "id": "source-ch01-007",
+      "chapter": "ch01",
+      "number": 7,
+      "key": "A",
+      "result": "Giữa hai mặt: E = |σ|/(εε₀).",
+      "steps": [
+        "Mỗi mặt tạo trường có độ lớn |σ|/(2εε₀).",
+        "Giữa hai mặt trái dấu, hai vectơ điện trường cùng hướng từ dương sang âm.",
+        "Cộng hai trường được |σ|/(εε₀)."
+      ],
+      "pages": [
+        2,
+        3
+      ],
+      "status": "solved"
+    },
+    {
+      "id": "source-ch01-008",
+      "chapter": "ch01",
+      "number": 8,
+      "key": "A",
+      "result": "Bên ngoài hai mặt: E = 0.",
+      "steps": [
+        "Hai mặt vô hạn có mật độ điện mặt bằng nhau về độ lớn.",
+        "Ở ngoài, hai điện trường có cùng độ lớn nhưng ngược hướng.",
+        "Tổng vectơ bằng 0; kết luận dùng mô hình mặt phẳng vô hạn."
+      ],
+      "pages": [
+        3
+      ],
+      "status": "solved"
+    },
+    {
+      "id": "source-ch01-009",
+      "chapter": "ch01",
+      "number": 9,
+      "key": "B",
+      "result": "E = 500 V/m, hướng về Q.",
+      "steps": [
+        "r = 0,30 m; |Q| = 5 × 10⁻⁹ C.",
+        "E = 9 × 10⁹ × 5 × 10⁻⁹/0,30² = 500 V/m.",
+        "Đề hỏi độ lớn nên không chọn −500 V/m."
+      ],
+      "pages": [
+        3
+      ],
+      "status": "solved"
+    },
+    {
+      "id": "source-ch01-010",
+      "chapter": "ch01",
+      "number": 10,
+      "key": "D",
+      "result": "|E| = 1,8 × 10⁵ V/m, hướng vào tâm cầu.",
+      "steps": [
+        "Điểm ở ngoài cầu, cách tâm r = 0,5 + 1,5 = 2 m.",
+        "Đối xứng cầu cho trường ngoài như điện tích điểm: |E| = 9 × 10⁹ × 8 × 10⁻⁵/2².",
+        "Kết quả 18 × 10⁴ V/m ứng với D. Nếu chọn chiều bán kính ra ngoài thì thành phần Eᵣ âm; đề không cho trục tọa độ."
+      ],
+      "pages": [
+        3
+      ],
+      "status": "solved"
+    },
+    {
+      "id": "source-ch01-011",
+      "chapter": "ch01",
+      "number": 11,
+      "key": "A",
+      "result": "E ≈ 1694,9 V/m.",
+      "steps": [
+        "Giữa hai mặt dùng E = |σ|/(εε₀); khoảng cách không xuất hiện khi σ đã biết.",
+        "Thay σ = 9 × 10⁻⁸ C/m², ε = 6 và ε₀ = 8,85 × 10⁻¹² F/m.",
+        "E = 9 × 10⁻⁸/(6 × 8,85 × 10⁻¹²) ≈ 1694,9 V/m."
+      ],
+      "pages": [
+        3
+      ],
+      "status": "solved"
+    },
+    {
+      "id": "source-ch01-012",
+      "chapter": "ch01",
+      "number": 12,
+      "key": "A",
+      "result": "Góc lệch ≈ 16°.",
+      "steps": [
+        "E = σ/(2ε₀) ≈ 1,130 × 10⁶ V/m; Fđ = qE ≈ 0,01130 N.",
+        "Cân bằng: T sinθ = Fđ và T cosθ = mg, với mg = 0,004 × 9,8 = 0,0392 N.",
+        "tanθ = Fđ/(mg) ≈ 0,2883 ⇒ θ ≈ 16,08°, làm tròn 16°."
+      ],
+      "pages": [
+        3
+      ],
+      "status": "solved"
+    },
+    {
+      "id": "source-ch01-013",
+      "chapter": "ch01",
+      "number": 13,
+      "key": "A",
+      "result": "Điểm cách q₁ 32 cm và q₂ 16 cm, ngoài đoạn AB về phía q₂.",
+      "steps": [
+        "Trong đoạn AB, hai trường cùng chiều nên không triệt tiêu.",
+        "Ngoài về phía điện tích có độ lớn nhỏ hơn: r₁ = r₂ + 16 cm. Điều kiện 4/r₁² = 1/r₂² cho r₁ = 2r₂.",
+        "Giải được r₂ = 16 cm, r₁ = 32 cm."
+      ],
+      "pages": [
+        3
+      ],
+      "status": "solved"
+    },
+    {
+      "id": "source-ch01-014",
+      "chapter": "ch01",
+      "number": 14,
+      "key": "D",
+      "result": "E = 14 × 10³ V/m.",
+      "steps": [
+        "Mỗi điện tích cách trung điểm 0,03 m.",
+        "Mỗi trường bằng 9 × 10⁹ × 0,7 × 10⁻⁹/0,03² = 7000 V/m.",
+        "Hai trường hướng từ A dương sang B âm nên cộng: 14000 V/m."
+      ],
+      "pages": [
+        3
+      ],
+      "status": "solved"
+    },
+    {
+      "id": "source-ch01-015",
+      "chapter": "ch01",
+      "number": 15,
+      "key": "A",
+      "result": "E ≈ 204401 V/m; lệch khoảng 12° từ vectơ MA về phía AN.",
+      "steps": [
+        "MA² + NA² = MN² nên hai trường tại A vuông góc.",
+        "E₁ = 9 × 10⁹ × 8 × 10⁻⁸/0,06² = 200000 V/m; E₂ = 9 × 10⁹ × 3 × 10⁻⁸/0,08² = 42187,5 V/m.",
+        "E = √(E₁² + E₂²) ≈ 204401 V/m; tanθ = E₂/E₁ ⇒ θ ≈ 11,91°."
+      ],
+      "pages": [
+        4
+      ],
+      "status": "solved"
+    },
+    {
+      "id": "source-ch01-016",
+      "chapter": "ch01",
+      "number": 16,
+      "key": "A",
+      "result": "E ≈ 7636,75 V/m, hướng MN.",
+      "steps": [
+        "a = 0,05 m; AN = BN = a√2.",
+        "Mỗi trường có độ lớn kq/(2a²) = 5400 V/m; thành phần ngang triệt tiêu.",
+        "E = 2 × 5400 × cos45° ≈ 7636,75 V/m, ra xa các điện tích dương theo MN."
+      ],
+      "pages": [
+        4
+      ],
+      "status": "solved"
+    },
+    {
+      "id": "source-ch01-017",
+      "chapter": "ch01",
+      "number": 17,
+      "key": "D",
+      "result": "E ≈ 1591 V/m.",
+      "steps": [
+        "Các thành phần vuông góc trục vòng triệt tiêu do đối xứng.",
+        "Trường trên trục: E = k|q|z/(R² + z²)^(3/2).",
+        "R = z = 0,10 m ⇒ E = 9 × 10⁹ × 5 × 10⁻⁹ × 0,1/0,02^(3/2) ≈ 1591 V/m."
+      ],
+      "pages": [
+        4
+      ],
+      "status": "solved"
+    },
+    {
+      "id": "source-ch01-018",
+      "chapter": "ch01",
+      "number": 18,
+      "key": "C",
+      "result": "V = kQ/(εr), chọn V ở vô hạn bằng 0.",
+      "steps": [
+        "Điện thế là đại lượng vô hướng có dấu của điện tích nguồn.",
+        "Tích phân trường Coulomb từ vô hạn cho V = kQ/(εr).",
+        "Mẫu là r, không phải r²; không lấy trị tuyệt đối Q."
+      ],
+      "pages": [
+        4
+      ],
+      "status": "solved"
+    },
+    {
+      "id": "source-ch01-019",
+      "chapter": "ch01",
+      "number": 19,
+      "key": "C",
+      "result": "V = −162 × 10⁴ V.",
+      "steps": [
+        "Điểm ngoài cầu cách tâm r = 0,3 + 0,2 = 0,5 m.",
+        "V = kq/r = 9 × 10⁹ × (−9 × 10⁻⁵)/0,5.",
+        "V = −1,62 × 10⁶ V; điện thế âm do q âm và gốc ở vô hạn."
+      ],
+      "pages": [
+        4
+      ],
+      "status": "solved"
+    },
+    {
+      "id": "source-ch01-020",
+      "chapter": "ch01",
+      "number": 20,
+      "key": "B",
+      "result": "Uđầu,cuối = 4 × 10⁻⁴ V.",
+      "steps": [
+        "Đổi động năng: K = 2 × 10⁷ × 1,6 × 10⁻¹⁹ = 3,2 × 10⁻¹² J.",
+        "Hạt bắt đầu đứng yên, công điện q(Vđầu − Vcuối) = K.",
+        "U = K/q = 3,2 × 10⁻¹²/(8 × 10⁻⁹) = 4 × 10⁻⁴ V."
+      ],
+      "pages": [
+        4
+      ],
+      "status": "solved"
+    },
+    {
+      "id": "source-ch01-021",
+      "chapter": "ch01",
+      "number": 21,
+      "key": "B",
+      "result": "Công AOM = 3,6 × 10⁻⁴ J.",
+      "steps": [
+        "AO = BO = 0,04 m; AM = 0,06 m; BM = √(0,08² + 0,06²) = 0,10 m.",
+        "VO = k(q₁ + q₂)/0,04 = −450 V; VM = k(q₁/0,06 + q₂/0,10) = −540 V.",
+        "AOM = q₀(VO − VM) = 4 × 10⁻⁶ × 90 = 3,6 × 10⁻⁴ J."
+      ],
+      "pages": [
+        5
+      ],
+      "status": "solved"
+    },
+    {
+      "id": "source-ch01-022",
+      "chapter": "ch01",
+      "number": 22,
+      "key": "A",
+      "result": "V ≈ −381,8 V.",
+      "steps": [
+        "Mọi phần tử trên vòng cách M một khoảng √(R² + z²) = √0,02 m.",
+        "Cộng vô hướng các điện thế: V = kq/√(R² + z²).",
+        "V = 9 × 10⁹ × (−6 × 10⁻⁹)/√0,02 ≈ −381,8 V."
+      ],
+      "pages": [
+        5
+      ],
+      "status": "solved"
+    },
+    {
+      "id": "source-ch01-023",
+      "chapter": "ch01",
+      "number": 23,
+      "key": "A",
+      "result": "C = εε₀S/d.",
+      "steps": [
+        "Tụ phẳng lý tưởng: E = Q/(εε₀S).",
+        "Hiệu điện thế U = Ed = Qd/(εε₀S).",
+        "Từ C = Q/U suy ra C = εε₀S/d."
+      ],
+      "pages": [
+        5
+      ],
+      "status": "solved"
+    },
+    {
+      "id": "source-ch01-024",
+      "chapter": "ch01",
+      "number": 24,
+      "key": "A",
+      "result": "|σ| = 5,31 × 10⁻⁶ C/m².",
+      "steps": [
+        "E = U/d = 300/0,003 = 10⁵ V/m.",
+        "Mật độ điện tích tự do trên bản tụ σ = εε₀E.",
+        "σ = 6 × 8,85 × 10⁻¹² × 10⁵ = 5,31 × 10⁻⁶ C/m²."
+      ],
+      "pages": [
+        5
+      ],
+      "status": "solved"
+    },
+    {
+      "id": "source-ch01-025",
+      "chapter": "ch01",
+      "number": 25,
+      "key": "C",
+      "result": "Năng lượng giảm 2 lần.",
+      "steps": [
+        "Tụ vẫn nối nguồn nên U không đổi.",
+        "Khoảng cách tăng gấp đôi làm C = εε₀S/d giảm còn C/2.",
+        "W = CU²/2 nên W mới bằng W/2; nguồn có trao đổi năng lượng với tụ."
+      ],
+      "pages": [
+        5
+      ],
+      "status": "solved"
+    },
+    {
+      "id": "source-ch01-026",
+      "chapter": "ch01",
+      "number": 26,
+      "key": "B",
+      "result": "W = 3,186 × 10⁻⁷ J, gần 318 × 10⁻⁹ J của B.",
+      "steps": [
+        "S = 2 × 10⁻⁴ m²; d = 1,5 × 10⁻³ m.",
+        "C = 6 × 8,85 × 10⁻¹² × 2 × 10⁻⁴/(1,5 × 10⁻³) = 7,08 × 10⁻¹² F.",
+        "W = CU²/2 = 7,08 × 10⁻¹² × 300²/2 = 3,186 × 10⁻⁷ J. PDF làm tròn ở phương án B; không chia đôi thêm lần nữa."
+      ],
+      "pages": [
+        5
+      ],
+      "status": "solved"
+    },
+    {
+      "id": "source-ch01-027",
+      "chapter": "ch01",
+      "number": 27,
+      "key": {
+        "value": 0.87,
+        "tolerance": 0.015,
+        "unit": "μC"
+      },
+      "result": "q ≈ 0,87 μC (g = 9,8 m/s²).",
+      "steps": [
+        "Hình cho mỗi dây lệch 30° so với phương thẳng đứng. Khoảng cách hai quả r = 2L sin30° = 0,20 m.",
+        "Cân bằng mỗi quả: Fđ = mg tan30°. Dùng kq²/r² = mg tan30°.",
+        "q = √(0,03 × 9,8 × tan30° × 0,20²/(9 × 10⁹)) ≈ 0,869 μC. Nếu lấy g = 10 thì q ≈ 0,877 μC."
+      ],
+      "pages": [
+        6
+      ],
+      "status": "solved"
+    },
+    {
+      "id": "source-ch01-028",
+      "chapter": "ch01",
+      "number": 28,
+      "key": {
+        "value": 9.909823,
+        "tolerance": 0.005,
+        "unit": "x"
+      },
+      "result": "Theo biểu thức in trong đề: x ≈ 9,91.",
+      "steps": [
+        "Thanh mất electron nên tích điện dương: N = Q/e = 13 × 10⁻⁹/(1,6 × 10⁻¹⁹) = 8,125 × 10¹⁰.",
+        "Đề viết N = 10 · 10ˣ, tức 10^(x+1), không phải N = x · 10¹⁰.",
+        "x = log₁₀(N) − 1 ≈ 9,9098. Nếu đề mong x nguyên thì cách ghi này cần được chỉnh lại."
+      ],
+      "pages": [
+        6
+      ],
+      "status": "solved"
+    },
+    {
+      "id": "source-ch01-029",
+      "chapter": "ch01",
+      "number": 29,
+      "key": {
+        "value": -4.9,
+        "tolerance": 0.15,
+        "unit": "pC"
+      },
+      "result": "q ≈ −4,9 pC.",
+      "steps": [
+        "Giọt lơ lửng: lực điện phải hướng lên để cân bằng trọng lực. Vì E hướng xuống nên q âm.",
+        "|q|E = mg ⇒ q = −3 × 10⁻⁹ × 9,8/(6 × 10³) = −4,9 × 10⁻¹² C.",
+        "Đề hỏi picocoulomb: 1 pC = 10⁻¹² C nên q ≈ −4,9 pC; với g = 10 được −5 pC. Không nhầm pC với μC (1 μC = 10⁶ pC)."
+      ],
+      "pages": [
+        6
+      ],
+      "status": "solved"
+    },
+    {
+      "id": "source-ch01-030",
+      "chapter": "ch01",
+      "number": 30,
+      "key": {
+        "value": 8.85,
+        "tolerance": 0.02,
+        "unit": "μC/m²"
+      },
+      "result": "|σ| = 8,85 μC/m², trong không khí.",
+      "steps": [
+        "Giả sử khoảng giữa hai mặt là không khí (ε ≈ 1), vì đề không nêu điện môi.",
+        "Giữa hai mặt trái dấu: E = |σ|/ε₀ ⇒ |σ| = ε₀E.",
+        "|σ| = 8,85 × 10⁻¹² × 10⁶ = 8,85 × 10⁻⁶ C/m² = 8,85 μC/m²; hai mặt mang dấu đối nhau."
+      ],
+      "pages": [
+        6
+      ],
+      "status": "solved"
+    },
+    {
+      "id": "source-ch01-031",
+      "chapter": "ch01",
+      "number": 31,
+      "key": {
+        "value": 3.84,
+        "tolerance": 0.005,
+        "unit": "x"
+      },
+      "result": "x = 3,84; lực hướng lên.",
+      "steps": [
+        "Độ lớn lực F = |q|E.",
+        "F = 3,2 × 10⁻¹⁹ × 120 = 3,84 × 10⁻¹⁷ N.",
+        "Hệ số x = 3,84. Điện tích âm nên lực ngược chiều điện trường."
+      ],
+      "pages": [
+        6
+      ],
+      "status": "solved"
+    },
+    {
+      "id": "source-ch01-032",
+      "chapter": "ch01",
+      "number": 32,
+      "key": {
+        "value": 27,
+        "tolerance": 0.5,
+        "unit": "độ"
+      },
+      "result": "x = 27°.",
+      "steps": [
+        "Đổi E = 10³ V/cm = 10⁵ V/m và m = 0,2 g = 2 × 10⁻⁴ kg.",
+        "Fđ = qE = 10⁻³ N; mg = 2 × 10⁻³ N. Cân bằng cho tanθ = Fđ/(mg) = 1/2.",
+        "θ = arctan(1/2) ≈ 26,565°, làm tròn phần nguyên là 27°."
+      ],
+      "pages": [
+        6
+      ],
+      "status": "solved"
+    },
+    {
+      "id": "source-ch01-033",
+      "chapter": "ch01",
+      "number": 33,
+      "key": {
+        "value": 0.8,
+        "tolerance": 0.002,
+        "unit": "mV"
+      },
+      "result": "Uđầu,cuối = 0,8 mV.",
+      "steps": [
+        "K = 10⁷ eV = 1,6 × 10⁻¹² J.",
+        "qU = K ⇒ U = 1,6 × 10⁻¹²/(2 × 10⁻⁹) = 8 × 10⁻⁴ V.",
+        "Đổi V sang mV: 0,8 mV."
+      ],
+      "pages": [
+        7
+      ],
+      "status": "solved"
+    },
+    {
+      "id": "source-ch01-034",
+      "chapter": "ch01",
+      "number": 34,
+      "key": {
+        "value": 5537,
+        "tolerance": 10,
+        "unit": "km/s"
+      },
+      "result": "v ≈ 5,54 × 10³ km/s.",
+      "steps": [
+        "Proton đi cùng E nên công điện eEd dương, bằng động năng nhận được.",
+        "v = √(2eEd/mₚ), dùng e = 1,6 × 10⁻¹⁹ C và mₚ ≈ 1,67 × 10⁻²⁷ kg.",
+        "v ≈ √(2 × 1,6 × 10⁻¹⁹ × 8 × 10⁴ × 2/(1,67 × 10⁻²⁷)) ≈ 5,537 × 10⁶ m/s = 5537 km/s."
+      ],
+      "pages": [
+        7
+      ],
+      "status": "solved"
+    },
+    {
+      "id": "source-ch01-035",
+      "chapter": "ch01",
+      "number": 35,
+      "key": {
+        "value": 4.4,
+        "tolerance": 0.05,
+        "unit": "C"
+      },
+      "result": "|Q| ≈ 4,4 C.",
+      "steps": [
+        "Coi đám mây như điện tích điểm theo giả thiết đề.",
+        "E = k|Q|/r² ⇒ |Q| = Er²/k = 800 × 7000²/(9 × 10⁹).",
+        "|Q| ≈ 4,3556 C, làm tròn đến hàng phần mười là 4,4 C; chưa xác định dấu chỉ từ độ lớn E."
+      ],
+      "pages": [
+        7
+      ],
+      "status": "solved"
+    },
+    {
+      "id": "source-ch01-036",
+      "chapter": "ch01",
+      "number": 36,
+      "key": {
+        "value": 300,
+        "tolerance": 0.1,
+        "unit": "V/m"
+      },
+      "result": "E = 300 V/m.",
+      "steps": [
+        "Đổi khoảng cách d = 4 cm = 0,04 m.",
+        "Điện trường đều giữa hai bản có E = U/d.",
+        "E = 12/0,04 = 300 V/m, hướng từ bản dương sang bản âm."
+      ],
+      "pages": [
+        7
+      ],
+      "status": "solved"
+    },
+    {
+      "id": "source-ch01-037",
+      "chapter": "ch01",
+      "number": 37,
+      "key": null,
+      "result": "a Đúng; b Sai; c cần làm rõ phạm vi; d Đúng.",
+      "steps": [
+        "a) Lực tĩnh điện tác dụng lên hạt bụi đã tích điện đưa chúng đến bản thu. b) Đây không phải nguyên lý từ trường.",
+        "c) Hình là bộ lọc bụi công nghiệp; cũng có thiết bị làm sạch không khí dùng lọc tĩnh điện trong nhà. Từ “thường” không có phạm vi hay số liệu để kết luận chắc chắn.",
+        "d) Ion hóa hạt và tách hạt bằng điện trường là nguyên lý thiết bị. Không chấm cả câu khi c chưa được làm rõ."
+      ],
+      "pages": [
+        8
+      ],
+      "status": "review",
+      "issue": "Nhận định c không xác định loại thiết bị/phạm vi sử dụng."
+    },
+    {
+      "id": "source-ch01-038",
+      "chapter": "ch01",
+      "number": 38,
+      "key": null,
+      "result": "a Đúng; b tùy giai đoạn; c Đúng; d Sai.",
+      "steps": [
+        "a) Quá trình sao chép dùng ảnh điện tích và lực điện để hút/chuyển mực.",
+        "b) Ở bước chuyển mực, lực tĩnh điện đưa mực lên giấy; ở bản in hoàn tất, mực bám bền chủ yếu nhờ nóng chảy và ép. Đề không phân biệt hai giai đoạn.",
+        "c) Lô sấy nung chảy mực để cố định mực là đúng. d) Giấy nóng do lô sấy, không phải chỉ vì được tích điện."
+      ],
+      "pages": [
+        8
+      ],
+      "status": "review",
+      "issue": "Nhận định b cần nói rõ bước chuyển mực hay bản in sau sấy."
+    },
+    {
+      "id": "source-ch01-039",
+      "chapter": "ch01",
+      "number": 39,
+      "key": "TTFF",
+      "result": "a Đúng; b Đúng; c Sai; d Sai.",
+      "steps": [
+        "a) Electron âm và proton dương hút nhau. Đặt f = ke²/d², g = ke²/D²; theo hình D > d nên f > g.",
+        "b,c) Fa = f + g; Fb = f − g; Fc = √(f² + g²). Vậy Fb nhỏ nhất, Fa lớn nhất.",
+        "d) Với AB thẳng đứng, tanθ = g/f = d²/D² < 1 ⇒ θ < 45°, nên phát biểu lớn hơn 45° sai."
+      ],
+      "pages": [
+        8
+      ],
+      "status": "solved"
+    },
+    {
+      "id": "source-ch01-040",
+      "chapter": "ch01",
+      "number": 40,
+      "key": "TFFT",
+      "result": "a Đúng; b Sai; c Sai; d Đúng, theo cùng quy ước mật độ đường sức.",
+      "steps": [
+        "a) (a) và (c) có các đường thẳng song song, cách đều; (b) có đường sức loe ra nên trường biến đổi.",
+        "b) Cường độ ở (a) không giống (b); theo mật độ đường sức chung, (a) mạnh hơn dọc AB.",
+        "c,d) Công q∫E·dl lớn nhất ở (a), nên K, tốc độ v và động lượng mv ở B lớn nhất tại (a). Nếu các hình không dùng cùng thang đường sức thì không thể so sánh độ lớn."
+      ],
+      "pages": [
+        9
+      ],
+      "status": "solved"
+    },
+    {
+      "id": "source-ch01-041",
+      "chapter": "ch01",
+      "number": 41,
+      "key": "FTFT",
+      "result": "a Sai; b Đúng; c Sai; d Đúng.",
+      "steps": [
+        "a,b) Mỗi tháng dùng 150 h. Đèn sợi đốt tốn 0,1 × 150 × 2000 = 30000 đồng; LED tốn 0,02 × 150 × 2000 = 6000 đồng.",
+        "c) Trong 30000 h cần 30 bóng sợi đốt: 30 × 8000 + 0,1 × 30000 × 2000 = 6240000 đồng, không phải 6440000.",
+        "d) LED dùng một bóng: 48000 + 0,02 × 30000 × 2000 = 1248000 đồng. Dùng giá điện 2000 đồng/kWh in trong hình."
+      ],
+      "pages": [
+        9,
+        10
+      ],
+      "status": "solved"
+    },
+    {
+      "id": "source-ch02-001",
+      "chapter": "ch02",
+      "number": 1,
+      "key": "C",
+      "result": "Dòng điện là dòng dịch chuyển có hướng của các hạt mang điện.",
+      "steps": [
+        "Chuyển động nhiệt hỗn loạn có thể có mà dòng điện tổng bằng 0.",
+        "Dòng điện cần có sự vận chuyển điện tích thuần theo một hướng.",
+        "C nêu đủ yếu tố “có hướng”; không giới hạn hạt tải là electron."
+      ],
+      "pages": [
+        11
+      ],
+      "status": "solved"
+    },
+    {
+      "id": "source-ch02-002",
+      "chapter": "ch02",
+      "number": 2,
+      "key": "C",
+      "result": "Mật độ dòng điện có đơn vị A/m².",
+      "steps": [
+        "I = ∫j·dS. Với dòng đều vuông góc tiết diện, j = I/S.",
+        "I đo bằng ampere, S đo bằng m².",
+        "Vì vậy j có đơn vị A/m²; C/s chỉ là đơn vị của I."
+      ],
+      "pages": [
+        11
+      ],
+      "status": "solved"
+    },
+    {
+      "id": "source-ch02-003",
+      "chapter": "ch02",
+      "number": 3,
+      "key": "B",
+      "result": "Suất điện động đặc trưng công nguồn thực hiện trên một đơn vị điện tích.",
+      "steps": [
+        "Lực lạ trong nguồn chuyển điện tích để duy trì dòng điện.",
+        "Suất điện động ℰ = Anguồn/q, đơn vị J/C = V.",
+        "B mô tả khả năng thực hiện công; ℰ không phải lực, dù tên có chữ “động”."
+      ],
+      "pages": [
+        11
+      ],
+      "status": "solved"
+    },
+    {
+      "id": "source-ch02-004",
+      "chapter": "ch02",
+      "number": 4,
+      "key": "B",
+      "result": "t = 25 h.",
+      "steps": [
+        "Dung lượng điện tích cho sẵn là 20 A·h.",
+        "Với dòng không đổi: Q = It ⇒ t = Q/I.",
+        "t = 20/0,8 = 25 h, trong mô hình sử dụng hết dung lượng danh định."
+      ],
+      "pages": [
+        11
+      ],
+      "status": "solved"
+    },
+    {
+      "id": "source-ch02-005",
+      "chapter": "ch02",
+      "number": 5,
+      "key": "B",
+      "result": "I = 1 A.",
+      "steps": [
+        "Dung lượng Q = 5 × 3 = 15 A·h.",
+        "Giả thiết cùng dung lượng sử dụng, Q = I₂t₂.",
+        "I₂ = 15/15 = 1 A; bỏ qua sự phụ thuộc dung lượng thực vào chế độ xả."
+      ],
+      "pages": [
+        11
+      ],
+      "status": "solved"
+    },
+    {
+      "id": "source-ch02-006",
+      "chapter": "ch02",
+      "number": 6,
+      "key": "A",
+      "result": "H có đơn vị A/m.",
+      "steps": [
+        "Định luật Ampère cho ∮H·dl = I tự do.",
+        "Tích H với độ dài có đơn vị ampere.",
+        "H do đó có đơn vị A/m, khác B đo bằng tesla."
+      ],
+      "pages": [
+        11
+      ],
+      "status": "solved"
+    },
+    {
+      "id": "source-ch02-007",
+      "chapter": "ch02",
+      "number": 7,
+      "key": "A",
+      "result": "B có đơn vị tesla (T).",
+      "steps": [
+        "Lực từ lên dây vuông góc trường: F = BIl.",
+        "B = F/(Il) có đơn vị N/(A·m).",
+        "Đơn vị này được gọi là tesla, ký hiệu T."
+      ],
+      "pages": [
+        11
+      ],
+      "status": "solved"
+    },
+    {
+      "id": "source-ch02-008",
+      "chapter": "ch02",
+      "number": 8,
+      "key": "A",
+      "result": "H = I/(2πr).",
+      "steps": [
+        "Dây thẳng vô hạn có đối xứng trụ; H tiếp tuyến đường tròn bán kính r.",
+        "Lấy đường Ampère tròn: H·2πr = I.",
+        "Suy ra H = I/(2πr), trong cấu hình đối xứng và dòng ổn định."
+      ],
+      "pages": [
+        11,
+        12
+      ],
+      "status": "solved"
+    },
+    {
+      "id": "source-ch02-009",
+      "chapter": "ch02",
+      "number": 9,
+      "key": "A",
+      "result": "B = μμ₀I/(2πr).",
+      "steps": [
+        "Trường quanh dây vô hạn: H = I/(2πr).",
+        "Trong môi trường tuyến tính, đẳng hướng: B = μμ₀H.",
+        "Kết hợp được biểu thức A; μ là độ từ thẩm tương đối."
+      ],
+      "pages": [
+        12
+      ],
+      "status": "solved"
+    },
+    {
+      "id": "source-ch02-010",
+      "chapter": "ch02",
+      "number": 10,
+      "key": "B",
+      "result": "B = 4 × 10⁻⁶ T.",
+      "steps": [
+        "Lấy không khí μ ≈ 1, r = 0,10 m.",
+        "B = 2 × 10⁻⁷I/r.",
+        "B = 2 × 10⁻⁷ × 2/0,10 = 4 × 10⁻⁶ T."
+      ],
+      "pages": [
+        12
+      ],
+      "status": "solved"
+    },
+    {
+      "id": "source-ch02-011",
+      "chapter": "ch02",
+      "number": 11,
+      "key": "A",
+      "result": "r = 10 cm.",
+      "steps": [
+        "Trong không khí B = 2 × 10⁻⁷I/r.",
+        "r = 2 × 10⁻⁷ × 4/(8 × 10⁻⁶) = 0,10 m.",
+        "Đổi đơn vị được 10 cm."
+      ],
+      "pages": [
+        12
+      ],
+      "status": "solved"
+    },
+    {
+      "id": "source-ch02-012",
+      "chapter": "ch02",
+      "number": 12,
+      "key": "A",
+      "result": "H ≈ 42,21 A/m.",
+      "steps": [
+        "C thuộc trung trực và góc ACB = 90°, nên hai góc so với đường vuông góc là 45°.",
+        "Đoạn dây hữu hạn: H = I(sinθ₁ + sinθ₂)/(4πa).",
+        "H = 15 × 2sin45°/(4π × 0,04) ≈ 42,20 A/m, khớp A theo làm tròn."
+      ],
+      "pages": [
+        12
+      ],
+      "status": "solved"
+    },
+    {
+      "id": "source-ch02-013",
+      "chapter": "ch02",
+      "number": 13,
+      "key": "A",
+      "result": "H ≈ 3,98 A/m.",
+      "steps": [
+        "r = 12 cm = 0,12 m.",
+        "Dây vô hạn: H = I/(2πr).",
+        "H = 3/(2π × 0,12) ≈ 3,979 A/m."
+      ],
+      "pages": [
+        12
+      ],
+      "status": "solved"
+    },
+    {
+      "id": "source-ch02-014",
+      "chapter": "ch02",
+      "number": 14,
+      "key": "D",
+      "result": "N ≈ 398 vòng.",
+      "steps": [
+        "Ống dây dài lõi không khí: B = μ₀NI/l.",
+        "N = Bl/(μ₀I), với B = 250 × 10⁻⁵ T và l = 0,40 m.",
+        "N = 0,0025 × 0,40/(4π × 10⁻⁷ × 2) ≈ 397,89, chọn 398 vòng."
+      ],
+      "pages": [
+        12
+      ],
+      "status": "solved"
+    },
+    {
+      "id": "source-ch02-015",
+      "chapter": "ch02",
+      "number": 15,
+      "key": "A",
+      "result": "B ≈ 50,3 × 10⁻⁵ T.",
+      "steps": [
+        "Quấn một lớp sát nhau, bỏ qua sơn mỏng: n = 1/d = 1/0,0005 = 2000 vòng/m.",
+        "Ống dây dài lõi không khí có B = μ₀nI.",
+        "B = 4π × 10⁻⁷ × 2000 × 0,2 ≈ 5,027 × 10⁻⁴ T."
+      ],
+      "pages": [
+        12
+      ],
+      "status": "solved"
+    },
+    {
+      "id": "source-ch02-016",
+      "chapter": "ch02",
+      "number": 16,
+      "key": "A",
+      "result": "B ≈ 1,833 × 10⁻⁵ T.",
+      "steps": [
+        "4 + 6 = 10 cm nên điểm nằm giữa hai dây. Dòng ngược chiều cho hai trường cùng hướng tại điểm này.",
+        "B₁ = 2 × 10⁻⁷ × 3/0,04 = 1,5 × 10⁻⁵ T; B₂ = 2 × 10⁻⁷/0,06.",
+        "B = B₁ + B₂ ≈ 1,833 × 10⁻⁵ T."
+      ],
+      "pages": [
+        12,
+        13
+      ],
+      "status": "solved"
+    },
+    {
+      "id": "source-ch02-017",
+      "chapter": "ch02",
+      "number": 17,
+      "key": "A",
+      "result": "B = 1,6 × 10⁻⁵ T.",
+      "steps": [
+        "M ở trong mặt phẳng hai dây và cách đều nên r₁ = r₂ = 0,10 m.",
+        "Hai dòng ngược chiều: trường giữa chúng cùng hướng.",
+        "B = 2 × 10⁻⁷(5 + 3)/0,10 = 1,6 × 10⁻⁵ T."
+      ],
+      "pages": [
+        13
+      ],
+      "status": "solved"
+    },
+    {
+      "id": "source-ch02-018",
+      "chapter": "ch02",
+      "number": 18,
+      "key": "A",
+      "result": "H ≈ 9,56 A/m, hợp MA góc khoảng 34°.",
+      "steps": [
+        "Tam giác MAN vuông tại A vì 6² + 8² = 10². Các trường vuông góc với bán kính MA, NA nên cũng vuông góc nhau.",
+        "H₁ = 2/(2π × 0,06) ≈ 5,305 A/m; H₂ = 4/(2π × 0,08) ≈ 7,958 A/m.",
+        "H = √(H₁² + H₂²) ≈ 9,564 A/m. Theo chiều dòng trong hình, H₂ song song MA; tanθ = H₁/H₂ = 2/3 ⇒ θ ≈ 33,69°."
+      ],
+      "pages": [
+        13
+      ],
+      "status": "solved"
+    },
+    {
+      "id": "source-ch02-019",
+      "chapter": "ch02",
+      "number": 19,
+      "key": {
+        "value": 0.417,
+        "tolerance": 0.00051,
+        "unit": "x"
+      },
+      "result": "x = 0,417.",
+      "steps": [
+        "MA = 0,06 m; NA = 0,08 m; MN = 0,10 m ⇒ hai vectơ B tại A vuông góc.",
+        "B₁ = 2 × 10⁻⁷/0,06; B₂ = 2 × 10⁻⁷/0,08.",
+        "B = √(B₁² + B₂²) = 4,1667 × 10⁻⁶ T = 0,41667 × 10⁻⁵ T. Làm tròn x = 0,417."
+      ],
+      "pages": [
+        13
+      ],
+      "status": "solved"
+    },
+    {
+      "id": "source-ch02-020",
+      "chapter": "ch02",
+      "number": 20,
+      "key": {
+        "value": 6,
+        "tolerance": 0.01,
+        "unit": "x"
+      },
+      "result": "x = 6.",
+      "steps": [
+        "a = 0,05 m; khoảng cách từ M tới mỗi dây là a√2.",
+        "Mỗi trường B₀ = μ₀I/(2πa√2); hai thành phần theo OM triệt tiêu, thành phần vuông góc OM cộng.",
+        "B = 2B₀cos45° = μ₀I/(2πa) = 6 × 10⁻⁵ T ⇒ x = 6."
+      ],
+      "pages": [
+        13
+      ],
+      "status": "solved"
+    },
+    {
+      "id": "source-ch02-021",
+      "chapter": "ch02",
+      "number": 21,
+      "key": {
+        "value": 675,
+        "tolerance": 0.5,
+        "unit": "A"
+      },
+      "result": "I ≈ 675 A theo mô hình dây thẳng dài.",
+      "steps": [
+        "Lấy r = 9,00 km = 9000 m và B = 1,50 × 10⁻⁸ T.",
+        "Xấp xỉ dòng điện hiệu dụng dọc trục lốc như dây thẳng dài: I = 2πrB/μ₀.",
+        "I = 9000 × 1,50 × 10⁻⁸/(2 × 10⁻⁷) = 675 A. Hình dạng xoắn thực cần mô hình chi tiết hơn; đây là giả thiết của bài."
+      ],
+      "pages": [
+        13
+      ],
+      "status": "solved"
+    },
+    {
+      "id": "source-ch02-022",
+      "chapter": "ch02",
+      "number": 22,
+      "key": null,
+      "result": "A mô tả đầy đủ; B và D cũng là các tính chất đúng khi lực khác 0.",
+      "steps": [
+        "Lực từ F = I l × B vuông góc đồng thời với dây và B.",
+        "Vì thế lực vuông góc mặt phẳng chứa dây và B (A), cũng vuông góc dây (B) và vuông góc B (D).",
+        "Nếu đề yêu cầu “mô tả đầy đủ nhất” thì chọn A. Với cách hỏi hiện tại có nhiều phát biểu đúng; khi dây song song B thì lực bằng 0 và không có phương."
+      ],
+      "pages": [
+        13,
+        14
+      ],
+      "status": "review",
+      "issue": "Các phương án A, B, D không loại trừ nhau; cần sửa yêu cầu chọn đáp án đầy đủ nhất."
+    },
+    {
+      "id": "source-ch02-023",
+      "chapter": "ch02",
+      "number": 23,
+      "key": "A",
+      "result": "l = 64 cm.",
+      "steps": [
+        "Lực từ F = BIl sinθ, với θ = 30°.",
+        "l = 0,04/(0,5 × 0,25 × sin30°) = 0,64 m.",
+        "Đổi sang cm: 64 cm."
+      ],
+      "pages": [
+        14
+      ],
+      "status": "solved"
+    },
+    {
+      "id": "source-ch02-024",
+      "chapter": "ch02",
+      "number": 24,
+      "key": "A",
+      "result": "Dòng M → N, I = 7,5 A.",
+      "steps": [
+        "Dây vuông góc B nên I = F/(Bl) = 0,06/(0,08 × 0,10) = 7,5 A.",
+        "B hướng sang phải; F hướng ra khỏi giấy.",
+        "Quy tắc tích có hướng l × B cho l hướng xuống, tức M → N."
+      ],
+      "pages": [
+        14
+      ],
+      "status": "solved"
+    },
+    {
+      "id": "source-ch02-025",
+      "chapter": "ch02",
+      "number": 25,
+      "key": "C",
+      "result": "r = 0,02 m.",
+      "steps": [
+        "Lực trên đơn vị chiều dài: F/l = μ₀I₁I₂/(2πr).",
+        "r = 2 × 10⁻⁷ × 2 × 2/(4 × 10⁻⁵).",
+        "r = 0,02 m; độ lớn này không phụ thuộc hai dòng cùng hay ngược chiều."
+      ],
+      "pages": [
+        14
+      ],
+      "status": "solved"
+    },
+    {
+      "id": "source-ch02-026",
+      "chapter": "ch02",
+      "number": 26,
+      "key": {
+        "value": 8.4,
+        "tolerance": 0.05,
+        "unit": "N"
+      },
+      "result": "F = 8,4 N.",
+      "steps": [
+        "B ≈ 3 × 10⁻⁵ T khi bỏ thành phần thẳng đứng rất nhỏ.",
+        "Dây vuông góc trường: F = BIl.",
+        "F = 3 × 10⁻⁵ × 1400 × 200 = 8,4 N."
+      ],
+      "pages": [
+        14
+      ],
+      "status": "solved"
+    },
+    {
+      "id": "source-ch02-027",
+      "chapter": "ch02",
+      "number": 27,
+      "key": {
+        "value": -5,
+        "tolerance": 0.001,
+        "unit": "x"
+      },
+      "result": "x = −5.",
+      "steps": [
+        "BC dài 0,20 m, nằm vuông góc trường giữa hai cực như hình.",
+        "F = BIl = 10⁻³ × 0,1 × 0,20 = 2 × 10⁻⁵ N.",
+        "So sánh với F = 2 · 10ˣ N cho x = −5."
+      ],
+      "pages": [
+        14
+      ],
+      "status": "solved"
+    },
+    {
+      "id": "source-ch02-028",
+      "chapter": "ch02",
+      "number": 28,
+      "key": {
+        "value": 5.4,
+        "tolerance": 0.005,
+        "unit": "x"
+      },
+      "result": "x = 5,4 theo mô hình đoạn dòng điện của đề.",
+      "steps": [
+        "Đổi l = 2 mm = 0,002 m; I = 1,5 mA = 0,0015 A.",
+        "Lực lớn nhất khi dòng vuông góc trường: Fmax = BIl.",
+        "Fmax = 1,8 × 0,0015 × 0,002 = 5,4 × 10⁻⁶ N ⇒ x = 5,4."
+      ],
+      "pages": [
+        14,
+        15
+      ],
+      "status": "solved"
+    },
+    {
+      "id": "source-ch02-029",
+      "chapter": "ch02",
+      "number": 29,
+      "key": {
+        "value": 1.51,
+        "tolerance": 0.0051,
+        "unit": "N"
+      },
+      "result": "F ≈ 1,51 N.",
+      "steps": [
+        "Mô hình đề bỏ qua suất điện động do cuộn chuyển động: I = U/R = 12/6 = 2 A.",
+        "Trong khe loa, B hướng xuyên tâm và dây theo tiếp tuyến, các lực cùng hướng dọc trục. Chiều dài tác dụng l = Nπd = 20π × 0,06 m.",
+        "F = BIl = 0,2 × 2 × 20π × 0,06 ≈ 1,50796 N ⇒ 1,51 N."
+      ],
+      "pages": [
+        15
+      ],
+      "status": "solved"
+    },
+    {
+      "id": "source-ch02-030",
+      "chapter": "ch02",
+      "number": 30,
+      "key": {
+        "value": 0.54,
+        "tolerance": 0.0051,
+        "unit": "N"
+      },
+      "result": "Fmax = 0,54 N.",
+      "steps": [
+        "Đổi l = 10 cm = 0,10 m.",
+        "F = BIl sinθ đạt cực đại khi θ = 90°.",
+        "Fmax = 1,8 × 3 × 0,10 = 0,54 N."
+      ],
+      "pages": [
+        15
+      ],
+      "status": "solved"
+    },
+    {
+      "id": "source-ch02-031",
+      "chapter": "ch02",
+      "number": 31,
+      "key": "A",
+      "result": "F = 4,8 × 10⁻¹⁵ N.",
+      "steps": [
+        "Chỉ xét thành phần từ của lực Lorentz; v vuông góc B.",
+        "F = |e|vB = 1,6 × 10⁻¹⁹ × 1,5 × 10⁶ × 2 × 10⁻².",
+        "F = 4,8 × 10⁻¹⁵ N; hướng ngược v × B do electron âm."
+      ],
+      "pages": [
+        15
+      ],
+      "status": "solved"
+    },
+    {
+      "id": "source-ch02-032",
+      "chapter": "ch02",
+      "number": 32,
+      "key": "A",
+      "result": "R ≈ 8,53 × 10⁻⁴ m.",
+      "steps": [
+        "Lực từ đóng vai trò hướng tâm: evB = mv²/R.",
+        "R = mv/(eB), với m = 9,1 × 10⁻³¹ kg.",
+        "R = 9,1 × 10⁻³¹ × 3 × 10⁶/(1,6 × 10⁻¹⁹ × 0,02) ≈ 8,531 × 10⁻⁴ m."
+      ],
+      "pages": [
+        15
+      ],
+      "status": "solved"
+    },
+    {
+      "id": "source-ch02-033",
+      "chapter": "ch02",
+      "number": 33,
+      "key": "A",
+      "result": "F ≈ 4,24 × 10⁻¹⁵ N.",
+      "steps": [
+        "Tăng tốc từ nghỉ: mv²/2 = eU. Dùng xấp xỉ phi tương đối tính của bài.",
+        "v = √(2 × 1,6 × 10⁻¹⁹ × 2000/(9,1 × 10⁻³¹)) ≈ 2,652 × 10⁷ m/s.",
+        "F = evB ≈ 1,6 × 10⁻¹⁹ × 2,652 × 10⁷ × 10⁻³ = 4,24 × 10⁻¹⁵ N."
+      ],
+      "pages": [
+        15
+      ],
+      "status": "solved"
+    },
+    {
+      "id": "source-ch02-034",
+      "chapter": "ch02",
+      "number": 34,
+      "key": "A",
+      "result": "T ≈ 1,8 × 10⁻⁸ s.",
+      "steps": [
+        "T = 2πR/v và R = mv/(eB).",
+        "Suy ra T = 2πm/(eB), không phụ thuộc U trong mô hình phi tương đối tính.",
+        "T = 2π × 9,1 × 10⁻³¹/(1,6 × 10⁻¹⁹ × 2 × 10⁻³) ≈ 1,787 × 10⁻⁸ s."
+      ],
+      "pages": [
+        15,
+        16
+      ],
+      "status": "solved"
+    },
+    {
+      "id": "source-ch02-035",
+      "chapter": "ch02",
+      "number": 35,
+      "key": {
+        "value": 11,
+        "tolerance": 0.5,
+        "unit": "x"
+      },
+      "result": "x = 11.",
+      "steps": [
+        "R = 0,03 m; từ mv = eBR suy ra động năng K = e²B²R²/(2m).",
+        "K = (1,6 × 10⁻¹⁹ × 3 × 10⁻⁵ × 0,03)²/(2 × 9,1 × 10⁻³¹) ≈ 1,1393 × 10⁻²⁰ J.",
+        "K ≈ 11,393 × 10⁻²¹ J ⇒ hệ số làm tròn x = 11."
+      ],
+      "pages": [
+        16
+      ],
+      "status": "solved"
+    },
+    {
+      "id": "source-ch02-036",
+      "chapter": "ch02",
+      "number": 36,
+      "key": {
+        "value": 0.03,
+        "tolerance": 0.005,
+        "unit": "x"
+      },
+      "result": "x = 0,03 sau khi làm tròn hai chữ số thập phân.",
+      "steps": [
+        "v = √(2eU/m) ≈ 5,93 × 10⁶ m/s. Thành phần gây quay là v⊥ = v sin60°.",
+        "R = mv sin60°/(eB) ≈ 2,921 × 10⁻⁵ m.",
+        "R = 0,02921 × 10⁻³ m ⇒ x làm tròn là 0,03; không nhầm hệ số x với bán kính đo bằng m."
+      ],
+      "pages": [
+        16
+      ],
+      "status": "solved"
+    },
+    {
+      "id": "source-ch02-037",
+      "chapter": "ch02",
+      "number": 37,
+      "key": "FTTT",
+      "result": "a Sai; b Đúng; c Đúng; d Đúng.",
+      "steps": [
+        "a,b) Dấu chấm ở M biểu diễn dòng đi ra; trường I₁ tại A hướng theo NA từ N lên A, không phải A → N. Dòng I₂ đi vào cho H₂ song song MA theo M → A.",
+        "H₁ = 2/(2π × 0,06); H₂ = 3/(2π × 0,08), vuông góc nhau.",
+        "H = √(H₁² + H₂²) ≈ 7,986 A/m; B = μ₀H ≈ 1,003 × 10⁻⁵ T. Vì vậy c,d đúng theo làm tròn."
+      ],
+      "pages": [
+        16
+      ],
+      "status": "solved"
+    },
+    {
+      "id": "source-ch02-038",
+      "chapter": "ch02",
+      "number": 38,
+      "key": null,
+      "result": "Nếu A là trung điểm: a Sai; b Sai; c Đúng; d Đúng.",
+      "steps": [
+        "Đề chỉ ghi A “nằm giữa”, chưa nói cách đều hai dây. Đặt khoảng cách tới dây 1 là x, tới dây 2 là 0,05 − x (m).",
+        "Cùng chiều: B = 2 × 10⁻⁶|1/x − 1/(0,05 − x)|. Ngược chiều: B = 2 × 10⁻⁶[1/x + 1/(0,05 − x)].",
+        "Nếu bổ sung x = 0,025 m, trường mỗi dây là 8 × 10⁻⁵ T: cùng chiều triệt tiêu, ngược chiều cộng thành 1,6 × 10⁻⁴ T. Không áp kết quả trung điểm cho mọi điểm nằm giữa."
+      ],
+      "pages": [
+        16
+      ],
+      "status": "review",
+      "issue": "Thiếu điều kiện A là trung điểm để xác nhận các giá trị b,c,d."
+    },
+    {
+      "id": "source-ch02-039",
+      "chapter": "ch02",
+      "number": 39,
+      "key": "TTFF",
+      "result": "a Đúng; b Đúng; c Sai; d Sai.",
+      "steps": [
+        "a,b) Chỉ có từ trường đều và v⊥B nên quỹ đạo tròn; R = mv/(eB) = 0,03792 m ≈ 3,8 cm.",
+        "c) T = 2πm/(eB) ≈ 1,19 × 10⁻⁷ s, khác 3,8 × 10⁻⁸ s.",
+        "d) F = evB = 1,6 × 10⁻¹⁹ × 2 × 10⁶ × 3 × 10⁻⁴ = 9,6 × 10⁻¹⁷ N, khác số đã cho."
+      ],
+      "pages": [
+        16
+      ],
+      "status": "solved"
+    },
+    {
+      "id": "source-ch02-040",
+      "chapter": "ch02",
+      "number": 40,
+      "key": "FFTF",
+      "result": "a Sai; b Sai; c Đúng; d Sai.",
+      "steps": [
+        "a) Dòng I₁ hướng xuống, ở bên phải dây B hướng ra khỏi giấy. b) AB cùng chiều I₁ nên bị hút. c) CD ngược chiều nên bị đẩy.",
+        "Lực lên BC và DA đối nhau, triệt tiêu. FAB = 2 × 10⁻⁷ × 15 × 20 × 0,15/0,02 = 4,5 × 10⁻⁴ N.",
+        "FCD = 2 × 10⁻⁷ × 15 × 20 × 0,15/0,12 = 7,5 × 10⁻⁵ N. Fnet = 3,75 × 10⁻⁴ N hướng về dây, khác 5 × 10⁻⁴ N."
+      ],
+      "pages": [
+        17
+      ],
+      "status": "solved"
+    },
+    {
+      "id": "source-ch02-041",
+      "chapter": "ch02",
+      "number": 41,
+      "key": "FTFF",
+      "result": "a Sai; b Đúng; c Sai; d Sai.",
+      "steps": [
+        "a,b) Lúc vào, v song song dây còn B bao quanh dây nên v⊥B. Lực từ khác 0 làm quỹ đạo cong, không giữ đường thẳng ban đầu.",
+        "c) B = 2 × 10⁻⁷ × 1/0,002 = 10⁻⁴ T, không phải 10⁻³ T.",
+        "d) Lực ban đầu F = evB = 1,6 × 10⁻¹⁹ × 10⁷ × 10⁻⁴ = 1,6 × 10⁻¹⁶ N. Trường không đều nên không tự coi toàn quỹ đạo là đường tròn."
+      ],
+      "pages": [
+        17
+      ],
+      "status": "solved"
+    },
+    {
+      "id": "source-ch03-001",
+      "chapter": "ch03",
+      "number": 1,
+      "key": "A",
+      "result": "Tịnh tiến khung song song với dòng điện thẳng.",
+      "steps": [
+        "Dòng I không đổi tạo B chỉ phụ thuộc khoảng cách đến dây.",
+        "Khi khung dịch dọc dây, các khoảng cách, diện tích và hướng mặt khung không đổi.",
+        "Từ thông không đổi ⇒ e = −dΦ/dt = 0. Các chuyển động còn lại nói chung làm từ thông thay đổi."
+      ],
+      "pages": [
+        18
+      ],
+      "status": "solved"
+    },
+    {
+      "id": "source-ch03-002",
+      "chapter": "ch03",
+      "number": 2,
+      "key": "C",
+      "result": "Từ O đến M.",
+      "steps": [
+        "O là vị trí nam châm gần cuộn nhất trong mô hình hình vẽ.",
+        "Từ O ra biên M, độ lớn từ trường xuyên qua cuộn giảm.",
+        "Từ N đến O hoặc M đến O thì tăng; từ M đến N gồm cả giai đoạn tăng và giảm."
+      ],
+      "pages": [
+        18
+      ],
+      "status": "solved"
+    },
+    {
+      "id": "source-ch03-003",
+      "chapter": "ch03",
+      "number": 3,
+      "key": "D",
+      "result": "Phát biểu D sai.",
+      "steps": [
+        "Đóng/ngắt khóa làm dòng sơ cấp biến đổi, gây tín hiệu cảm ứng trong cuộn nối điện kế. Khi dòng một chiều ổn định, tín hiệu về 0.",
+        "Độ lệch phụ thuộc tốc độ biến thiên dòng và đáp ứng điện kế, không tăng đơn giản theo giá trị điện trở.",
+        "Nguồn xoay chiều gây suất điện động luân phiên; quan sát kim dao động ở C chỉ phù hợp nếu điện kế theo kịp tần số, không phải mọi tần số."
+      ],
+      "pages": [
+        18,
+        19
+      ],
+      "status": "solved"
+    },
+    {
+      "id": "source-ch03-004",
+      "chapter": "ch03",
+      "number": 4,
+      "key": "A",
+      "result": "Nhìn từ phía trên vòng: ban đầu cùng chiều kim đồng hồ; sau khi nam châm đi qua và ra xa thì ngược chiều.",
+      "steps": [
+        "Cực S tiến xuống gần vòng làm từ thông hướng lên tăng.",
+        "Lenz: vòng phải tạo B hướng xuống để chống sự tăng, tức dòng cùng chiều kim đồng hồ khi nhìn từ trên.",
+        "Khi nam châm đã qua và ra xa, từ thông hướng lên giảm; dòng đảo chiều để duy trì nó. Phải giữ cùng phía nhìn khi nói chiều quay."
+      ],
+      "pages": [
+        19
+      ],
+      "status": "solved"
+    },
+    {
+      "id": "source-ch03-005",
+      "chapter": "ch03",
+      "number": 5,
+      "key": "A",
+      "result": "Hình A theo quy ước nhìn từ phía nam châm vào vòng.",
+      "steps": [
+        "Cực N đang đối diện vòng. Khi vòng tiến gần, từ thông từ nam châm xuyên qua vòng tăng.",
+        "Mặt vòng hướng về nam châm phải trở thành cực N để chống sự tiến gần: dòng ngược chiều kim đồng hồ khi nhìn từ nam châm.",
+        "Trong cách biểu diễn mặt vòng của đề, đó là hình A. Khi ra xa phải đảo chiều; I không bằng 0 như hình D."
+      ],
+      "pages": [
+        19
+      ],
+      "status": "solved"
+    },
+    {
+      "id": "source-ch03-006",
+      "chapter": "ch03",
+      "number": 6,
+      "key": "B",
+      "result": "|Φ| = 6 × 10⁻⁵ Wb.",
+      "steps": [
+        "S = 24 cm² = 0,0024 m². Góc với mặt phẳng là 30°, nên góc với pháp tuyến là 60°.",
+        "Φ = BS cos60° = BS sin30°.",
+        "|Φ| = 0,05 × 0,0024 × 0,5 = 6 × 10⁻⁵ Wb."
+      ],
+      "pages": [
+        19
+      ],
+      "status": "solved"
+    },
+    {
+      "id": "source-ch03-007",
+      "chapter": "ch03",
+      "number": 7,
+      "key": "A",
+      "result": "Góc với pháp tuyến bằng 0°.",
+      "steps": [
+        "S = 0,10² = 0,01 m².",
+        "cosθ = Φ/(BS) = 10⁻⁶/(10⁻⁴ × 0,01) = 1.",
+        "Vì từ thông đã cho dương theo pháp tuyến đang xét, θ = 0°."
+      ],
+      "pages": [
+        19
+      ],
+      "status": "solved"
+    },
+    {
+      "id": "source-ch03-008",
+      "chapter": "ch03",
+      "number": 8,
+      "key": "B",
+      "result": "Suất điện động trung bình có độ lớn 8 V.",
+      "steps": [
+        "ΔΦ = 0,4 − 2 = −1,6 Wb.",
+        "|e trung bình| = |ΔΦ|/Δt.",
+        "|e| = 1,6/0,2 = 8 V. Giá trị tức thời cũng là 8 V nếu từ thông giảm đều."
+      ],
+      "pages": [
+        19,
+        20
+      ],
+      "status": "solved"
+    },
+    {
+      "id": "source-ch03-009",
+      "chapter": "ch03",
+      "number": 9,
+      "key": "A",
+      "result": "|e trung bình| = 0,96 V.",
+      "steps": [
+        "Vòng cố định, pháp tuyến song song B nên ΔΦ = SΔB.",
+        "ΔB = 1,2 − 0,6 = 0,6 T.",
+        "|e| = 0,4 × 0,6/0,25 = 0,96 V; là giá trị không đổi nếu B tăng đều."
+      ],
+      "pages": [
+        20
+      ],
+      "status": "solved"
+    },
+    {
+      "id": "source-ch03-010",
+      "chapter": "ch03",
+      "number": 10,
+      "key": "A",
+      "result": "|e trung bình| = 2,5 mV.",
+      "steps": [
+        "S = 0,05² = 0,0025 m². Ban đầu Φ = BS; cuối cùng mặt phẳng song song B nên Φ = 0.",
+        "|ΔΦ| = 0,01 × 0,0025 = 2,5 × 10⁻⁵ Wb.",
+        "|e| = |ΔΦ|/0,01 = 0,0025 V = 2,5 mV."
+      ],
+      "pages": [
+        20
+      ],
+      "status": "solved"
+    },
+    {
+      "id": "source-ch03-011",
+      "chapter": "ch03",
+      "number": 11,
+      "key": "B",
+      "result": "|e| = 20 mV.",
+      "steps": [
+        "S = 20 cm² = 0,002 m²; góc với mặt phẳng 30° nên lấy sin30°.",
+        "Từ thông móc vòng ban đầu Ψ = NBS sin30° = 1000 × 2 × 10⁻⁴ × 0,002 × 0,5.",
+        "B giảm đều về 0 trong 0,01 s: |e| = Ψ/0,01 = 0,020 V."
+      ],
+      "pages": [
+        20
+      ],
+      "status": "solved"
+    },
+    {
+      "id": "source-ch03-012",
+      "chapter": "ch03",
+      "number": 12,
+      "key": "D",
+      "result": "|e trung bình| ≈ 1,5 V.",
+      "steps": [
+        "Đường kính giảm từ 1 m xuống 0,6 m nên bán kính là 0,5 m và 0,3 m.",
+        "|ΔS| = π(0,5² − 0,3²) = 0,16π m².",
+        "|e| = B|ΔS|/Δt = 0,3 × 0,16π/0,1 ≈ 1,508 V."
+      ],
+      "pages": [
+        20
+      ],
+      "status": "solved"
+    },
+    {
+      "id": "source-ch03-013",
+      "chapter": "ch03",
+      "number": 13,
+      "key": "B",
+      "result": "e = 200 sin(100πt + π/4) V.",
+      "steps": [
+        "Dùng e = −dΦ/dt với quy ước vòng tương ứng pháp tuyến của Φ.",
+        "Đạo hàm cos(100πt + π/4) là −100π sin(100πt + π/4).",
+        "Hai dấu âm triệt tiêu; biên độ (2/π) × 100π = 200 V."
+      ],
+      "pages": [
+        20
+      ],
+      "status": "solved"
+    },
+    {
+      "id": "source-ch03-014",
+      "chapter": "ch03",
+      "number": 14,
+      "key": "A",
+      "result": "|dB/dt| = 0,5 T/s trong mô hình thuần trở hoặc sau quá độ.",
+      "steps": [
+        "Điện áp cảm ứng cần thiết |e| = IR = 0,15 × 4 = 0,6 V.",
+        "|e| = NS|dB/dt|, S = 30 cm² = 0,003 m².",
+        "|dB/dt| = 0,6/(400 × 0,003) = 0,5 T/s. Bỏ qua tự cảm lúc chuyển tiếp."
+      ],
+      "pages": [
+        20
+      ],
+      "status": "solved"
+    },
+    {
+      "id": "source-ch03-015",
+      "chapter": "ch03",
+      "number": 15,
+      "key": {
+        "value": 6,
+        "tolerance": 0.05,
+        "unit": "x"
+      },
+      "result": "x = 6,0.",
+      "steps": [
+        "Đọc đồ thị: B giảm đều từ 2,4 × 10⁻³ T về 0 trong 0,4 s.",
+        "|dB/dt| = 0,006 T/s; S = 100 cm² = 0,01 m².",
+        "|e| = NS|dB/dt| = 10 × 0,01 × 0,006 = 6 × 10⁻⁴ V."
+      ],
+      "pages": [
+        20
+      ],
+      "status": "solved"
+    },
+    {
+      "id": "source-ch03-016",
+      "chapter": "ch03",
+      "number": 16,
+      "key": null,
+      "result": "Giá trị lớn nhất là 1 mV; cần biết hướng thanh để xác định đáp án duy nhất.",
+      "steps": [
+        "Suất điện động chuyển động: e = ∫(v × B)·dl.",
+        "Dù v⊥B, chưa biết thanh có song song v × B hay không. Nếu góc giữa thanh và v × B là β thì |e| = Blv|cosβ|.",
+        "Blv = 5 × 10⁻⁴ × 0,40 × 5 = 0,001 V. A đúng nếu thanh song song v × B; nếu thanh song song v thì e = 0."
+      ],
+      "pages": [
+        20,
+        21
+      ],
+      "status": "review",
+      "issue": "Đề thiếu hướng thanh đối với v × B."
+    },
+    {
+      "id": "source-ch03-017",
+      "chapter": "ch03",
+      "number": 17,
+      "key": {
+        "value": 0.4,
+        "tolerance": 0.05,
+        "unit": "x"
+      },
+      "result": "x = 0,4.",
+      "steps": [
+        "Dây không giãn nên chu vi giữ 4 × 6 = 24 cm. Hai cạnh mới là b và 2b, 6b = 24 ⇒ b = 4 cm.",
+        "S đầu = 36 cm²; S cuối = 4 × 8 = 32 cm² ⇒ |ΔS| = 4 × 10⁻⁴ m².",
+        "Tổng điện lượng q = |ΔΦ|/R = B|ΔS|/R = 10⁻³ × 4 × 10⁻⁴/0,01 = 4 × 10⁻⁵ C = 0,4 × 10⁻⁴ C. Tính cả quá trình từ trạng thái không dòng đến không dòng."
+      ],
+      "pages": [
+        21
+      ],
+      "status": "solved"
+    },
+    {
+      "id": "source-ch03-018",
+      "chapter": "ch03",
+      "number": 18,
+      "key": {
+        "value": 1.6,
+        "tolerance": 0.05,
+        "unit": "x"
+      },
+      "result": "x = 1,6.",
+      "steps": [
+        "Trục ống là pháp tuyến vòng: Ψ ban đầu = NBS cos60°.",
+        "Tổng điện lượng khi từ trường về 0 và dòng đã tắt: q = |ΔΨ|/R.",
+        "q = 200 × 0,4 × 16 × 10⁻⁴ × 0,5/40 = 1,6 × 10⁻³ C."
+      ],
+      "pages": [
+        21
+      ],
+      "status": "solved"
+    },
+    {
+      "id": "source-ch03-019",
+      "chapter": "ch03",
+      "number": 19,
+      "key": {
+        "value": 4,
+        "tolerance": 0.01,
+        "unit": "x"
+      },
+      "result": "x = 4.",
+      "steps": [
+        "Suất điện động |e| = NS|dB/dt| = 2000 × 40 × 10⁻⁴ × 10⁻³ = 0,008 V.",
+        "Ở chế độ bỏ qua quá độ tự cảm: P = e²/R.",
+        "P = 0,008²/160 = 4 × 10⁻⁷ W ⇒ x = 4."
+      ],
+      "pages": [
+        21
+      ],
+      "status": "solved"
+    },
+    {
+      "id": "source-ch03-020",
+      "chapter": "ch03",
+      "number": 20,
+      "key": "B",
+      "result": "e = 9,6π sin(4πt + π) V.",
+      "steps": [
+        "120 vòng/phút = 2 Hz ⇒ ω = 4π rad/s. S = 600 cm² = 0,06 m².",
+        "Ban đầu pháp tuyến ngược B nên Ψ = NBS cos(ωt + π).",
+        "e = −dΨ/dt = NBSω sin(ωt + π), biên độ 200 × 0,2 × 0,06 × 4π = 9,6π V."
+      ],
+      "pages": [
+        21
+      ],
+      "status": "solved"
+    },
+    {
+      "id": "source-ch03-021",
+      "chapter": "ch03",
+      "number": 21,
+      "key": "B",
+      "result": "B sai: chiều dòng dùng định luật Lenz, không phải Joule–Lenz.",
+      "steps": [
+        "Dòng Foucault là dòng cảm ứng khép kín trong khối vật dẫn.",
+        "Chiều dòng chống sự biến thiên từ thông, theo Lenz.",
+        "Joule–Lenz Q = I²Rt mô tả nhiệt tỏa ra; trong lõi máy biến áp nhiệt này là tổn hao."
+      ],
+      "pages": [
+        21
+      ],
+      "status": "solved"
+    },
+    {
+      "id": "source-ch03-022",
+      "chapter": "ch03",
+      "number": 22,
+      "key": "D",
+      "result": "D sai: dòng Foucault không luôn có hại.",
+      "steps": [
+        "Dòng xoáy có thể gây nóng hữu ích trong bếp từ, lò cảm ứng.",
+        "Mômen hãm do dòng xoáy dùng trong công tơ điện cơ để hãm đĩa.",
+        "Trong lõi máy biến áp, chúng gây tổn hao; tác dụng lợi/hại phụ thuộc ứng dụng nên chữ “luôn” sai."
+      ],
+      "pages": [
+        21
+      ],
+      "status": "solved"
+    },
+    {
+      "id": "source-ch03-023",
+      "chapter": "ch03",
+      "number": 23,
+      "key": null,
+      "result": "a Đúng; b Sai; c Đúng; d cần làm rõ cách diễn đạt.",
+      "steps": [
+        "a) Từ trường biến thiên của cuộn bếp gây cảm ứng trong đáy nồi. b) Nhiệt chủ yếu phát sinh trong nồi, không phải mặt bếp nung rồi truyền lên.",
+        "c) Dòng xoáy trong vật liệu có điện trở gây tỏa nhiệt; vật liệu sắt từ còn có tổn hao từ trễ.",
+        "d) Dòng cảm ứng trong nồi chính là dòng Foucault, do từ thông biến thiên sinh ra. Nếu “do dòng Foucault” được dùng với nghĩa “là dòng Foucault” thì nhận định đúng; đọc như quan hệ nguyên nhân giữa hai dòng riêng biệt thì sai. Cần đối chiếu ý định của đề."
+      ],
+      "pages": [
+        22
+      ],
+      "status": "review",
+      "issue": "Cách dùng từ “do dòng Foucault” ở d gây hai cách hiểu; không tự chấm nhận định này."
+    },
+    {
+      "id": "source-ch03-024",
+      "chapter": "ch03",
+      "number": 24,
+      "key": "D",
+      "result": "Suất điện động tự cảm tỉ lệ với tốc độ biến thiên dòng.",
+      "steps": [
+        "Với độ tự cảm L không đổi, từ thông móc vòng Ψ = Li.",
+        "e tự cảm = −dΨ/dt = −L di/dt.",
+        "Độ lớn tỉ lệ |di/dt|, không trực tiếp tỉ lệ điện trở hay từ thông cực trị."
+      ],
+      "pages": [
+        22
+      ],
+      "status": "solved"
+    },
+    {
+      "id": "source-ch03-025",
+      "chapter": "ch03",
+      "number": 25,
+      "key": "A",
+      "result": "L = μμ₀N²S/l.",
+      "steps": [
+        "Ống dây dài: B = μμ₀NI/l.",
+        "Móc vòng Ψ = NBS = μμ₀N²SI/l.",
+        "L = Ψ/I = μμ₀N²S/l, giả thiết lõi tuyến tính và bỏ hiệu ứng mép."
+      ],
+      "pages": [
+        22
+      ],
+      "status": "solved"
+    },
+    {
+      "id": "source-ch03-026",
+      "chapter": "ch03",
+      "number": 26,
+      "key": "A",
+      "result": "e tự cảm = −L di/dt.",
+      "steps": [
+        "Móc vòng Ψ = Li khi L không đổi.",
+        "Áp dụng Faraday e = −dΨ/dt.",
+        "Dấu âm biểu thị Lenz: tự cảm chống thay đổi dòng, không nhất thiết chống chính chiều dòng."
+      ],
+      "pages": [
+        22
+      ],
+      "status": "solved"
+    },
+    {
+      "id": "source-ch03-027",
+      "chapter": "ch03",
+      "number": 27,
+      "key": "B",
+      "result": "1 H = 1 J/A².",
+      "steps": [
+        "Năng lượng từ W = LI²/2.",
+        "Suy ra L = 2W/I², đơn vị J/A².",
+        "Cũng có H = Wb/A = V·s/A."
+      ],
+      "pages": [
+        22
+      ],
+      "status": "solved"
+    },
+    {
+      "id": "source-ch03-028",
+      "chapter": "ch03",
+      "number": 28,
+      "key": "A",
+      "result": "Đơn vị của L là henry (H).",
+      "steps": [
+        "L liên hệ móc vòng và dòng: Ψ = LI.",
+        "Đơn vị Wb/A được đặt tên henry.",
+        "Tesla đo B; Wb đo từ thông; joule đo năng lượng."
+      ],
+      "pages": [
+        22
+      ],
+      "status": "solved"
+    },
+    {
+      "id": "source-ch03-029",
+      "chapter": "ch03",
+      "number": 29,
+      "key": "A",
+      "result": "Đèn 1 sáng trước; đèn 2 tăng sáng từ từ.",
+      "steps": [
+        "Nhánh 1 có điện trở, dòng tăng nhanh khi đóng nguồn trong mô hình lý tưởng.",
+        "Nhánh 2 có cuộn cảm chống sự tăng dòng đột ngột.",
+        "Dòng nhánh 2 tăng theo quá trình RL, nên đèn 2 sáng dần; bỏ qua quán tính nhiệt chung của bóng đèn."
+      ],
+      "pages": [
+        22
+      ],
+      "status": "solved"
+    },
+    {
+      "id": "source-ch03-030",
+      "chapter": "ch03",
+      "number": 30,
+      "key": "A",
+      "result": "L ≈ 12,56 μH.",
+      "steps": [
+        "l = 100 cm = 1 m; S = 10 cm² = 0,001 m²; N = 100.",
+        "L = μ₀N²S/l.",
+        "L = 4π × 10⁻⁷ × 100² × 0,001/1 ≈ 1,2566 × 10⁻⁵ H = 12,566 μH."
+      ],
+      "pages": [
+        23
+      ],
+      "status": "solved"
+    },
+    {
+      "id": "source-ch03-031",
+      "chapter": "ch03",
+      "number": 31,
+      "key": "B",
+      "result": "L ≈ 36,19 H.",
+      "steps": [
+        "S = 9 × 10⁻⁴ m², l = 0,20 m; lấy μ = 400 là độ từ thẩm tương đối không đổi.",
+        "L = μμ₀N²S/l.",
+        "L = 400 × 4π × 10⁻⁷ × 4000² × 9 × 10⁻⁴/0,20 ≈ 36,19 H."
+      ],
+      "pages": [
+        23
+      ],
+      "status": "solved"
+    },
+    {
+      "id": "source-ch03-032",
+      "chapter": "ch03",
+      "number": 32,
+      "key": "A",
+      "result": "|e| = 7,5 V.",
+      "steps": [
+        "Đổi L = 50 mH = 0,050 H.",
+        "|e| = L|di/dt|.",
+        "|e| = 0,050 × 150 = 7,5 V."
+      ],
+      "pages": [
+        23
+      ],
+      "status": "solved"
+    },
+    {
+      "id": "source-ch03-033",
+      "chapter": "ch03",
+      "number": 33,
+      "key": "B",
+      "result": "L = 0,08 H.",
+      "steps": [
+        "Dòng giảm 8 A trong 0,01 s, tốc độ trung bình có độ lớn 800 A/s.",
+        "|e trung bình| = L|ΔI|/Δt.",
+        "L = 64/800 = 0,08 H."
+      ],
+      "pages": [
+        23
+      ],
+      "status": "solved"
+    },
+    {
+      "id": "source-ch03-034",
+      "chapter": "ch03",
+      "number": 34,
+      "key": "A",
+      "result": "B = 0,14 T.",
+      "steps": [
+        "Móc vòng Ψ = NBS = LI, coi B đều trên tiết diện mỗi vòng.",
+        "S = 20 cm² = 0,002 m².",
+        "B = LI/(NS) = 0,28 × 5/(5000 × 0,002) = 0,14 T."
+      ],
+      "pages": [
+        23
+      ],
+      "status": "solved"
+    },
+    {
+      "id": "source-ch03-035",
+      "chapter": "ch03",
+      "number": 35,
+      "key": "B",
+      "result": "L₁/L₂ = 3, với cùng vật liệu lõi.",
+      "steps": [
+        "L ∝ N²S/l nếu μ bằng nhau.",
+        "N₁ = 3N₂, l₁ = 3l₂ và S₁ = S₂.",
+        "L₁/L₂ = 3²/3 = 3. Nếu vật liệu lõi khác phải nhân thêm μ₁/μ₂."
+      ],
+      "pages": [
+        23
+      ],
+      "status": "solved"
+    },
+    {
+      "id": "source-ch03-036",
+      "chapter": "ch03",
+      "number": 36,
+      "key": "B",
+      "result": "|e| ≈ 0,185 V.",
+      "steps": [
+        "Bán kính ống r = 0,005 m, S = πr²; l = 0,50 m.",
+        "L = μ₀N²S/l = 4π × 10⁻⁷ × 2500² × π × 0,005²/0,50 ≈ 0,0012337 H.",
+        "|e| = L × 1,5/0,01 ≈ 0,1851 V."
+      ],
+      "pages": [
+        23
+      ],
+      "status": "solved"
+    },
+    {
+      "id": "source-ch03-037",
+      "chapter": "ch03",
+      "number": 37,
+      "key": "A",
+      "result": "W = 10 J.",
+      "steps": [
+        "L = 50 mH = 0,050 H.",
+        "Năng lượng của cuộn cảm tuyến tính: W = LI²/2.",
+        "W = 0,050 × 20²/2 = 10 J."
+      ],
+      "pages": [
+        23
+      ],
+      "status": "solved"
+    },
+    {
+      "id": "source-ch03-038",
+      "chapter": "ch03",
+      "number": 38,
+      "key": {
+        "value": 1,
+        "tolerance": 0.05,
+        "unit": "V"
+      },
+      "result": "Độ lớn |e| ≈ 1,0 V; theo chiều dòng đã chọn e ≈ −1,0 V.",
+      "steps": [
+        "Vống = 2000 cm³ = 0,002 m³, n = 2000 vòng/m. L = μ₀n²Vống ≈ 0,010053 H.",
+        "Đồ thị cho di/dt = (5 − 0)/0,05 = 100 A/s.",
+        "e = −L di/dt ≈ −1,0053 V; độ lớn làm tròn một chữ số là 1,0 V."
+      ],
+      "pages": [
+        23
+      ],
+      "status": "solved",
+      "acceptMagnitude": true
+    },
+    {
+      "id": "source-ch03-039",
+      "chapter": "ch03",
+      "number": 39,
+      "key": {
+        "value": 13,
+        "tolerance": 0.5,
+        "unit": "V"
+      },
+      "result": "e cực đại ≈ 13 V.",
+      "steps": [
+        "i = I₀sinωt ⇒ e = −LωI₀cosωt.",
+        "ω = 2πf = 100π rad/s.",
+        "E₀ = LωI₀ = 0,021 × 100π × 2 ≈ 13,195 V, làm tròn 13 V."
+      ],
+      "pages": [
+        24
+      ],
+      "status": "solved"
+    },
+    {
+      "id": "source-ch03-040",
+      "chapter": "ch03",
+      "number": 40,
+      "key": {
+        "value": 3,
+        "tolerance": 0.01,
+        "unit": "x"
+      },
+      "result": "x = 3.",
+      "steps": [
+        "I = 0,6(5 − t) ⇒ dI/dt = −0,6 A/s.",
+        "e = −L dI/dt = −0,005 × (−0,6).",
+        "e = +0,003 V = 3 × 10⁻³ V, theo chiều dòng dương của biểu thức."
+      ],
+      "pages": [
+        24
+      ],
+      "status": "solved"
+    },
+    {
+      "id": "source-ch03-041",
+      "chapter": "ch03",
+      "number": 41,
+      "key": "TFTF",
+      "result": "a Đúng; b Sai; c Đúng; d Sai.",
+      "steps": [
+        "a) S = π × 0,01² m²; L = μ₀ × 800² × S/0,50 ≈ 0,5053 mH.",
+        "b) Từ thông một tiết diện Φ = LI/N ≈ 6,317 × 10⁻⁷ Wb; 0,505 × 10⁻³ Wb là móc vòng NΦ, không phải một tiết diện.",
+        "c) W = LI²/2 ≈ 2,527 × 10⁻⁴ J. d) w = W/(Sl) ≈ 1,61 J/m³, không phải 0,4 J/m³."
+      ],
+      "pages": [
+        24
+      ],
+      "status": "solved"
+    },
+    {
+      "id": "source-ch03-042",
+      "chapter": "ch03",
+      "number": 42,
+      "key": null,
+      "result": "a Đúng; b chỉ đúng khi giữ các điều kiện khác; c Sai; d không suy ra được.",
+      "steps": [
+        "a) Nam châm chuyển động làm từ thông qua cuộn thay đổi, tạo điện năng.",
+        "b) Nếu giữ biên độ và dạng chuyển động, giảm chu kỳ thường tăng tốc độ biến thiên từ thông; độ sáng thực còn phụ thuộc mạch tích trữ, giới hạn LED và tổn hao. c) Chuỗi chính là cơ năng → điện năng → quang năng, không bắt buộc đi qua nhiệt năng.",
+        "d) Cuộn dài phủ toàn hành trình không bảo đảm sáng hơn: móc vòng có thể biến thiên ít hơn, điện trở cũng thay đổi. Cần thêm thông số mới so sánh được."
+      ],
+      "pages": [
+        24
+      ],
+      "status": "review",
+      "issue": "Thiếu điều kiện so sánh độ sáng ở b và d."
+    },
+    {
+      "id": "source-ch03-043",
+      "chapter": "ch03",
+      "number": 43,
+      "key": "FTTT",
+      "result": "a Sai; b Đúng về độ lớn biến thiên móc vòng; c Đúng; d Đúng.",
+      "steps": [
+        "a) Mỗi vòng: Φ₀ = 2,4 × 10⁻³ × 40 × 10⁻⁴ = 9,6 μWb, không phải 96 μWb.",
+        "b) Cả 10 vòng: |ΔΨ| = 10 × 9,6 = 96 μWb. Nếu chọn pháp tuyến vào giấy thì biến thiên có dấu là −96 μWb.",
+        "c) B vào giấy đang giảm: dòng cùng chiều kim đồng hồ tạo B vào giấy. d) |e| = 96 μWb/0,4 s = 0,24 mV."
+      ],
+      "pages": [
+        24
+      ],
+      "status": "solved"
+    },
+    {
+      "id": "source-ch03-044",
+      "chapter": "ch03",
+      "number": 44,
+      "key": null,
+      "result": "a Sai; b Đúng; c không suy ra từ B trung bình; d Sai trong mô hình không ổn áp.",
+      "steps": [
+        "a,b) Dynamo biến cơ năng thành điện năng; nam châm quay gây từ thông biến thiên và suất điện động xoay chiều.",
+        "Nếu coi B = 0,01 T là biên độ của trường hình sin: E₀ = NBSω = 0,005ω; ω = v/0,01 ⇒ E₀ = 0,5v. E₀ = 3 V cho v = 6 m/s, không phải 9 m/s.",
+        "Đề lại gọi B là “giá trị trung bình”, chưa cho dạng sóng nên không xác định E₀ chỉ từ B đó. d) Khi không có tích trữ/ổn áp, tốc độ thay đổi làm điện áp và độ sáng thay đổi."
+      ],
+      "pages": [
+        25
+      ],
+      "status": "review",
+      "issue": "Đề dùng B trung bình nhưng hỏi suất điện động cực đại; cần xác định dạng sóng và biên độ B."
+    },
+    {
+      "id": "source-ch03-045",
+      "chapter": "ch03",
+      "number": 45,
+      "key": null,
+      "result": "b Đúng; c Sai; d Đúng; a cần quy ước pháp tuyến.",
+      "steps": [
+        "60 vòng/phút = 1 Hz ⇒ ω = 2π rad/s. S = 600 cm² = 0,06 m².",
+        "Móc vòng cực đại Ψ₀ = NBS = 100 × 0,2 × 0,06 = 1,2 Wb, không phải 1,2 × 10³ Wb. E₀ = ωΨ₀ = 2,4π V.",
+        "Ban đầu mặt phẳng vuông góc B: nếu chọn pháp tuyến cùng B thì φ = 0; chọn ngược B thì φ = π. Đề chưa chọn chiều pháp tuyến nên a không có kết luận duy nhất."
+      ],
+      "pages": [
+        25
+      ],
+      "status": "review",
+      "issue": "Nhận định a thiếu quy ước chiều pháp tuyến (pha có thể 0 hoặc π)."
+    },
+    {
+      "id": "source-ch04-001",
+      "chapter": "ch04",
+      "number": 1,
+      "key": "A",
+      "result": "Điện trường xoáy liên hệ với từ trường biến thiên theo thời gian.",
+      "steps": [
+        "Faraday–Maxwell: ∇ × E = −∂B/∂t.",
+        "Khi có thành phần xoáy, điện trường không là trường thế thuần túy.",
+        "Không thể khẳng định E luôn không đổi tại mọi điểm. Đường sức kín thường gặp trong cấu hình đối xứng, không phải định nghĩa tổng quát."
+      ],
+      "pages": [
+        26
+      ],
+      "status": "solved"
+    },
+    {
+      "id": "source-ch04-002",
+      "chapter": "ch04",
+      "number": 2,
+      "key": "A",
+      "result": "Dòng điện dịch liên hệ với sự biến thiên của điện trường.",
+      "steps": [
+        "Định nghĩa mật độ dòng dịch jᵈ = ∂D/∂t.",
+        "Trong chân không hoặc điện môi tuyến tính không đổi: jᵈ = εε₀∂E/∂t.",
+        "Không phải dòng chuyển dời hạt tải tự do như dòng dẫn; trong chân không không gây nhiệt Joule của vật dẫn. Điện môi thực có thể có tổn hao."
+      ],
+      "pages": [
+        26
+      ],
+      "status": "solved"
+    },
+    {
+      "id": "source-ch04-003",
+      "chapter": "ch04",
+      "number": 3,
+      "key": "D",
+      "result": "jᵈ = εε₀ ∂E/∂t.",
+      "steps": [
+        "Công thức tổng quát jᵈ = ∂D/∂t, mang dấu dương.",
+        "Với D = εε₀E và ε không đổi, lấy đạo hàm theo thời gian.",
+        "Thu được D; A sai dấu, B thiếu ε₀, C nhân điện thẩm thêm một lần."
+      ],
+      "pages": [
+        26
+      ],
+      "status": "solved"
+    },
+    {
+      "id": "source-ch04-004",
+      "chapter": "ch04",
+      "number": 4,
+      "key": "A",
+      "result": "Đơn vị mật độ dòng dịch là A/m².",
+      "steps": [
+        "D có đơn vị C/m².",
+        "Đạo hàm D theo thời gian có đơn vị C/(m²·s).",
+        "Vì C/s = A, kết quả là A/m²."
+      ],
+      "pages": [
+        26
+      ],
+      "status": "solved"
+    },
+    {
+      "id": "source-ch04-005",
+      "chapter": "ch04",
+      "number": 5,
+      "key": "A",
+      "result": "jᵈ ≈ −2,5 × 10⁻³ sin(200πt) A/m².",
+      "steps": [
+        "d = 0,4 cm = 0,004 m; ω = 2π/T = 200π rad/s. E = u/d.",
+        "jᵈ = εε₀dE/dt = −εε₀U₀ω sinωt/d.",
+        "Biên độ = 6 × 8,85 × 10⁻¹² × 300 × 200π/0,004 ≈ 2,502 × 10⁻³ A/m²."
+      ],
+      "pages": [
+        26
+      ],
+      "status": "solved"
+    },
+    {
+      "id": "source-ch04-006",
+      "chapter": "ch04",
+      "number": 6,
+      "key": "A",
+      "result": "iᵈ ≈ 2,513 × 10⁻⁴ cos(100πt) A.",
+      "steps": [
+        "E₀ = 200 V/cm = 20000 V/m; d = 0,02 m ⇒ U₀ = E₀d = 400 V.",
+        "C = 2000 pF = 2 × 10⁻⁹ F; ω = 100π rad/s.",
+        "iᵈ = Cdu/dt = CU₀ω cosωt; biên độ 2 × 10⁻⁹ × 400 × 100π ≈ 2,513 × 10⁻⁴ A."
+      ],
+      "pages": [
+        26
+      ],
+      "status": "solved"
+    },
+    {
+      "id": "source-ch04-007",
+      "chapter": "ch04",
+      "number": 7,
+      "key": "B",
+      "result": "T biến đổi từ 2π√(LC₁) đến 2π√(LC₂).",
+      "steps": [
+        "Mạch LC lý tưởng thỏa q″ + q/(LC) = 0.",
+        "ω₀ = 1/√(LC), nên T = 2π√(LC).",
+        "Giữ L, T tăng theo √C; thay hai giá trị biên C₁, C₂ vào công thức."
+      ],
+      "pages": [
+        27
+      ],
+      "status": "solved"
+    },
+    {
+      "id": "source-ch04-008",
+      "chapter": "ch04",
+      "number": 8,
+      "key": "B",
+      "result": "U₀ = I₀√(L/C).",
+      "steps": [
+        "Tổng năng lượng bảo toàn: W = CU₀²/2 = LI₀²/2.",
+        "Suy ra U₀² = (L/C)I₀².",
+        "Biên độ dương nên U₀ = I₀√(L/C)."
+      ],
+      "pages": [
+        27
+      ],
+      "status": "solved"
+    },
+    {
+      "id": "source-ch04-009",
+      "chapter": "ch04",
+      "number": 9,
+      "key": "B",
+      "result": "i² = (C/L)(U₀² − u²).",
+      "steps": [
+        "Tại mọi thời điểm: Cu²/2 + Li²/2 = CU₀²/2.",
+        "Chuyển phần năng lượng điện sang vế phải.",
+        "Li² = C(U₀² − u²), chia cho L được B."
+      ],
+      "pages": [
+        27
+      ],
+      "status": "solved"
+    },
+    {
+      "id": "source-ch04-010",
+      "chapter": "ch04",
+      "number": 10,
+      "key": "C",
+      "result": "T = 2πQ₀/I₀.",
+      "steps": [
+        "q = Q₀cos(ωt + φ), i = dq/dt.",
+        "Biên độ dòng I₀ = ωQ₀ ⇒ ω = I₀/Q₀.",
+        "T = 2π/ω = 2πQ₀/I₀."
+      ],
+      "pages": [
+        27
+      ],
+      "status": "solved"
+    },
+    {
+      "id": "source-ch04-011",
+      "chapter": "ch04",
+      "number": 11,
+      "key": "A",
+      "result": "A sai: tổng năng lượng điện từ không đổi.",
+      "steps": [
+        "Trong LC lý tưởng, W = WE + WB được bảo toàn.",
+        "WE ∝ cos²(ωt + φ) và WB ∝ sin²(ωt + φ), từng phần biến thiên với tần số 2f.",
+        "Hai phần bằng nhau tại các thời điểm liên tiếp cách T/4; các giá trị cực đại đều bằng W. Không gán tần số 2f cho tổng năng lượng hằng."
+      ],
+      "pages": [
+        27
+      ],
+      "status": "solved"
+    },
+    {
+      "id": "source-ch04-012",
+      "chapter": "ch04",
+      "number": 12,
+      "key": "C",
+      "result": "T từ 4 × 10⁻⁸ s đến 3,2 × 10⁻⁷ s.",
+      "steps": [
+        "Dùng T² = 4π²LC và π² = 10 theo đề.",
+        "Tmin = √(40 × 4 × 10⁻⁶ × 10 × 10⁻¹²) = 4 × 10⁻⁸ s.",
+        "Cmax/Cmin = 640/10 = 64 ⇒ Tmax = 8Tmin = 3,2 × 10⁻⁷ s."
+      ],
+      "pages": [
+        27
+      ],
+      "status": "solved"
+    },
+    {
+      "id": "source-ch04-013",
+      "chapter": "ch04",
+      "number": 13,
+      "key": "D",
+      "result": "f = 6,0 MHz.",
+      "steps": [
+        "Với L cố định, 1/f² = 4π²LC.",
+        "C = C₁ + C₂ ⇒ 1/f² = 1/f₁² + 1/f₂².",
+        "f = f₁f₂/√(f₁² + f₂²) = 7,5 × 10/√(7,5² + 10²) = 6 MHz."
+      ],
+      "pages": [
+        27,
+        28
+      ],
+      "status": "solved"
+    },
+    {
+      "id": "source-ch04-014",
+      "chapter": "ch04",
+      "number": 14,
+      "key": "D",
+      "result": "W = 2,5 × 10⁻⁴ J.",
+      "steps": [
+        "C = 5 μF = 5 × 10⁻⁶ F; U₀ = 10 V.",
+        "Toàn bộ năng lượng bằng năng lượng điện cực đại CU₀²/2.",
+        "W = 5 × 10⁻⁶ × 10²/2 = 2,5 × 10⁻⁴ J."
+      ],
+      "pages": [
+        28
+      ],
+      "status": "solved"
+    },
+    {
+      "id": "source-ch04-015",
+      "chapter": "ch04",
+      "number": 15,
+      "key": "B",
+      "result": "WB = 5 × 10⁻⁵ J.",
+      "steps": [
+        "W = CU₀²/2, năng lượng điện tức thời WE = Cu²/2.",
+        "WB = W − WE = C(U₀² − u²)/2.",
+        "WB = 5 × 10⁻⁶ × (6² − 4²)/2 = 5 × 10⁻⁵ J."
+      ],
+      "pages": [
+        28
+      ],
+      "status": "solved"
+    },
+    {
+      "id": "source-ch04-016",
+      "chapter": "ch04",
+      "number": 16,
+      "key": "C",
+      "result": "Thời gian ngắn nhất t = 1/300 s.",
+      "steps": [
+        "Ban đầu tụ tích điện và dòng bằng 0: q = Q₀cosωt.",
+        "q = Q₀/2 lần đầu khi ωt = π/3 ⇒ t = T/6.",
+        "T = √(4π²LC) = √(40 × 1 × 10⁻⁵) = 0,02 s ⇒ t = 1/300 s."
+      ],
+      "pages": [
+        28
+      ],
+      "status": "solved"
+    },
+    {
+      "id": "source-ch04-017",
+      "chapter": "ch04",
+      "number": 17,
+      "key": "B",
+      "result": "R lớn hơn làm bao biên tắt nhanh hơn khi mạch còn trong miền dao động.",
+      "steps": [
+        "Với RLC nối tiếp dưới tắt dần tới hạn, bao biên ∝ exp(−Rt/(2L)).",
+        "Giữ L,C, tăng R làm hệ số suy giảm R/(2L) tăng.",
+        "Kết luận áp dụng khi R < 2√(L/C); không kéo dài sang miền quá tắt dần rồi gọi đó là dao động."
+      ],
+      "pages": [
+        28
+      ],
+      "status": "solved"
+    },
+    {
+      "id": "source-ch04-018",
+      "chapter": "ch04",
+      "number": 18,
+      "key": "B",
+      "result": "Công suất bù trung bình P = 72 μW.",
+      "steps": [
+        "Để duy trì biên độ, công suất cấp bù tổn hao điện trở: P = RI₀²/2.",
+        "Dao động yếu tắt dần có I₀² = (C/L)U₀².",
+        "P = 0,01 × (5 × 10⁻⁶/0,05) × 12²/2 = 72 × 10⁻⁶ W."
+      ],
+      "pages": [
+        28
+      ],
+      "status": "solved"
+    },
+    {
+      "id": "source-ch04-019",
+      "chapter": "ch04",
+      "number": 19,
+      "key": "A",
+      "result": "Nhiệt lượng cuối cùng Q = 9 μJ.",
+      "steps": [
+        "Khi ổn định: I = 3/(2 + 3) = 0,6 A; điện áp tụ bằng 3I = 1,8 V.",
+        "Năng lượng ban đầu: W = LI²/2 + CU²/2 = 0,9 μJ + 8,1 μJ.",
+        "Sau ngắt nguồn, mạch kín còn cuộn dây và tụ; toàn bộ 9 μJ biến thành nhiệt ở điện trở cuộn."
+      ],
+      "pages": [
+        28
+      ],
+      "status": "solved"
+    },
+    {
+      "id": "source-ch04-020",
+      "chapter": "ch04",
+      "number": 20,
+      "key": "B",
+      "result": "Truyền được trong chân không là tính chất không chung.",
+      "steps": [
+        "Sóng cơ cần môi trường vật chất.",
+        "Sóng điện từ có thể truyền trong chân không.",
+        "Cả hai đều mang năng lượng và có thể phản xạ, khúc xạ trong điều kiện phù hợp."
+      ],
+      "pages": [
+        28,
+        29
+      ],
+      "status": "solved"
+    },
+    {
+      "id": "source-ch04-021",
+      "chapter": "ch04",
+      "number": 21,
+      "key": "C",
+      "result": "C sai: E và B cùng pha trong sóng phẳng chạy ở chân không.",
+      "steps": [
+        "Sóng phẳng điện từ trong môi trường không tổn hao có E, B vuông góc nhau và vuông góc hướng truyền.",
+        "Các thành phần E và B đạt cực trị đồng thời: cùng pha, không vuông pha.",
+        "Sóng mang năng lượng; trong chân không λ = c/f. Các phát biểu về phương được hiểu trong mô hình sóng phẳng của bài."
+      ],
+      "pages": [
+        29
+      ],
+      "status": "solved"
+    },
+    {
+      "id": "source-ch04-022",
+      "chapter": "ch04",
+      "number": 22,
+      "key": "A",
+      "result": "E cực đại và hướng Tây.",
+      "steps": [
+        "Sóng truyền lên trên, hướng truyền cùng E × B.",
+        "Chọn Đông = +x, Bắc = +y, lên = +z. B hướng Nam = −y.",
+        "Cần E = −x vì (−x) × (−y) = +z. E hướng Tây và đạt cực đại cùng B."
+      ],
+      "pages": [
+        29
+      ],
+      "status": "solved"
+    },
+    {
+      "id": "source-ch04-023",
+      "chapter": "ch04",
+      "number": 23,
+      "key": "B",
+      "result": "Máy soi chiếu hành lý dùng tia X.",
+      "steps": [
+        "Tia X xuyên qua vật với mức suy giảm phụ thuộc vật liệu và bề dày.",
+        "Đầu thu ghi sự suy giảm để tạo ảnh bên trong hành lý.",
+        "Đó là cơ sở phân biệt với hồng ngoại hoặc tử ngoại trong các phương án."
+      ],
+      "pages": [
+        29
+      ],
+      "status": "solved"
+    },
+    {
+      "id": "source-ch04-024",
+      "chapter": "ch04",
+      "number": 24,
+      "key": "A",
+      "result": "Mạch tách sóng thuộc máy thu trong sơ đồ cơ bản.",
+      "steps": [
+        "Máy phát tạo sóng mang và biến điệu tín hiệu cần truyền.",
+        "Tín hiệu được khuếch đại rồi đưa ra anten.",
+        "Mạch tách sóng lấy tín hiệu âm tần từ sóng mang ở máy thu, nên không thuộc sơ đồ phát cơ bản."
+      ],
+      "pages": [
+        29
+      ],
+      "status": "solved"
+    },
+    {
+      "id": "source-ch04-025",
+      "chapter": "ch04",
+      "number": 25,
+      "key": "D",
+      "result": "f = 60 MHz.",
+      "steps": [
+        "Đọc hình gốc: bước sóng λ = 5 m.",
+        "Trong chân không f = c/λ.",
+        "f = 3 × 10⁸/5 = 6 × 10⁷ Hz = 60 MHz."
+      ],
+      "pages": [
+        29
+      ],
+      "status": "solved"
+    },
+    {
+      "id": "source-ch04-026",
+      "chapter": "ch04",
+      "number": 26,
+      "key": "D",
+      "result": "λ = 3 m.",
+      "steps": [
+        "100 MHz = 10⁸ Hz.",
+        "λ = c/f.",
+        "λ = 3 × 10⁸/10⁸ = 3 m."
+      ],
+      "pages": [
+        29,
+        30
+      ],
+      "status": "solved"
+    },
+    {
+      "id": "source-ch04-027",
+      "chapter": "ch04",
+      "number": 27,
+      "key": {
+        "value": 6000,
+        "tolerance": 0.5,
+        "unit": "m"
+      },
+      "result": "λ = 6000 m.",
+      "steps": [
+        "Hệ số của t trong pha là ω = 100000π rad/s.",
+        "f = ω/(2π) = 50000 Hz.",
+        "λ = 3 × 10⁸/50000 = 6000 m; biên độ và pha ban đầu không làm đổi λ."
+      ],
+      "pages": [
+        31
+      ],
+      "status": "solved"
+    },
+    {
+      "id": "source-ch04-028",
+      "chapter": "ch04",
+      "number": 28,
+      "key": {
+        "value": 0.5,
+        "tolerance": 0.05,
+        "unit": "tỉ số"
+      },
+      "result": "q₁/q₂ = 0,5.",
+      "steps": [
+        "Trong mỗi mạch: i² + ω²q² = I₀².",
+        "Tại cùng |i| < I₀, |q| = √(I₀² − i²)/ω, nên |q| tỉ lệ với T.",
+        "q₁/q₂ = T₁/T₂ = 1/2 = 0,5."
+      ],
+      "pages": [
+        31
+      ],
+      "status": "solved"
+    },
+    {
+      "id": "source-ch04-029",
+      "chapter": "ch04",
+      "number": 29,
+      "key": {
+        "value": 8,
+        "tolerance": 0.01,
+        "unit": "mA"
+      },
+      "result": "|i₂| = 8 mA.",
+      "steps": [
+        "Từ 4q₁² + q₂² = 1,3 × 10⁻¹⁷ và q₁ = 10⁻⁹ C suy ra |q₂| = 3 × 10⁻⁹ C.",
+        "Đạo hàm đẳng thức theo t: 8q₁i₁ + 2q₂i₂ = 0.",
+        "|i₂| = 4|q₁i₁/q₂| = 4 × 6/3 = 8 mA."
+      ],
+      "pages": [
+        31
+      ],
+      "status": "solved"
+    },
+    {
+      "id": "source-ch04-030",
+      "chapter": "ch04",
+      "number": 30,
+      "key": {
+        "value": 10,
+        "tolerance": 0.01,
+        "unit": "%"
+      },
+      "result": "Biên độ điện áp giảm 10%.",
+      "steps": [
+        "Năng lượng còn lại sau 20 chu kỳ là W₂/W₁ = 1 − 0,19 = 0,81.",
+        "Vì W ∝ U₀² nên U₀₂/U₀₁ = √0,81 = 0,9.",
+        "Mức giảm tương đối bằng 1 − 0,9 = 0,1 = 10%."
+      ],
+      "pages": [
+        31
+      ],
+      "status": "solved"
+    },
+    {
+      "id": "source-ch04-031",
+      "chapter": "ch04",
+      "number": 31,
+      "key": {
+        "value": 98.96,
+        "tolerance": 0.0051,
+        "unit": "mJ"
+      },
+      "result": "Nhiệt trên R bằng 98,96 mJ.",
+      "steps": [
+        "Trước ngắt: I₀ = 24/(1 + 5 + 18) = 1 A; U tụ = I₀(R + R₀) = 23 V.",
+        "W₀ = LI₀²/2 + CU²/2 = 0,1 + 100 × 10⁻⁶ × 23²/2 = 0,12645 J.",
+        "Sau ngắt, cùng dòng đi qua R và R₀ nên QR = R/(R + R₀) × W₀ = 18/23 × 0,12645 = 0,09896087 J."
+      ],
+      "pages": [
+        31
+      ],
+      "status": "solved"
+    },
+    {
+      "id": "source-ch04-032",
+      "chapter": "ch04",
+      "number": 32,
+      "key": {
+        "value": 20,
+        "tolerance": 0.5,
+        "unit": "a"
+      },
+      "result": "a = 20.",
+      "steps": [
+        "Nguồn phát đẳng hướng: I = P/(4πr²).",
+        "r = √(P/(4πI)) = √(2,5 × 10²⁵/(4π × 5 × 10³)).",
+        "r ≈ 1,9947 × 10¹⁰ m = 19,947 × 10⁹ m ⇒ a làm tròn 20."
+      ],
+      "pages": [
+        31
+      ],
+      "status": "solved"
+    },
+    {
+      "id": "source-ch04-033",
+      "chapter": "ch04",
+      "number": 33,
+      "key": {
+        "value": 4.88,
+        "tolerance": 0.0051,
+        "unit": "hệ số A"
+      },
+      "result": "Hệ số A = 4,88.",
+      "steps": [
+        "Máy thu ngay dưới vệ tinh nên khoảng cách truyền r = 2,02 × 10⁷ m.",
+        "Theo giả thiết phát đẳng hướng, I = P/(4πr²).",
+        "I = 25/[4π(2,02 × 10⁷)²] ≈ 4,8756 × 10⁻¹⁵ W/m² ⇒ A = 4,88. Không cần dùng tần số để tính cường độ này."
+      ],
+      "pages": [
+        31
+      ],
+      "status": "solved"
+    },
+    {
+      "id": "source-ch04-034",
+      "chapter": "ch04",
+      "number": 34,
+      "key": null,
+      "result": "Nếu phát đẳng hướng: I ≈ 6 nW/m²; nếu phát đều trong bán cầu: khoảng 12 nW/m².",
+      "steps": [
+        "r = 575 km = 575000 m; P = 25,0 kW = 25000 W.",
+        "Giả sử đẳng hướng toàn không gian: I = P/(4πr²) ≈ 6,017 nW/m², một chữ số có nghĩa là 6 nW/m².",
+        "Đề chỉ nói phát về phía mặt đất, không xác định góc chùm hay độ lợi anten. Phát đều bán cầu dùng 2πr² cho khoảng 12,03 nW/m². Cần bổ sung kiểu phát trước khi chấm một số duy nhất."
+      ],
+      "pages": [
+        31,
+        32
+      ],
+      "status": "review",
+      "issue": "Thiếu góc phát/giả thiết đẳng hướng của nguồn."
+    },
+    {
+      "id": "source-ch04-035",
+      "chapter": "ch04",
+      "number": 35,
+      "key": {
+        "value": 223,
+        "tolerance": 0.5,
+        "unit": "A/m²"
+      },
+      "result": "jᵈ ≈ 223 A/m².",
+      "steps": [
+        "Giữa hai bản lý tưởng, dòng dịch bằng dòng dẫn I = 0,28 A.",
+        "S = πr² = 3,14 × 0,02² = 0,001256 m².",
+        "jᵈ = I/S ≈ 222,93 A/m² ⇒ 223 A/m²."
+      ],
+      "pages": [
+        32
+      ],
+      "status": "solved"
+    },
+    {
+      "id": "source-ch04-036",
+      "chapter": "ch04",
+      "number": 36,
+      "key": {
+        "value": 538,
+        "tolerance": 0.5,
+        "unit": "kWh"
+      },
+      "result": "Điện năng theo giả thiết đề: 538 kWh.",
+      "steps": [
+        "Diện tích pin S = 8 × 20 × 0,80 = 128 m².",
+        "Công suất điện với hiệu suất giả định 70%: P = 1000 × 128 × 0,70 = 89600 W = 89,6 kW.",
+        "A = Pt = 89,6 × 6 = 537,6 kWh ⇒ 538 kWh. Hiệu suất 70% là dữ kiện bài, không phải khẳng định hiệu suất tấm pin dân dụng thực tế."
+      ],
+      "pages": [
+        32
+      ],
+      "status": "solved"
+    },
+    {
+      "id": "source-ch04-037",
+      "chapter": "ch04",
+      "number": 37,
+      "key": "TFFT",
+      "result": "a Đúng; b Sai; c Sai; d Đúng.",
+      "steps": [
+        "a) Tiền tố mega là 10⁶; dùng dải tần đã cho làm dữ kiện bài.",
+        "b,c) λ₁ = 3 × 10⁸/(850 × 10⁶) ≈ 0,353 m; λ₂ ≈ 0,115 m. Đơn vị trong hai nhận định là km nên sai.",
+        "d) Đây là sóng vô tuyến, nằm ngoài vùng nhìn thấy. Dải 850–2600 MHz trong đề không phải danh sách đầy đủ mọi băng di động đang được sử dụng."
+      ],
+      "pages": [
+        33
+      ],
+      "status": "solved"
+    },
+    {
+      "id": "source-ch04-038",
+      "chapter": "ch04",
+      "number": 38,
+      "key": "TTFT",
+      "result": "a Đúng; b Đúng; c Sai; d Đúng.",
+      "steps": [
+        "a,d) Tử ngoại có bước sóng ngắn hơn ánh sáng thấy; hồng ngoại dài hơn nên A là tử ngoại, B là hồng ngoại.",
+        "b) Khả năng xuyên và suy giảm khác nhau trong vật chất giúp tia X tạo ảnh. c) Sóng phẳng điện từ trong chân không là sóng ngang, không phải sóng dọc.",
+        "Hình còn có nhãn “năng lượng tăng dần” với mũi tên hai phía không chuẩn: năng lượng mỗi photon hc/λ tăng khi λ giảm."
+      ],
+      "pages": [
+        33
+      ],
+      "status": "solved"
+    },
+    {
+      "id": "source-ch04-039",
+      "chapter": "ch04",
+      "number": 39,
+      "key": "FTFF",
+      "result": "a Sai; b Đúng; c Sai về tên UHF; d Sai nếu hiểu như khẳng định chung.",
+      "steps": [
+        "a) Wi-Fi là sóng điện từ, siêu âm là sóng cơ. b) λ ở 2,4 GHz = 0,125 m = 12,5 cm, thuộc UHF.",
+        "c) 5 GHz có λ = 0,06 m, nhưng theo ITU thuộc SHF (3–30 GHz), không phải UHF (300–3000 MHz). Bảng “sóng cực ngắn” của đề rộng hơn riêng UHF.",
+        "d) Tốc độ và độ ổn định phụ thuộc chuẩn, độ rộng kênh, khoảng cách và vật cản. Không thể kết luận 5 GHz luôn ổn định hơn 2,4 GHz."
+      ],
+      "pages": [
+        33,
+        34
+      ],
+      "status": "solved"
+    },
+    {
+      "id": "source-ch04-040",
+      "chapter": "ch04",
+      "number": 40,
+      "key": "TTFT",
+      "result": "a Đúng; b Đúng; c Sai nếu đòi tần số tắt dần; d xấp xỉ đúng.",
+      "steps": [
+        "a) Không có ngoại lực tuần hoàn và R < 2√(L/C), nên đây là dao động tự do tắt dần. b) dW/dt = −Ri² ≤ 0.",
+        "c) β = R/(2L) ≈ 86,9565 s⁻¹; ω = √[1/(LC) − β²] ≈ 783,30 rad/s. Số 788,11 là ω₀ = 1/√(LC) của mạch không điện trở.",
+        "d) Giảm lượng lôga δ = βT = 2πβ/ω ≈ 0,69752, gần 0,697 của đề (làm tròn ba chữ số thập phân đúng là 0,698)."
+      ],
+      "pages": [
+        34
+      ],
+      "status": "solved"
+    },
+    {
+      "id": "source-ch04-041",
+      "chapter": "ch04",
+      "number": 41,
+      "key": null,
+      "result": "Theo ngưỡng giả định và nguồn đẳng hướng: a Đúng; b Sai; c theo giả thiết; d ≈ 0,729 m.",
+      "steps": [
+        "Đổi 1500 mW/m² = 1,5 W/m². Với nguồn đẳng hướng, I = P/(4πr²), tỉ lệ nghịch r².",
+        "Theo ngưỡng giả định: rmin = √(10/(4 × 3,14 × 1,5)) ≈ 0,72855 m. Đây là kết quả mô hình của bài.",
+        "Đề không cho tính định hướng radar; không thể dùng khoảng cách này làm chỉ dẫn an toàn thực tế. Nhận định c dựa trên ngưỡng do đề đặt ra, không chứng minh một ngưỡng sức khỏe chung."
+      ],
+      "pages": [
+        34
+      ],
+      "status": "review",
+      "issue": "Thiếu giả thiết nguồn đẳng hướng; ngưỡng phơi nhiễm là dữ kiện giả định, không phải kết luận an toàn thực tế."
+    },
+    {
+      "id": "source-ch05-001",
+      "chapter": "ch05",
+      "number": 1,
+      "key": "D",
+      "result": "Định luật truyền thẳng ánh sáng.",
+      "steps": [
+        "Trong môi trường đồng tính, ánh sáng được mô hình hóa bằng tia thẳng.",
+        "Vật chắn ngăn một phần hoặc toàn bộ tia từ nguồn đến vùng quan sát.",
+        "Nguồn có kích thước hữu hạn tạo vùng nửa tối; cùng cách dựng hình giải thích nhật thực, nguyệt thực ở mức quang hình."
+      ],
+      "pages": [
+        35
+      ],
+      "status": "solved"
+    },
+    {
+      "id": "source-ch05-002",
+      "chapter": "ch05",
+      "number": 2,
+      "key": "D",
+      "result": "Bóng trên mặt nước dài ≈ 207,85 cm.",
+      "steps": [
+        "Chỉ phần cọc phía trên nước tạo đoạn bóng trên mặt nước đang xét.",
+        "Tia hợp mặt nước góc 30°: tan30° = h₁/l.",
+        "l = 120/tan30° ≈ 207,846 cm."
+      ],
+      "pages": [
+        35
+      ],
+      "status": "solved"
+    },
+    {
+      "id": "source-ch05-003",
+      "chapter": "ch05",
+      "number": 3,
+      "key": {
+        "value": 233,
+        "tolerance": 0.5,
+        "unit": "cm"
+      },
+      "result": "Bóng dưới đáy dài khoảng 233 cm.",
+      "steps": [
+        "Phần tia trong không khí lệch ngang l₁ = h₁/tan45° = 120 cm. Góc tới với pháp tuyến i = 45°.",
+        "Snell: sinr = sin45°/(4/3) ⇒ r ≈ 32,03°. Đoạn trong nước lệch ngang l₂ = 180tanr ≈ 112,598 cm.",
+        "Tổng l = 120 + 112,598 = 232,598 cm ⇒ 233 cm."
+      ],
+      "pages": [
+        35
+      ],
+      "status": "solved"
+    },
+    {
+      "id": "source-ch05-004",
+      "chapter": "ch05",
+      "number": 4,
+      "key": {
+        "value": 69,
+        "tolerance": 0.05,
+        "unit": "độ"
+      },
+      "result": "Góc giới hạn ≈ 69,0°.",
+      "steps": [
+        "Ánh sáng truyền từ lõi n₁ = 1,50 sang vỏ n₂ = 1,40.",
+        "sin i giới hạn = n₂/n₁ = 1,40/1,50.",
+        "i giới hạn ≈ 68,9605°, làm tròn 0,1° được 69,0°."
+      ],
+      "pages": [
+        35
+      ],
+      "status": "solved"
+    },
+    {
+      "id": "source-ch05-005",
+      "chapter": "ch05",
+      "number": 5,
+      "key": "FTFT",
+      "result": "a Sai; b Đúng; c Sai; d Đúng với bản hai mặt song song trong không khí.",
+      "steps": [
+        "a) sinr = sin60°/1,5 ⇒ r ≈ 35,26°, không phải 40°. b) v = c/n = 2 × 10⁸ m/s.",
+        "c) Từ không khí vào thủy tinh (n tăng) không xảy ra phản xạ toàn phần dù i = 80°.",
+        "d) Qua bản mặt song song và trở lại không khí, tia ló song song tia tới, có dịch ngang. Độ dày không làm đổi kết luận góc."
+      ],
+      "pages": [
+        35
+      ],
+      "status": "solved"
+    },
+    {
+      "id": "source-ch05-006",
+      "chapter": "ch05",
+      "number": 6,
+      "key": "FFTF",
+      "result": "a Sai; b Sai; c Đúng về sự rò ánh sáng vào vỏ; d Sai.",
+      "steps": [
+        "a) i giới hạn = arcsin(1,4/1,5) ≈ 68,96°; phản xạ toàn phần cần i lớn hơn, không nhỏ hơn.",
+        "b) Khi n lõi = n vỏ không còn phản xạ toàn phần ở ranh giới đó. c) i < 68° khiến một phần ánh sáng khúc xạ từ lõi vào vỏ.",
+        "d) Ưu điểm truyền xa gắn với suy hao thấp, không phải cao. “Thoát ra” ở c hiểu là rời lõi vào vỏ, không khẳng định mọi tia đều ra khỏi toàn bộ sợi."
+      ],
+      "pages": [
+        36
+      ],
+      "status": "solved"
+    },
+    {
+      "id": "source-ch05-007",
+      "chapter": "ch05",
+      "number": 7,
+      "key": "B",
+      "result": "B phù hợp mô hình nguồn điểm ở khoảng cách hữu hạn.",
+      "steps": [
+        "Sóng từ nguồn điểm trong môi trường đồng tính, đẳng hướng có mặt đồng pha hình cầu.",
+        "Biên độ giảm xấp xỉ 1/r khi không hấp thụ; không hằng theo khoảng cách.",
+        "Khi nguồn rất xa, một miền nhỏ của mặt cầu được xấp xỉ mặt phẳng. “Nguồn ở gần” là cách phân biệt mô hình trong các lựa chọn, không phải định nghĩa đầy đủ."
+      ],
+      "pages": [
+        36
+      ],
+      "status": "solved"
+    },
+    {
+      "id": "source-ch05-008",
+      "chapter": "ch05",
+      "number": 8,
+      "key": null,
+      "result": "Nếu hỏi thành phần trường trực tiếp tương tác quang học: A; nếu hỏi độ sáng cảm nhận: cần xét cường độ và phổ.",
+      "steps": [
+        "Thành phần điện trường của sóng tác dụng chủ yếu lên điện tích trong vật chất và thường được gọi là vectơ sáng.",
+        "Cảm nhận độ sáng còn phụ thuộc năng lượng/cường độ tới mắt, bước sóng và đáp ứng thị giác.",
+        "A là đáp án theo quy ước “vectơ sáng” của bài giảng; nhưng B cũng liên quan trực tiếp đến độ sáng. Câu hỏi cần phân biệt cơ chế tương tác với mức độ sáng cảm nhận."
+      ],
+      "pages": [
+        36
+      ],
+      "status": "review",
+      "issue": "Cách hỏi lẫn thành phần trường tác dụng với đại lượng quyết định độ sáng."
+    },
+    {
+      "id": "source-ch05-009",
+      "chapter": "ch05",
+      "number": 9,
+      "key": "B",
+      "result": "Tần số quyết định màu của ánh sáng đơn sắc.",
+      "steps": [
+        "Khi ánh sáng đơn sắc đổi môi trường, vận tốc và bước sóng đổi nhưng tần số giữ nguyên.",
+        "Màu đơn sắc được gắn với tần số trong vùng nhìn thấy.",
+        "Biên độ/cường độ chủ yếu thay đổi độ sáng; ánh sáng có phổ nhiều tần số cần xét toàn bộ phổ để mô tả màu."
+      ],
+      "pages": [
+        36
+      ],
+      "status": "solved"
+    },
+    {
+      "id": "source-ch05-010",
+      "chapter": "ch05",
+      "number": 10,
+      "key": null,
+      "result": "Không có phương án sai rõ ràng nếu A được hiểu là cường độ ảnh hưởng độ sáng.",
+      "steps": [
+        "B mô tả ánh sáng không phân cực theo thống kê; C là quá trình phân cực; D đúng cho ánh sáng đơn sắc.",
+        "A: cường độ ánh sáng có ảnh hưởng đến độ sáng cảm nhận. Nếu bài giảng muốn hỏi “thành phần trường tác dụng lên mắt” thì đó là điện trường, nhưng không vì thế phủ nhận tác dụng của cường độ.",
+        "Cần sửa A hoặc sửa câu hỏi để có một phương án sai duy nhất; không chấm theo suy đoán ý tác giả."
+      ],
+      "pages": [
+        36
+      ],
+      "status": "review",
+      "issue": "A không sai rõ ràng theo nghĩa thông thường; cần làm rõ thuật ngữ."
+    },
+    {
+      "id": "source-ch05-011",
+      "chapter": "ch05",
+      "number": 11,
+      "key": "A",
+      "result": "v = 2 × 10⁸ m/s.",
+      "steps": [
+        "Chiết suất tuyệt đối n = c/v.",
+        "v = c/n = 3 × 10⁸/1,5.",
+        "v = 2 × 10⁸ m/s."
+      ],
+      "pages": [
+        36,
+        37
+      ],
+      "status": "solved"
+    },
+    {
+      "id": "source-ch05-012",
+      "chapter": "ch05",
+      "number": 12,
+      "key": "D",
+      "result": "t = 7,5 × 10⁻¹¹ s.",
+      "steps": [
+        "Độ dày d = 15 mm = 0,015 m.",
+        "Vận tốc trong kính v = c/n = 2 × 10⁸ m/s.",
+        "Tia vuông góc đi quãng đường d: t = d/v = 0,015/(2 × 10⁸) = 7,5 × 10⁻¹¹ s."
+      ],
+      "pages": [
+        37
+      ],
+      "status": "solved"
+    },
+    {
+      "id": "source-ch05-013",
+      "chapter": "ch05",
+      "number": 13,
+      "key": "D",
+      "result": "Quãng đường trong chân không là 22,5 mm.",
+      "steps": [
+        "Thời gian xuyên kính t = nd/c.",
+        "Trong cùng thời gian, quãng đường trong chân không s = ct = nd.",
+        "s = 1,5 × 15 = 22,5 mm, chính là quang lộ của đoạn kính."
+      ],
+      "pages": [
+        37
+      ],
+      "status": "solved"
+    },
+    {
+      "id": "source-ch05-014",
+      "chapter": "ch05",
+      "number": 14,
+      "key": "B",
+      "result": "Bước sóng tăng 0,30 μm.",
+      "steps": [
+        "Bước sóng trong kính λ = λ₀/n.",
+        "λ₀ = nλ = 1,5 × 0,6 = 0,9 μm.",
+        "Δλ = λ₀ − λ = 0,9 − 0,6 = 0,30 μm."
+      ],
+      "pages": [
+        37
+      ],
+      "status": "solved"
+    },
+    {
+      "id": "source-ch05-015",
+      "chapter": "ch05",
+      "number": 15,
+      "key": {
+        "value": 293,
+        "tolerance": 0.5,
+        "unit": "nm"
+      },
+      "result": "x = 293 nm.",
+      "steps": [
+        "Tần số không đổi khi ánh sáng đi vào kính.",
+        "λ = λ₀/n = 440/1,5 ≈ 293,333 nm.",
+        "Làm tròn phần nguyên: 293 nm."
+      ],
+      "pages": [
+        37
+      ],
+      "status": "solved"
+    },
+    {
+      "id": "source-ch05-016",
+      "chapter": "ch05",
+      "number": 16,
+      "key": "B",
+      "result": "Màu sắc bong bóng xà phòng do giao thoa màng mỏng.",
+      "steps": [
+        "Hai sóng phản xạ từ hai mặt của màng gặp nhau.",
+        "Độ lệch pha phụ thuộc bước sóng và bề dày, làm một số màu được tăng cường, số khác bị giảm.",
+        "Lăng kính tách màu chủ yếu do tán sắc; bóng chắn là quang hình; vệt đèn pin không phải dấu hiệu giao thoa đặc trưng."
+      ],
+      "pages": [
+        37
+      ],
+      "status": "solved"
+    },
+    {
+      "id": "source-ch05-017",
+      "chapter": "ch05",
+      "number": 17,
+      "key": null,
+      "result": "Màng rất mỏng có thể giảm phản xạ nhờ giao thoa triệt tiêu; A và C chồng lấn ý.",
+      "steps": [
+        "Phản xạ từ không khí vào dầu (n tăng) đổi pha π; từ dầu sang nước (n giảm) không đổi pha.",
+        "Khi bề dày rất nhỏ, pha do đường đi gần 0; hai sóng phản xạ gần ngược pha và làm giảm phản xạ. A và C vì thế không loại trừ nhau.",
+        "Biên độ hai phản xạ có thể khác nên không nhất thiết đen hoàn toàn. Không phải dầu hấp thụ hết ánh sáng như B; D cũng không đúng."
+      ],
+      "pages": [
+        37
+      ],
+      "status": "review",
+      "issue": "A và C cùng mô tả cơ chế; điều kiện “toàn màu đen” còn phụ thuộc biên độ và nền."
+    },
+    {
+      "id": "source-ch05-018",
+      "chapter": "ch05",
+      "number": 18,
+      "key": "D",
+      "result": "Cả ba mô tả khoảng vân đều đúng trong hệ vân Young đều.",
+      "steps": [
+        "Các vân sáng liên tiếp cách nhau i = λD/a.",
+        "Các vân tối liên tiếp cũng cách nhau i.",
+        "Khoảng cách nhỏ nhất giữa hai vân sáng phân biệt là giữa hai vân liên tiếp, nên A,B,C tương đương."
+      ],
+      "pages": [
+        37
+      ],
+      "status": "solved"
+    },
+    {
+      "id": "source-ch05-019",
+      "chapter": "ch05",
+      "number": 19,
+      "key": "A",
+      "result": "Giao thoa chứng tỏ tính chất sóng.",
+      "steps": [
+        "Hai trường sóng chồng chất với pha xác định tạo vùng tăng cường và triệt tiêu.",
+        "Đây là hiện tượng đặc trưng của sự chồng chất sóng.",
+        "Riêng giao thoa chưa chứng minh sóng là ngang hay điện từ; tính ngang được thể hiện rõ qua phân cực."
+      ],
+      "pages": [
+        37,
+        38
+      ],
+      "status": "solved"
+    },
+    {
+      "id": "source-ch05-020",
+      "chapter": "ch05",
+      "number": 20,
+      "key": "C",
+      "result": "Các vân tròn nằm trên tiêu diện ảnh của thấu kính.",
+      "steps": [
+        "Với bản dày không đổi, độ lệch pha phụ thuộc góc nghiêng của tia.",
+        "Các tia cùng góc nghiêng tạo một nón đối xứng quanh pháp tuyến.",
+        "Thấu kính có trục vuông góc bản gom chúng thành vòng tròn ở tiêu diện ảnh."
+      ],
+      "pages": [
+        38
+      ],
+      "status": "solved"
+    },
+    {
+      "id": "source-ch05-021",
+      "chapter": "ch05",
+      "number": 21,
+      "key": "D",
+      "result": "λ = 0,75 μm.",
+      "steps": [
+        "Vân sáng bậc 3 có x₃ = 3λD/a.",
+        "λ = ax₃/(3D) = 10⁻³ × 4,5 × 10⁻³/(3 × 2).",
+        "λ = 7,5 × 10⁻⁷ m = 0,75 μm."
+      ],
+      "pages": [
+        38
+      ],
+      "status": "solved"
+    },
+    {
+      "id": "source-ch05-022",
+      "chapter": "ch05",
+      "number": 22,
+      "key": "B",
+      "result": "Khoảng vân tăng lên.",
+      "steps": [
+        "Ánh sáng vàng có bước sóng lớn hơn ánh sáng lam trong cùng môi trường.",
+        "Khoảng vân i = λD/a.",
+        "Giữ D,a, tăng λ làm i tăng; vân trung tâm không đổi khi cách chiếu và hiệu pha nguồn không đổi."
+      ],
+      "pages": [
+        38
+      ],
+      "status": "solved"
+    },
+    {
+      "id": "source-ch05-023",
+      "chapter": "ch05",
+      "number": 23,
+      "key": "A",
+      "result": "15 vân sáng và 16 vân tối, nếu vùng rộng 15 mm đối xứng qua tâm và tính cả biên.",
+      "steps": [
+        "i = λD/a = 0,5 × 10⁻⁶ × 1/(0,5 × 10⁻³) = 1 mm.",
+        "Vùng [−7,5; 7,5] mm: vân sáng x = ki cho k = −7,…,7, tổng 15.",
+        "Vân tối ở ±0,5; ±1,5; …; ±7,5 mm, tổng 16. Hai vân tối ở đúng biên được tính; nếu không tính biên còn 14."
+      ],
+      "pages": [
+        38
+      ],
+      "status": "solved"
+    },
+    {
+      "id": "source-ch05-024",
+      "chapter": "ch05",
+      "number": 24,
+      "key": {
+        "value": 5,
+        "tolerance": 0.01,
+        "unit": "vân"
+      },
+      "result": "Có 5 vân sáng trùng nhau trong vùng đối xứng qua tâm.",
+      "steps": [
+        "i₁ = 0,48 × 10⁻⁶ × 2/(1,2 × 10⁻³) = 0,8 mm; i₂ = 1,0 mm.",
+        "Trùng sáng khi 0,8k₁ = 1,0k₂ ⇒ cặp nhỏ nhất k₁ = 5, k₂ = 4; khoảng giữa hai vân trùng là 4 mm.",
+        "Với vùng 20 mm lấy từ −10 đến +10 mm, các vị trí −8, −4, 0, 4, 8 mm cho 5 vân. Giả thiết vùng quan sát đối xứng qua tâm."
+      ],
+      "pages": [
+        38
+      ],
+      "status": "solved"
+    },
+    {
+      "id": "source-ch05-025",
+      "chapter": "ch05",
+      "number": 25,
+      "key": {
+        "value": 1,
+        "tolerance": 0.0051,
+        "unit": "cm"
+      },
+      "result": "Vân trung tâm dịch lên 1,00 cm.",
+      "steps": [
+        "Bản kính làm tăng quang lộ đường từ khe S₁ thêm (n − 1)d.",
+        "Để hiệu quang lộ bằng 0, vân trung tâm chuyển về phía khe đặt kính; độ dịch Δx = D(n − 1)d/a.",
+        "Δx = 2 × 0,5 × 10 × 10⁻⁶/10⁻³ = 0,01 m = 1,00 cm, lên phía S₁."
+      ],
+      "pages": [
+        38
+      ],
+      "status": "solved"
+    },
+    {
+      "id": "source-ch05-026",
+      "chapter": "ch05",
+      "number": 26,
+      "key": {
+        "value": 2.82,
+        "tolerance": 0.0051,
+        "unit": "μm"
+      },
+      "result": "Bề dày ≈ 2,82 μm.",
+      "steps": [
+        "Số khoảng vân dịch m = Δx/i = (n − 1)d/λ.",
+        "d = mλ/(n − 1).",
+        "d = 3,2 × 0,44/0,5 = 2,816 μm ⇒ 2,82 μm."
+      ],
+      "pages": [
+        38
+      ],
+      "status": "solved"
+    },
+    {
+      "id": "source-ch05-027",
+      "chapter": "ch05",
+      "number": 27,
+      "key": "FTFT",
+      "result": "a Sai; b Đúng; c Sai; d Đúng trong xấp xỉ Young bỏ ảnh hưởng đường bao.",
+      "steps": [
+        "a) i = 500 × 10⁻⁹ × 2/10⁻³ = 1 mm. b) Vân bậc 1 và 3 khác phía cách nhau (1 + 3)i = 4 mm.",
+        "c) Tăng a gấp đôi làm i giảm một nửa.",
+        "d) Vị trí cực đại giao thoa ax/D = kλ không phụ thuộc bề rộng mỗi khe. Bề rộng khe thay đường bao nhiễu xạ, có thể làm mất vân hoặc dịch nhẹ cực đại cường độ tổng khi không dùng xấp xỉ khe hẹp."
+      ],
+      "pages": [
+        39
+      ],
+      "status": "solved"
+    },
+    {
+      "id": "source-ch05-028",
+      "chapter": "ch05",
+      "number": 28,
+      "key": {
+        "value": 400,
+        "tolerance": 0.5,
+        "unit": "nm"
+      },
+      "result": "λ = 400 nm.",
+      "steps": [
+        "Bảy vân tối liên tiếp tạo sáu khoảng vân: i = 1,2 cm/6 = 0,002 m.",
+        "Nêm không khí, chiếu gần vuông góc: i = λ/(2α).",
+        "λ = 2αi = 2 × 10⁻⁴ × 0,002 = 4 × 10⁻⁷ m = 400 nm."
+      ],
+      "pages": [
+        39
+      ],
+      "status": "solved"
+    },
+    {
+      "id": "source-ch05-029",
+      "chapter": "ch05",
+      "number": 29,
+      "key": "D",
+      "result": "λ = 0,72 μm.",
+      "steps": [
+        "Phản xạ hai mặt nêm kính trong không khí có một lần đổi pha π. Vân sáng thứ ba: 2nd = (3 − 1/2)λ.",
+        "Bề dày tại x = 0,6 cm: d ≈ αx = 10⁻⁴ × 0,006 = 6 × 10⁻⁷ m.",
+        "λ = 2 × 1,5 × 6 × 10⁻⁷/2,5 = 7,2 × 10⁻⁷ m = 0,72 μm."
+      ],
+      "pages": [
+        39
+      ],
+      "status": "solved"
+    },
+    {
+      "id": "source-ch05-030",
+      "chapter": "ch05",
+      "number": 30,
+      "key": {
+        "value": 0.9,
+        "tolerance": 0.05,
+        "unit": "x"
+      },
+      "result": "x = 0,9 cho vị trí trùng đầu tiên ngoài cạnh nêm.",
+      "steps": [
+        "Vân tối phản xạ: 2αl = kλ. Trùng tối khi k₁ × 0,45 = k₂ × 0,54, cặp nhỏ nhất khác 0 là (6,5).",
+        "Hiệu quang lộ tương ứng 6 × 0,45 = 2,70 μm.",
+        "α = 2,70 × 10⁻⁶/(2 × 1,5 × 10⁻³) = 0,9 × 10⁻³ rad. Cạnh nêm l = 0 cũng tối chung; bài được hiểu là vị trí trùng kế tiếp."
+      ],
+      "pages": [
+        39
+      ],
+      "status": "solved"
+    },
+    {
+      "id": "source-ch05-031",
+      "chapter": "ch05",
+      "number": 31,
+      "key": "A",
+      "result": "r₃ = √[5λR/(2n₀)].",
+      "steps": [
+        "Dù n₀ > n, vẫn chỉ một trong hai tia phản xạ đổi pha π: phản xạ từ kính vào chất lỏng đổi pha, chiều ngược lại không.",
+        "Vân sáng phản xạ thứ m: 2n₀d = (m − 1/2)λ; hình học Newton d ≈ r²/(2R).",
+        "Với m = 3: n₀r²/R = 5λ/2 ⇒ r = √[5λR/(2n₀)]."
+      ],
+      "pages": [
+        39
+      ],
+      "status": "solved"
+    },
+    {
+      "id": "source-ch05-032",
+      "chapter": "ch05",
+      "number": 32,
+      "key": "A",
+      "result": "λ = 0,45 μm.",
+      "steps": [
+        "Vân tối phản xạ trong lớp không khí: rₖ² = kλR, tâm tối bậc 0.",
+        "λ = r²/(kR) = (6 × 10⁻³)²/(20 × 4).",
+        "λ = 4,5 × 10⁻⁷ m = 0,45 μm."
+      ],
+      "pages": [
+        39
+      ],
+      "status": "solved"
+    },
+    {
+      "id": "source-ch05-033",
+      "chapter": "ch05",
+      "number": 33,
+      "key": "TTFF",
+      "result": "a Đúng; b Đúng (bậc 6); c Sai; d Sai.",
+      "steps": [
+        "a) Bề dày lớp không khí chỉ phụ thuộc bán kính nên các vân là vòng tròn đồng tâm.",
+        "b) r₆ = √(6λR) = √(6 × 600 × 10⁻⁹ × 1) ≈ 1,897 mm.",
+        "c) rₖ ∝ √k nên khoảng giữa hai vòng không cố định. d) Giảm λ làm rₖ giảm theo √λ, không tăng."
+      ],
+      "pages": [
+        39,
+        40
+      ],
+      "status": "solved"
+    },
+    {
+      "id": "source-ch05-034",
+      "chapter": "ch05",
+      "number": 34,
+      "key": "C",
+      "result": "C: gần vị trí cực đại phụ thứ hai.",
+      "steps": [
+        "Nhiễu xạ khe đơn có cực tiểu sinφ = mλ/b.",
+        "Cực đại phụ thứ hai nằm giữa cực tiểu m = 2 và m = 3; 5λ/(2b) là công thức gần đúng trung điểm.",
+        "Chính xác, β = πb sinφ/λ phải thỏa tanβ = β; nghiệm thứ hai β ≈ 7,725 cho sinφ ≈ 2,459λ/b, không đúng bằng 2,5λ/b."
+      ],
+      "pages": [
+        40
+      ],
+      "status": "solved"
+    },
+    {
+      "id": "source-ch05-035",
+      "chapter": "ch05",
+      "number": 35,
+      "key": "C",
+      "result": "Một điểm nằm trong vùng cực đại trung tâm.",
+      "steps": [
+        "Hai cực tiểu đầu tiên có sinφ = ±λ/b.",
+        "Điểm sinφ = λ/(2b) nằm giữa chúng.",
+        "Nó thuộc vùng sáng trung tâm nhưng không phải đỉnh cực đại tại φ = 0, cũng không là cực tiểu."
+      ],
+      "pages": [
+        40
+      ],
+      "status": "solved"
+    },
+    {
+      "id": "source-ch05-036",
+      "chapter": "ch05",
+      "number": 36,
+      "key": {
+        "value": 19,
+        "tolerance": 0.01,
+        "unit": "cực đại"
+      },
+      "result": "Tối đa 19 cực đại trong mô hình khe đơn và màn bao đủ góc.",
+      "steps": [
+        "b/λ = 5/0,5 = 10 ⇒ |β| = |πb sinφ/λ| < 10π đối với các góc quan sát hữu hạn.",
+        "Các cực đại phụ thỏa tanβ = β; có 9 nghiệm dương trước 10π và 9 nghiệm âm đối xứng.",
+        "Cộng cực đại giữa: 9 + 1 + 9 = 19. Màn có kích thước hữu hạn có thể chỉ hứng được ít hơn."
+      ],
+      "pages": [
+        40
+      ],
+      "status": "solved"
+    },
+    {
+      "id": "source-ch05-037",
+      "chapter": "ch05",
+      "number": 37,
+      "key": {
+        "value": 27,
+        "tolerance": 0.01,
+        "unit": "mm"
+      },
+      "result": "Bề rộng cực đại trung tâm ≈ 27 mm.",
+      "steps": [
+        "a = 0,04 mm = 4 × 10⁻⁵ m; λ = 450 nm.",
+        "Hai cực tiểu đầu ở y ≈ ±Lλ/a nên bề rộng w ≈ 2Lλ/a.",
+        "w = 2 × 1,2 × 450 × 10⁻⁹/(4 × 10⁻⁵) = 0,027 m = 27 mm."
+      ],
+      "pages": [
+        40
+      ],
+      "status": "solved"
+    },
+    {
+      "id": "source-ch05-038",
+      "chapter": "ch05",
+      "number": 38,
+      "key": "FTFF",
+      "result": "a Sai; b Đúng; c Sai; d Sai.",
+      "steps": [
+        "a) sinθ₁ = λ/a = 0,0015 ⇒ θ₁ ≈ 0,08594°, không phải 0,8°. b) y₁ ≈ Dλ/a = 3 mm ⇒ w ≈ 6 mm.",
+        "c) a tăng 10 lần thì w giảm 10 lần, còn 0,6 mm.",
+        "d) Hai lần 450 nm là 900 nm, không phải 1160 nm. Với 900 nm thì w ≈ 12 mm; nếu dùng 1160 nm thì w ≈ 15,47 mm. Cả hai đều tăng."
+      ],
+      "pages": [
+        40
+      ],
+      "status": "solved"
+    },
+    {
+      "id": "source-ch05-039",
+      "chapter": "ch05",
+      "number": 39,
+      "key": "C",
+      "result": "C mô tả phân cực thẳng, không phải ánh sáng tự nhiên.",
+      "steps": [
+        "Ánh sáng tự nhiên có phương điện trường thay đổi ngẫu nhiên trong mặt phẳng ngang với tia sáng.",
+        "Phân cực thẳng có phương điện trường cố định; phân cực một phần có thành phần ưu tiên.",
+        "Vì vậy phát biểu ánh sáng tự nhiên chỉ dao động theo một phương là sai."
+      ],
+      "pages": [
+        40,
+        41
+      ],
+      "status": "solved"
+    },
+    {
+      "id": "source-ch05-040",
+      "chapter": "ch05",
+      "number": 40,
+      "key": "D",
+      "result": "I₂ = I₁ cos²α, với I₁ là cường độ ngay trước bản phân tích.",
+      "steps": [
+        "Điện trường truyền qua trục bản phân tích có biên độ E₂ = E₁cosα.",
+        "Cường độ tỉ lệ bình phương biên độ.",
+        "I₂/I₁ = cos²α. Nếu ánh sáng đầu chưa phân cực và có thêm bản phân cực lý tưởng trước đó, phải tính hệ số 1/2 ở bước ấy."
+      ],
+      "pages": [
+        41
+      ],
+      "status": "solved"
+    },
+    {
+      "id": "source-ch05-041",
+      "chapter": "ch05",
+      "number": 41,
+      "key": null,
+      "result": "Nếu ánh sáng tới tự nhiên và tổn hao thêm 20%: giảm 2,5 lần (B).",
+      "steps": [
+        "Ánh sáng tự nhiên qua bộ phân cực lý tưởng còn I₀/2. Nếu phần truyền này bị phản xạ/hấp thụ thêm 20%, I = 0,8I₀/2 = 0,4I₀.",
+        "Khi đó hệ số giảm I₀/I = 2,5, tương ứng B.",
+        "Nhưng đề không nói ánh sáng tới tự nhiên. Nếu đã phân cực cùng trục thì I = 0,8I₀, giảm 1,25 lần. Nếu 20% là toàn bộ tổn hao cũng cho 1,25 lần. Cần làm rõ trạng thái phân cực và cách tính tổn hao."
+      ],
+      "pages": [
+        41
+      ],
+      "status": "review",
+      "issue": "Thiếu trạng thái phân cực đầu vào và ý nghĩa tổn hao 20%."
+    },
+    {
+      "id": "source-ch06-001",
+      "chapter": "ch06",
+      "number": 1,
+      "key": "C",
+      "result": "Suất phát xạ toàn phần của vật đen: M = σT⁴.",
+      "steps": [
+        "T là nhiệt độ tuyệt đối, đơn vị kelvin.",
+        "Định luật Stefan–Boltzmann cho công suất trên đơn vị diện tích tỉ lệ T⁴.",
+        "M dương; vật xám có thêm hệ số phát xạ. Công suất toàn vật là P = SM."
+      ],
+      "pages": [
+        42
+      ],
+      "status": "solved"
+    },
+    {
+      "id": "source-ch06-002",
+      "chapter": "ch06",
+      "number": 2,
+      "key": "B",
+      "result": "B sai: cân bằng nhiệt không yêu cầu nguồn khổng lồ hay vô tận.",
+      "steps": [
+        "Cân bằng đòi hỏi các trao đổi năng lượng cân bằng, để nhiệt độ không thay đổi.",
+        "Nguồn có thể hữu hạn về kích thước và năng lượng.",
+        "B nêu một yêu cầu không cần thiết. D chỉ là tính chất chung của bức xạ điện từ, không đủ để định nghĩa trạng thái cân bằng."
+      ],
+      "pages": [
+        42
+      ],
+      "status": "solved"
+    },
+    {
+      "id": "source-ch06-003",
+      "chapter": "ch06",
+      "number": 3,
+      "key": "B",
+      "result": "λmax = b/T.",
+      "steps": [
+        "Định luật dịch chuyển Wien mô tả đỉnh phổ theo bước sóng của vật đen.",
+        "Tăng T thì λmax giảm, tích λmaxT = b ≈ 2,898 × 10⁻³ m·K.",
+        "Vì vậy chọn λmax = b/T; đỉnh phổ theo tần số có quy tắc chuyển đổi khác."
+      ],
+      "pages": [
+        42
+      ],
+      "status": "solved"
+    },
+    {
+      "id": "source-ch06-004",
+      "chapter": "ch06",
+      "number": 4,
+      "key": "B",
+      "result": "Ước tính nhiệt độ bề mặt sao từ đỉnh phổ.",
+      "steps": [
+        "Đo bước sóng mà phổ bức xạ nhiệt đạt cực đại.",
+        "Xấp xỉ sao bằng vật đen và dùng T = b/λmax.",
+        "Đây là ước lượng nhiệt độ hiệu dụng; các thiết bị quang điện hay phân cực dùng nguyên lý khác."
+      ],
+      "pages": [
+        42
+      ],
+      "status": "solved"
+    },
+    {
+      "id": "source-ch06-005",
+      "chapter": "ch06",
+      "number": 5,
+      "key": "B",
+      "result": "T ≈ 4830 K, gần 4800 K.",
+      "steps": [
+        "λmax = 600 nm = 6 × 10⁻⁷ m.",
+        "T = b/λmax = 2,898 × 10⁻³/(6 × 10⁻⁷).",
+        "T = 4830 K, chọn phương án gần nhất B; dùng xấp xỉ đỉnh phổ vật đen theo bước sóng."
+      ],
+      "pages": [
+        42
+      ],
+      "status": "solved"
+    },
+    {
+      "id": "source-ch06-006",
+      "chapter": "ch06",
+      "number": 6,
+      "key": "A",
+      "result": "P ≈ 580,6 W.",
+      "steps": [
+        "T = 527 + 273 ≈ 800 K; S = 250 cm² = 0,025 m².",
+        "Cửa sổ lò được coi là vật đen: P = σST⁴.",
+        "P = 5,67 × 10⁻⁸ × 0,025 × 800⁴ ≈ 580,608 W. Đây là công suất phát ra, chưa trừ bức xạ môi trường."
+      ],
+      "pages": [
+        42
+      ],
+      "status": "solved"
+    },
+    {
+      "id": "source-ch06-007",
+      "chapter": "ch06",
+      "number": 7,
+      "key": "C",
+      "result": "T ≈ 1053 K.",
+      "steps": [
+        "S = 2 × 3 cm² = 6 × 10⁻⁴ m²; P = 10 cal/s ≈ 41,84 W.",
+        "T = [P/(σS)]^(1/4).",
+        "T ≈ [41,84/(5,67 × 10⁻⁸ × 6 × 10⁻⁴)]^(1/4) ≈ 1053 K."
+      ],
+      "pages": [
+        42
+      ],
+      "status": "solved"
+    },
+    {
+      "id": "source-ch06-008",
+      "chapter": "ch06",
+      "number": 8,
+      "key": null,
+      "result": "Đỉnh phổ ở khoảng 674 nm; không thể đồng nhất đỉnh này với màu tổng hợp của sao.",
+      "steps": [
+        "Wien: λmax = 2,898 × 10⁻³/4300 ≈ 6,740 × 10⁻⁷ m = 674 nm.",
+        "Bước sóng đỉnh này nằm ở vùng đỏ; đây là phần số đúng của A.",
+        "Sao phát phổ rộng. Màu nhìn thấy là tổng hợp phổ với đáp ứng mắt, không chỉ màu tại λmax. Vì A gắn thêm kết luận màu sao, cần sửa thành câu hỏi về màu của bức xạ tại đỉnh phổ."
+      ],
+      "pages": [
+        42,
+        43
+      ],
+      "status": "review",
+      "issue": "Lẫn màu của bước sóng đỉnh với màu tổng hợp của sao."
+    },
+    {
+      "id": "source-ch06-009",
+      "chapter": "ch06",
+      "number": 9,
+      "key": {
+        "value": 116,
+        "tolerance": 0.5,
+        "unit": "W"
+      },
+      "result": "Công suất bức xạ ròng ≈ 116 W.",
+      "steps": [
+        "Dùng S = 0,05 m² là tổng diện tích trao đổi bức xạ đã cho; hệ số phát xạ ε = 0,75.",
+        "P ròng = εσS(T⁴ − T₀⁴).",
+        "P = 0,75 × 5,67 × 10⁻⁸ × 0,05 × (500⁴ − 300⁴) = 115,668 W ⇒ 116 W."
+      ],
+      "pages": [
+        43
+      ],
+      "status": "solved"
+    },
+    {
+      "id": "source-ch06-010",
+      "chapter": "ch06",
+      "number": 10,
+      "key": "D",
+      "result": "Thuyết lượng tử ánh sáng sơ cấp nói về phát và hấp thụ năng lượng theo lượng tử.",
+      "steps": [
+        "Năng lượng của ánh sáng trao đổi với vật chất theo từng photon.",
+        "Mỗi photon có năng lượng hf.",
+        "Vì vậy D phù hợp nội dung đang học; các phương án khác thuộc mô hình cấu trúc và mức năng lượng nguyên tử."
+      ],
+      "pages": [
+        43
+      ],
+      "status": "solved"
+    },
+    {
+      "id": "source-ch06-011",
+      "chapter": "ch06",
+      "number": 11,
+      "key": "C",
+      "result": "ε = hf = hc/λ.",
+      "steps": [
+        "Trong chân không f = c/λ.",
+        "Lượng tử năng lượng của photon ε = hf, h > 0 và f > 0.",
+        "Thay f được hc/λ; năng lượng không âm và không tỉ lệ nghịch f."
+      ],
+      "pages": [
+        43
+      ],
+      "status": "solved"
+    },
+    {
+      "id": "source-ch06-012",
+      "chapter": "ch06",
+      "number": 12,
+      "key": "B",
+      "result": "B theo phạm vi mô hình photon sơ cấp của bài.",
+      "steps": [
+        "Mô hình photon hấp thụ/phát xạ giải thích quang điện, pin quang điện và quang phát quang.",
+        "Để mô tả vân giao thoa cần thông tin pha và sự chồng chất sóng/biên độ xác suất.",
+        "Vì thế đáp án học phần là B. Cơ học lượng tử đầy đủ vẫn giải thích được giao thoa, kể cả từng photon; không hiểu câu này là giới hạn của toàn bộ lý thuyết lượng tử."
+      ],
+      "pages": [
+        43
+      ],
+      "status": "solved"
+    },
+    {
+      "id": "source-ch06-013",
+      "chapter": "ch06",
+      "number": 13,
+      "key": "A",
+      "result": "Hiệu ứng quang điện cung cấp bằng chứng cho lượng tử ánh sáng.",
+      "steps": [
+        "Ngưỡng tần số và Kmax phụ thuộc f phù hợp photon có năng lượng hf.",
+        "Tăng cường độ chủ yếu tăng số electron, không tăng Kmax ở cùng f.",
+        "Bằng chứng trực tiếp là tính lượng tử/photon (A); giao thoa và nhiễu xạ là các bằng chứng riêng cho tính sóng."
+      ],
+      "pages": [
+        43
+      ],
+      "status": "solved"
+    },
+    {
+      "id": "source-ch06-014",
+      "chapter": "ch06",
+      "number": 14,
+      "key": "A",
+      "result": "λ₀ là bước sóng dài nhất còn đạt ngưỡng quang điện.",
+      "steps": [
+        "Electron cần năng lượng tối thiểu A để thoát.",
+        "Điều kiện hc/λ ≥ A ⇒ λ ≤ hc/A.",
+        "Giới hạn λ₀ = hc/A là bước sóng dài nhất; công thoát là đại lượng năng lượng khác."
+      ],
+      "pages": [
+        43
+      ],
+      "status": "solved"
+    },
+    {
+      "id": "source-ch06-015",
+      "chapter": "ch06",
+      "number": 15,
+      "key": "D",
+      "result": "λ₀ = hc/A.",
+      "steps": [
+        "Tại ngưỡng lý tưởng, photon vừa đủ công thoát: hf₀ = A.",
+        "Dùng f₀ = c/λ₀.",
+        "hc/λ₀ = A ⇒ λ₀ = hc/A."
+      ],
+      "pages": [
+        43,
+        44
+      ],
+      "status": "solved"
+    },
+    {
+      "id": "source-ch06-016",
+      "chapter": "ch06",
+      "number": 16,
+      "key": "A",
+      "result": "f ≥ f₀ trong mô hình ngưỡng lý tưởng.",
+      "steps": [
+        "Photon phải có hf ≥ A.",
+        "Đặt f₀ = A/h.",
+        "Suy ra f ≥ f₀; ở ngưỡng Kmax = 0, còn dưới ngưỡng không có electron quang điện phát ra theo mô hình một photon."
+      ],
+      "pages": [
+        44
+      ],
+      "status": "solved"
+    },
+    {
+      "id": "source-ch06-017",
+      "chapter": "ch06",
+      "number": 17,
+      "key": "D",
+      "result": "ε ≈ 2,07 eV.",
+      "steps": [
+        "λ = 0,6 μm = 6 × 10⁻⁷ m.",
+        "ε = hc/λ ≈ 6,625 × 10⁻³⁴ × 3 × 10⁸/(6 × 10⁻⁷) = 3,3125 × 10⁻¹⁹ J.",
+        "Đổi eV: ε/(1,6 × 10⁻¹⁹) ≈ 2,0703 eV."
+      ],
+      "pages": [
+        44
+      ],
+      "status": "solved"
+    },
+    {
+      "id": "source-ch06-018",
+      "chapter": "ch06",
+      "number": 18,
+      "key": "C",
+      "result": "A = 6,625 × 10⁻¹⁹ J theo h và c làm tròn.",
+      "steps": [
+        "λ₀ = 0,30 μm = 3 × 10⁻⁷ m.",
+        "A = hc/λ₀.",
+        "A = 6,625 × 10⁻³⁴ × 3 × 10⁸/(3 × 10⁻⁷) = 6,625 × 10⁻¹⁹ J."
+      ],
+      "pages": [
+        44
+      ],
+      "status": "solved"
+    },
+    {
+      "id": "source-ch06-019",
+      "chapter": "ch06",
+      "number": 19,
+      "key": "D",
+      "result": "λ₀ ≈ 0,5646 μm theo h = 6,625 × 10⁻³⁴, e = 1,6 × 10⁻¹⁹.",
+      "steps": [
+        "Đổi A = 2,2 eV = 3,52 × 10⁻¹⁹ J.",
+        "λ₀ = hc/A = 6,625 × 10⁻³⁴ × 3 × 10⁸/(3,52 × 10⁻¹⁹).",
+        "λ₀ ≈ 5,6463 × 10⁻⁷ m, ứng với D. Hằng số SI đầy đủ cho khoảng 0,5636 μm và vẫn gần D nhất."
+      ],
+      "pages": [
+        44
+      ],
+      "status": "solved"
+    },
+    {
+      "id": "source-ch06-020",
+      "chapter": "ch06",
+      "number": 20,
+      "key": "C",
+      "result": "Dòng quang điện bão hòa tỉ lệ thuận cường độ sáng trong chế độ tuyến tính.",
+      "steps": [
+        "Giữ tần số trên ngưỡng và diện tích chiếu không đổi.",
+        "Tăng cường độ làm tăng số photon tới mỗi giây; với hiệu suất lượng tử không đổi, số electron phát ra cũng tăng tương ứng.",
+        "Ở bão hòa, electron đều được thu: Ibh = e·Ṅe, nên Ibh tỉ lệ cường độ sáng."
+      ],
+      "pages": [
+        44
+      ],
+      "status": "solved"
+    },
+    {
+      "id": "source-ch06-021",
+      "chapter": "ch06",
+      "number": 21,
+      "key": "C",
+      "result": "C sai: phải đạt hoặc vượt tần số ngưỡng.",
+      "steps": [
+        "Điều kiện một photon là hf ≥ A.",
+        "Tần số nhỏ hơn f₀ không cung cấp đủ công thoát.",
+        "Các nhận định A,B,D phù hợp mô hình quang điện ngoài tuyến tính khi bề mặt và các điều kiện khác giữ nguyên."
+      ],
+      "pages": [
+        44
+      ],
+      "status": "solved"
+    },
+    {
+      "id": "source-ch06-022",
+      "chapter": "ch06",
+      "number": 22,
+      "key": "C",
+      "result": "Hiệu ứng quang điện.",
+      "steps": [
+        "Mô tả sóng cổ điển liên tục không giải thích đầy đủ ngưỡng tần số và năng lượng cực đại electron.",
+        "Photon hf cho Kmax = hf − A, phù hợp các đặc điểm này.",
+        "Phản xạ, khúc xạ và giao thoa có mô tả bằng lý thuyết sóng cổ điển."
+      ],
+      "pages": [
+        44,
+        45
+      ],
+      "status": "solved"
+    },
+    {
+      "id": "source-ch06-023",
+      "chapter": "ch06",
+      "number": 23,
+      "key": "D",
+      "result": "Số electron phát ra mỗi giây tăng 3 lần trong chế độ tuyến tính.",
+      "steps": [
+        "Tần số giữ nguyên nên năng lượng mỗi photon hf không đổi.",
+        "Kmax = hf − A không đổi và công thoát A không đổi khi bề mặt giữ nguyên.",
+        "Cường độ tăng 3 lần làm thông lượng photon và số electron tăng 3 lần nếu hiệu suất không đổi."
+      ],
+      "pages": [
+        45
+      ],
+      "status": "solved"
+    },
+    {
+      "id": "source-ch06-024",
+      "chapter": "ch06",
+      "number": 24,
+      "key": "B",
+      "result": "Cả sáu ứng dụng có thể sử dụng cảm biến/quá trình quang điện.",
+      "steps": [
+        "Kính thiên văn hồng ngoại có thể dùng đầu thu photon; photodiode và pin mặt trời dùng tạo hạt tải trong bán dẫn.",
+        "Dò khói, cửa tự động, phát hiện xâm nhập có các thiết kế dùng bộ phát–thu quang điện.",
+        "Chọn B với nghĩa “có ứng dụng”. Không phải mọi thiết bị trong các nhóm này đều dùng quang điện; cảm biến nhiệt/PIR hay radar là cơ chế khác. Không đồng nhất quang điện trong với electron bật khỏi kim loại."
+      ],
+      "pages": [
+        45
+      ],
+      "status": "solved"
+    },
+    {
+      "id": "source-ch06-025",
+      "chapter": "ch06",
+      "number": 25,
+      "key": null,
+      "result": "Với hằng số SI đầy đủ: không xảy ra ở đồng và bạc (B); làm tròn thô có thể đổi kết luận ở đồng.",
+      "steps": [
+        "Dùng hc/e = 1239,841984 eV·nm: photon 300 nm có ε ≈ 4,13281 eV.",
+        "ε lớn hơn công thoát canxi 2,89 và kali 2,26; nhỏ hơn đồng 4,14 và bạc 4,78, nên B.",
+        "Nhưng bộ h = 6,625 × 10⁻³⁴, c = 3 × 10⁸, e = 1,6 × 10⁻¹⁹ cho ε = 4,140625 eV, vừa vượt ngưỡng đồng và dẫn đến C. Đề không quy định hằng số, dữ kiện quá sát ngưỡng nên chưa chấm tự động."
+      ],
+      "pages": [
+        45
+      ],
+      "status": "review",
+      "issue": "Kết luận về đồng đổi khi dùng bộ hằng số làm tròn quen thuộc; cần thống nhất dữ kiện gần ngưỡng."
+    },
+    {
+      "id": "source-ch06-026",
+      "chapter": "ch06",
+      "number": 26,
+      "key": "B",
+      "result": "Chỉ một bức xạ: f₃.",
+      "steps": [
+        "λ₀ = 0,44 μm ⇒ f₀ = c/λ₀ ≈ 6,818 × 10¹⁴ Hz.",
+        "f₁ = 6,5 × 10¹⁴ và f₂ = 5,5 × 10¹⁴ đều nhỏ hơn f₀.",
+        "f₃ = 7 × 10¹⁴ Hz vượt f₀, nên có 1 bức xạ. Số mũ trong ảnh gốc là 14."
+      ],
+      "pages": [
+        45
+      ],
+      "status": "solved"
+    },
+    {
+      "id": "source-ch06-027",
+      "chapter": "ch06",
+      "number": 27,
+      "key": {
+        "value": 1.61,
+        "tolerance": 0.0051,
+        "unit": "x"
+      },
+      "result": "x = 1,61.",
+      "steps": [
+        "Công thoát A = hc/λ₀, năng lượng photon tới ε = hc/λ.",
+        "Kmax = hc(1/λ − 1/λ₀).",
+        "Kmax = 6,625 × 10⁻³⁴ × 3 × 10⁸ × [1/(0,33 × 10⁻⁶) − 1/(0,45 × 10⁻⁶)] ≈ 1,60606 × 10⁻¹⁹ J ⇒ x = 1,61."
+      ],
+      "pages": [
+        45
+      ],
+      "status": "solved"
+    },
+    {
+      "id": "source-ch06-028",
+      "chapter": "ch06",
+      "number": 28,
+      "key": {
+        "value": 3.5,
+        "tolerance": 0.0051,
+        "unit": "x"
+      },
+      "result": "x = 3,50.",
+      "steps": [
+        "Kmax = mvmax²/2 = 9,1 × 10⁻³¹ × (4,5 × 10⁵)²/2 = 9,21375 × 10⁻²⁰ J.",
+        "ε = hc/λ = 4,41667 × 10⁻¹⁹ J.",
+        "A = ε − Kmax = 3,49529 × 10⁻¹⁹ J ⇒ x = 3,50."
+      ],
+      "pages": [
+        45
+      ],
+      "status": "solved"
+    },
+    {
+      "id": "source-ch06-029",
+      "chapter": "ch06",
+      "number": 29,
+      "key": {
+        "value": 7.63,
+        "tolerance": 0.0051,
+        "unit": "x"
+      },
+      "result": "x = 7,63.",
+      "steps": [
+        "Photon 0,3 μm có năng lượng lớn hơn photon 0,5 μm nên tạo Kmax lớn nhất.",
+        "Kmax = hc[1/(0,3 × 10⁻⁶) − 1/(0,5 × 10⁻⁶)] = 2,65 × 10⁻¹⁹ J.",
+        "vmax = √(2Kmax/m) ≈ 7,63163 × 10⁵ m/s ⇒ x = 7,63. Không cộng năng lượng hai photon trong mô hình bài."
+      ],
+      "pages": [
+        46
+      ],
+      "status": "solved"
+    },
+    {
+      "id": "source-ch06-030",
+      "chapter": "ch06",
+      "number": 30,
+      "key": {
+        "value": 0.55,
+        "tolerance": 0.0051,
+        "unit": "μm"
+      },
+      "result": "λ₀ ≈ 0,55 μm.",
+      "steps": [
+        "Lần đầu K = hc/λ − A; lần hai 4K = hc/(0,8λ) − A.",
+        "Trừ/khử K: 4hc/λ − 4A = 1,25hc/λ − A ⇒ A = (11/12)hc/λ.",
+        "λ₀ = hc/A = 12λ/11 = 12 × 0,5/11 ≈ 0,54545 μm ⇒ 0,55 μm."
+      ],
+      "pages": [
+        46
+      ],
+      "status": "solved"
+    },
+    {
+      "id": "source-ch06-031",
+      "chapter": "ch06",
+      "number": 31,
+      "key": {
+        "value": 92,
+        "tolerance": 0.5,
+        "unit": "%"
+      },
+      "result": "Hiệu suất lượng tử ≈ 92%.",
+      "steps": [
+        "Số electron mỗi giây Ṅe = Ibh/e; số photon tới Ṅγ = Pλ/(hc).",
+        "H = Ṅe/Ṅγ = Ibh hc/(ePλ).",
+        "H = 0,4 × 6,625 × 10⁻³⁴ × 3 × 10⁸/(1,6 × 10⁻¹⁹ × 1,2 × 0,45 × 10⁻⁶) ≈ 0,920139 ⇒ 92%."
+      ],
+      "pages": [
+        46
+      ],
+      "status": "solved"
+    },
+    {
+      "id": "source-ch06-032",
+      "chapter": "ch06",
+      "number": 32,
+      "key": {
+        "value": 0.161,
+        "tolerance": 0.00051,
+        "unit": "A"
+      },
+      "result": "Ibh = 0,161 A.",
+      "steps": [
+        "Ṅγ = Pλ/(hc), với λ = 400 nm; H = 0,80.",
+        "Ibh = HeṄγ = HePλ/(hc).",
+        "Ibh ≈ 0,8 × 1,6 × 10⁻¹⁹ × 0,625 × 400 × 10⁻⁹/(6,625 × 10⁻³⁴ × 3 × 10⁸) ≈ 0,161006 A."
+      ],
+      "pages": [
+        46
+      ],
+      "status": "solved"
+    },
+    {
+      "id": "source-ch06-033",
+      "chapter": "ch06",
+      "number": 33,
+      "key": {
+        "value": 0.11,
+        "tolerance": 0.0051,
+        "unit": "W"
+      },
+      "result": "P ≈ 0,11 W.",
+      "steps": [
+        "Ibh = HePλ/(hc) ⇒ P = Ibh hc/(Heλ).",
+        "Đổi Ibh = 1,5 mA = 0,0015 A; H = 5% = 0,05; λ = 0,35 μm.",
+        "P ≈ 0,106473 W ⇒ 0,11 W, dùng h = 6,625 × 10⁻³⁴ và e = 1,6 × 10⁻¹⁹."
+      ],
+      "pages": [
+        46
+      ],
+      "status": "solved"
+    },
+    {
+      "id": "source-ch06-034",
+      "chapter": "ch06",
+      "number": 34,
+      "key": {
+        "value": 0.13,
+        "tolerance": 0.0051,
+        "unit": "mA"
+      },
+      "result": "Ibh ≈ 0,13 mA.",
+      "steps": [
+        "P = 1,2 mW = 0,0012 W; λ = 450 nm; H = 0,30.",
+        "Ibh = HePλ/(hc).",
+        "Ibh ≈ 1,30415 × 10⁻⁴ A = 0,130415 mA ⇒ 0,13 mA."
+      ],
+      "pages": [
+        46
+      ],
+      "status": "solved"
+    },
+    {
+      "id": "source-ch06-035",
+      "chapter": "ch06",
+      "number": 35,
+      "key": {
+        "value": 1,
+        "tolerance": 0.05,
+        "unit": "x"
+      },
+      "result": "x = 1,0 sau khi làm tròn một chữ số thập phân.",
+      "steps": [
+        "Ṅ = P/(hc/λ) = Pλ/(hc).",
+        "Ṅ = 0,003 × 633 × 10⁻⁹/(6,625 × 10⁻³⁴ × 3 × 10⁸) ≈ 9,55472 × 10¹⁵ photon/s.",
+        "Ṅ = 0,955472 × 10¹⁶ photon/s ⇒ x = 1,0. Số mũ trong đề là 16, không phải 18 như nhận dạng chữ."
+      ],
+      "pages": [
+        46
+      ],
+      "status": "solved"
+    },
+    {
+      "id": "source-ch06-036",
+      "chapter": "ch06",
+      "number": 36,
+      "key": {
+        "value": 3.86,
+        "tolerance": 0.0051,
+        "unit": "m/s"
+      },
+      "result": "v ≈ 3,86 m/s, ngược hướng photon.",
+      "steps": [
+        "Ban đầu nguyên tử đứng yên, tổng động lượng bằng 0.",
+        "Bảo toàn động lượng: mv = pγ = h/λ.",
+        "v = 6,625 × 10⁻³⁴/(1,673 × 10⁻²⁷ × 102,57 × 10⁻⁹) ≈ 3,86073 m/s ⇒ 3,86 m/s."
+      ],
+      "pages": [
+        46
+      ],
+      "status": "solved"
+    },
+    {
+      "id": "source-ch06-037",
+      "chapter": "ch06",
+      "number": 37,
+      "key": "TFFF",
+      "result": "a Đúng; b Sai; c Sai; d Sai.",
+      "steps": [
+        "a) P = σST⁴ = 5,67 × 10⁻⁸ × 70 × 10⁻⁴ × 8000⁴ ≈ 1,6257 × 10⁶ W.",
+        "b) λmax = b/T ≈ 362,25 nm, không phải 112 nm. c) Photon tại λmax có năng lượng khoảng 3,43 eV, không phải 11,07 eV.",
+        "d) Vật đen có phổ rộng, không thể lấy toàn công suất chia cho năng lượng một photon tại đỉnh. Tích phân phổ Planck cho năng lượng photon trung bình ≈ 2,701kBT; Ṅ ≈ P/(2,701kBT) ≈ 5,45 × 10²⁴ photon/s, khác số đã cho."
+      ],
+      "pages": [
+        46
+      ],
+      "status": "solved"
+    },
+    {
+      "id": "source-ch06-038",
+      "chapter": "ch06",
+      "number": 38,
+      "key": "TTTF",
+      "result": "a Đúng theo xấp xỉ; b Đúng; c Đúng; d Sai.",
+      "steps": [
+        "a) εγ = hc/λ ≈ 3,55 × 10⁻¹⁹ J ≈ 2,22 eV; chênh lệch nhỏ với 2,218 do hằng số làm tròn.",
+        "b) Ṅγ = P/εγ ≈ 3,52 × 10¹⁸ s⁻¹. c) Ibh = 0,5eṄγ ≈ 0,282 A.",
+        "d) H tăng từ 50% lên 100% làm dòng tăng gấp đôi, khoảng 0,564 A; không phải 0,4877 A."
+      ],
+      "pages": [
+        46,
+        47
+      ],
+      "status": "solved"
+    },
+    {
+      "id": "source-ch06-039",
+      "chapter": "ch06",
+      "number": 39,
+      "key": "TTFT",
+      "result": "a Đúng; b Đúng theo xấp xỉ; c Sai; d Đúng.",
+      "steps": [
+        "v₂ = v₁/3 ⇒ K₂ = K₁/9. Đặt X = hc/λ₁: (2/3)X − A = (X − A)/9 ⇒ A = 5X/8.",
+        "λ₀ = 8λ₁/5 = 560 nm; A ≈ 2,22 eV. K₁ = 3X/8 ≈ 1,33 eV.",
+        "v₁ = √(2K₁/m) ≈ 6,84 × 10⁵ m/s, không phải 2,16 × 10⁷ m/s."
+      ],
+      "pages": [
+        47
+      ],
+      "status": "solved"
+    },
+    {
+      "id": "source-ch06-040",
+      "chapter": "ch06",
+      "number": 40,
+      "key": "TFFF",
+      "result": "a Đúng; b Sai; c Sai; d Sai.",
+      "steps": [
+        "a) ε = hc/λ ≈ 3,55 × 10⁻¹⁹ J. b) Ṅ = 0,0025/ε ≈ 7,04 × 10¹⁵ s⁻¹.",
+        "c) Ibh = 0,4 × 1,6 × 10⁻¹⁹ × Ṅ ≈ 4,51 × 10⁻⁴ A = 451 μA, không phải 12,4 μA.",
+        "d) Ibh tỉ lệ H theo công thức trên; không độc lập với hiệu suất lượng tử."
+      ],
+      "pages": [
+        47
+      ],
+      "status": "solved"
+    },
+    {
+      "id": "source-ch06-041",
+      "chapter": "ch06",
+      "number": 41,
+      "key": "TFFF",
+      "result": "a Đúng theo xấp xỉ; b Sai; c Sai; d Sai.",
+      "steps": [
+        "a) Kmax = mv²/2 = 9,1 × 10⁻³¹ × (6 × 10⁵)²/2 = 1,638 × 10⁻¹⁹ J ≈ 1,024 eV (hằng số đầy đủ cho khoảng 1,023 eV).",
+        "b) A = hc/λ − Kmax ≈ 1,737 eV, không phải 17,7 eV. c) |Uh| = Kmax/e ≈ 1,024 V, không phải 0,102 V.",
+        "d) Giữ λ và bề mặt kim loại, Kmax = hc/λ − A không thay đổi khi tăng cường độ sáng; số electron phát ra có thể tăng."
+      ],
+      "pages": [
+        47
+      ],
+      "status": "solved"
+    }
+  ]
+}

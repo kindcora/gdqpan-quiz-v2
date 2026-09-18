@@ -1,0 +1,1893 @@
+{
+  "sourceQuestionCount": 250,
+  "documents": [
+    {
+      "id": "exercises",
+      "title": "Bài tập gốc",
+      "originalName": "BAI_TAP_VAT_LY_DAI_CUONG_FULL.pdf",
+      "sha256": "ce2285ef052a96d550c07040cbc8c8f818495974af3faadbdaed81bdbec1618f",
+      "pdf": "assets/library/pdf/exercises.pdf"
+    },
+    {
+      "id": "lectures",
+      "title": "Bài giảng gốc",
+      "originalName": "BAI_TAP_VAT_LY_DAI_CUONG_FULL-1.pdf",
+      "sha256": "01a7cc4d39b53cdef92aca032eed1e39fc205172e224e52590981ae9f53387e1",
+      "pdf": "assets/library/pdf/lectures.pdf"
+    }
+  ],
+  "chapters": [
+    {
+      "id": "ch01",
+      "title": "Điện học",
+      "questionCount": 41,
+      "exercisePages": [
+        2,
+        10
+      ],
+      "lecturePages": [
+        7,
+        18
+      ]
+    },
+    {
+      "id": "ch02",
+      "title": "Từ học",
+      "questionCount": 41,
+      "exercisePages": [
+        11,
+        17
+      ],
+      "lecturePages": [
+        19,
+        26
+      ]
+    },
+    {
+      "id": "ch03",
+      "title": "Cảm ứng điện từ",
+      "questionCount": 45,
+      "exercisePages": [
+        18,
+        25
+      ],
+      "lecturePages": [
+        27,
+        35
+      ]
+    },
+    {
+      "id": "ch04",
+      "title": "Trường điện từ, dao động và sóng",
+      "questionCount": 41,
+      "exercisePages": [
+        26,
+        34
+      ],
+      "lecturePages": [
+        36,
+        47
+      ]
+    },
+    {
+      "id": "ch05",
+      "title": "Quang học",
+      "questionCount": 41,
+      "exercisePages": [
+        35,
+        41
+      ],
+      "lecturePages": [
+        48,
+        53
+      ]
+    },
+    {
+      "id": "ch06",
+      "title": "Vật lý lượng tử",
+      "questionCount": 41,
+      "exercisePages": [
+        42,
+        47
+      ],
+      "lecturePages": []
+    }
+  ],
+  "questions": [
+    {
+      "id": "source-ch01-001",
+      "kind": "mcq",
+      "pages": [
+        2
+      ]
+    },
+    {
+      "id": "source-ch01-002",
+      "kind": "mcq",
+      "pages": [
+        2
+      ]
+    },
+    {
+      "id": "source-ch01-003",
+      "kind": "mcq",
+      "pages": [
+        2
+      ]
+    },
+    {
+      "id": "source-ch01-004",
+      "kind": "mcq",
+      "pages": [
+        2
+      ]
+    },
+    {
+      "id": "source-ch01-005",
+      "kind": "mcq",
+      "pages": [
+        2
+      ]
+    },
+    {
+      "id": "source-ch01-006",
+      "kind": "mcq",
+      "pages": [
+        2
+      ]
+    },
+    {
+      "id": "source-ch01-007",
+      "kind": "mcq",
+      "pages": [
+        2,
+        3
+      ]
+    },
+    {
+      "id": "source-ch01-008",
+      "kind": "mcq",
+      "pages": [
+        3
+      ]
+    },
+    {
+      "id": "source-ch01-009",
+      "kind": "mcq",
+      "pages": [
+        3
+      ]
+    },
+    {
+      "id": "source-ch01-010",
+      "kind": "mcq",
+      "pages": [
+        3
+      ]
+    },
+    {
+      "id": "source-ch01-011",
+      "kind": "mcq",
+      "pages": [
+        3
+      ]
+    },
+    {
+      "id": "source-ch01-012",
+      "kind": "mcq",
+      "pages": [
+        3
+      ]
+    },
+    {
+      "id": "source-ch01-013",
+      "kind": "mcq",
+      "pages": [
+        3
+      ]
+    },
+    {
+      "id": "source-ch01-014",
+      "kind": "mcq",
+      "pages": [
+        3
+      ]
+    },
+    {
+      "id": "source-ch01-015",
+      "kind": "mcq",
+      "pages": [
+        4
+      ]
+    },
+    {
+      "id": "source-ch01-016",
+      "kind": "mcq",
+      "pages": [
+        4
+      ]
+    },
+    {
+      "id": "source-ch01-017",
+      "kind": "mcq",
+      "pages": [
+        4
+      ]
+    },
+    {
+      "id": "source-ch01-018",
+      "kind": "mcq",
+      "pages": [
+        4
+      ]
+    },
+    {
+      "id": "source-ch01-019",
+      "kind": "mcq",
+      "pages": [
+        4
+      ]
+    },
+    {
+      "id": "source-ch01-020",
+      "kind": "mcq",
+      "pages": [
+        4
+      ]
+    },
+    {
+      "id": "source-ch01-021",
+      "kind": "mcq",
+      "pages": [
+        5
+      ]
+    },
+    {
+      "id": "source-ch01-022",
+      "kind": "mcq",
+      "pages": [
+        5
+      ]
+    },
+    {
+      "id": "source-ch01-023",
+      "kind": "mcq",
+      "pages": [
+        5
+      ]
+    },
+    {
+      "id": "source-ch01-024",
+      "kind": "mcq",
+      "pages": [
+        5
+      ]
+    },
+    {
+      "id": "source-ch01-025",
+      "kind": "mcq",
+      "pages": [
+        5
+      ]
+    },
+    {
+      "id": "source-ch01-026",
+      "kind": "mcq",
+      "pages": [
+        5
+      ]
+    },
+    {
+      "id": "source-ch01-027",
+      "kind": "short",
+      "pages": [
+        6
+      ]
+    },
+    {
+      "id": "source-ch01-028",
+      "kind": "short",
+      "pages": [
+        6
+      ]
+    },
+    {
+      "id": "source-ch01-029",
+      "kind": "short",
+      "pages": [
+        6
+      ]
+    },
+    {
+      "id": "source-ch01-030",
+      "kind": "short",
+      "pages": [
+        6
+      ]
+    },
+    {
+      "id": "source-ch01-031",
+      "kind": "short",
+      "pages": [
+        6
+      ]
+    },
+    {
+      "id": "source-ch01-032",
+      "kind": "short",
+      "pages": [
+        6
+      ]
+    },
+    {
+      "id": "source-ch01-033",
+      "kind": "short",
+      "pages": [
+        7
+      ]
+    },
+    {
+      "id": "source-ch01-034",
+      "kind": "short",
+      "pages": [
+        7
+      ]
+    },
+    {
+      "id": "source-ch01-035",
+      "kind": "short",
+      "pages": [
+        7
+      ]
+    },
+    {
+      "id": "source-ch01-036",
+      "kind": "short",
+      "pages": [
+        7
+      ]
+    },
+    {
+      "id": "source-ch01-037",
+      "kind": "tf",
+      "pages": [
+        8
+      ]
+    },
+    {
+      "id": "source-ch01-038",
+      "kind": "tf",
+      "pages": [
+        8
+      ]
+    },
+    {
+      "id": "source-ch01-039",
+      "kind": "tf",
+      "pages": [
+        8
+      ]
+    },
+    {
+      "id": "source-ch01-040",
+      "kind": "tf",
+      "pages": [
+        9
+      ]
+    },
+    {
+      "id": "source-ch01-041",
+      "kind": "tf",
+      "pages": [
+        9,
+        10
+      ]
+    },
+    {
+      "id": "source-ch02-001",
+      "kind": "mcq",
+      "pages": [
+        11
+      ]
+    },
+    {
+      "id": "source-ch02-002",
+      "kind": "mcq",
+      "pages": [
+        11
+      ]
+    },
+    {
+      "id": "source-ch02-003",
+      "kind": "mcq",
+      "pages": [
+        11
+      ]
+    },
+    {
+      "id": "source-ch02-004",
+      "kind": "mcq",
+      "pages": [
+        11
+      ]
+    },
+    {
+      "id": "source-ch02-005",
+      "kind": "mcq",
+      "pages": [
+        11
+      ]
+    },
+    {
+      "id": "source-ch02-006",
+      "kind": "mcq",
+      "pages": [
+        11
+      ]
+    },
+    {
+      "id": "source-ch02-007",
+      "kind": "mcq",
+      "pages": [
+        11
+      ]
+    },
+    {
+      "id": "source-ch02-008",
+      "kind": "mcq",
+      "pages": [
+        11,
+        12
+      ]
+    },
+    {
+      "id": "source-ch02-009",
+      "kind": "mcq",
+      "pages": [
+        12
+      ]
+    },
+    {
+      "id": "source-ch02-010",
+      "kind": "mcq",
+      "pages": [
+        12
+      ]
+    },
+    {
+      "id": "source-ch02-011",
+      "kind": "mcq",
+      "pages": [
+        12
+      ]
+    },
+    {
+      "id": "source-ch02-012",
+      "kind": "mcq",
+      "pages": [
+        12
+      ]
+    },
+    {
+      "id": "source-ch02-013",
+      "kind": "mcq",
+      "pages": [
+        12
+      ]
+    },
+    {
+      "id": "source-ch02-014",
+      "kind": "mcq",
+      "pages": [
+        12
+      ]
+    },
+    {
+      "id": "source-ch02-015",
+      "kind": "mcq",
+      "pages": [
+        12
+      ]
+    },
+    {
+      "id": "source-ch02-016",
+      "kind": "mcq",
+      "pages": [
+        12,
+        13
+      ]
+    },
+    {
+      "id": "source-ch02-017",
+      "kind": "mcq",
+      "pages": [
+        13
+      ]
+    },
+    {
+      "id": "source-ch02-018",
+      "kind": "mcq",
+      "pages": [
+        13
+      ]
+    },
+    {
+      "id": "source-ch02-019",
+      "kind": "short",
+      "pages": [
+        13
+      ]
+    },
+    {
+      "id": "source-ch02-020",
+      "kind": "short",
+      "pages": [
+        13
+      ]
+    },
+    {
+      "id": "source-ch02-021",
+      "kind": "short",
+      "pages": [
+        13
+      ]
+    },
+    {
+      "id": "source-ch02-022",
+      "kind": "mcq",
+      "pages": [
+        13,
+        14
+      ]
+    },
+    {
+      "id": "source-ch02-023",
+      "kind": "mcq",
+      "pages": [
+        14
+      ]
+    },
+    {
+      "id": "source-ch02-024",
+      "kind": "mcq",
+      "pages": [
+        14
+      ]
+    },
+    {
+      "id": "source-ch02-025",
+      "kind": "mcq",
+      "pages": [
+        14
+      ]
+    },
+    {
+      "id": "source-ch02-026",
+      "kind": "short",
+      "pages": [
+        14
+      ]
+    },
+    {
+      "id": "source-ch02-027",
+      "kind": "short",
+      "pages": [
+        14
+      ]
+    },
+    {
+      "id": "source-ch02-028",
+      "kind": "short",
+      "pages": [
+        14,
+        15
+      ]
+    },
+    {
+      "id": "source-ch02-029",
+      "kind": "short",
+      "pages": [
+        15
+      ]
+    },
+    {
+      "id": "source-ch02-030",
+      "kind": "short",
+      "pages": [
+        15
+      ]
+    },
+    {
+      "id": "source-ch02-031",
+      "kind": "mcq",
+      "pages": [
+        15
+      ]
+    },
+    {
+      "id": "source-ch02-032",
+      "kind": "mcq",
+      "pages": [
+        15
+      ]
+    },
+    {
+      "id": "source-ch02-033",
+      "kind": "mcq",
+      "pages": [
+        15
+      ]
+    },
+    {
+      "id": "source-ch02-034",
+      "kind": "mcq",
+      "pages": [
+        15,
+        16
+      ]
+    },
+    {
+      "id": "source-ch02-035",
+      "kind": "short",
+      "pages": [
+        16
+      ]
+    },
+    {
+      "id": "source-ch02-036",
+      "kind": "short",
+      "pages": [
+        16
+      ]
+    },
+    {
+      "id": "source-ch02-037",
+      "kind": "tf",
+      "pages": [
+        16
+      ]
+    },
+    {
+      "id": "source-ch02-038",
+      "kind": "tf",
+      "pages": [
+        16
+      ]
+    },
+    {
+      "id": "source-ch02-039",
+      "kind": "tf",
+      "pages": [
+        16
+      ]
+    },
+    {
+      "id": "source-ch02-040",
+      "kind": "tf",
+      "pages": [
+        17
+      ]
+    },
+    {
+      "id": "source-ch02-041",
+      "kind": "tf",
+      "pages": [
+        17
+      ]
+    },
+    {
+      "id": "source-ch03-001",
+      "kind": "mcq",
+      "pages": [
+        18
+      ]
+    },
+    {
+      "id": "source-ch03-002",
+      "kind": "mcq",
+      "pages": [
+        18
+      ]
+    },
+    {
+      "id": "source-ch03-003",
+      "kind": "mcq",
+      "pages": [
+        18,
+        19
+      ]
+    },
+    {
+      "id": "source-ch03-004",
+      "kind": "mcq",
+      "pages": [
+        19
+      ]
+    },
+    {
+      "id": "source-ch03-005",
+      "kind": "mcq",
+      "pages": [
+        19
+      ]
+    },
+    {
+      "id": "source-ch03-006",
+      "kind": "mcq",
+      "pages": [
+        19
+      ]
+    },
+    {
+      "id": "source-ch03-007",
+      "kind": "mcq",
+      "pages": [
+        19
+      ]
+    },
+    {
+      "id": "source-ch03-008",
+      "kind": "mcq",
+      "pages": [
+        19,
+        20
+      ]
+    },
+    {
+      "id": "source-ch03-009",
+      "kind": "mcq",
+      "pages": [
+        20
+      ]
+    },
+    {
+      "id": "source-ch03-010",
+      "kind": "mcq",
+      "pages": [
+        20
+      ]
+    },
+    {
+      "id": "source-ch03-011",
+      "kind": "mcq",
+      "pages": [
+        20
+      ]
+    },
+    {
+      "id": "source-ch03-012",
+      "kind": "mcq",
+      "pages": [
+        20
+      ]
+    },
+    {
+      "id": "source-ch03-013",
+      "kind": "mcq",
+      "pages": [
+        20
+      ]
+    },
+    {
+      "id": "source-ch03-014",
+      "kind": "mcq",
+      "pages": [
+        20
+      ]
+    },
+    {
+      "id": "source-ch03-015",
+      "kind": "short",
+      "pages": [
+        20
+      ]
+    },
+    {
+      "id": "source-ch03-016",
+      "kind": "mcq",
+      "pages": [
+        20,
+        21
+      ]
+    },
+    {
+      "id": "source-ch03-017",
+      "kind": "short",
+      "pages": [
+        21
+      ]
+    },
+    {
+      "id": "source-ch03-018",
+      "kind": "short",
+      "pages": [
+        21
+      ]
+    },
+    {
+      "id": "source-ch03-019",
+      "kind": "short",
+      "pages": [
+        21
+      ]
+    },
+    {
+      "id": "source-ch03-020",
+      "kind": "mcq",
+      "pages": [
+        21
+      ]
+    },
+    {
+      "id": "source-ch03-021",
+      "kind": "mcq",
+      "pages": [
+        21
+      ]
+    },
+    {
+      "id": "source-ch03-022",
+      "kind": "mcq",
+      "pages": [
+        21
+      ]
+    },
+    {
+      "id": "source-ch03-023",
+      "kind": "tf",
+      "pages": [
+        22
+      ]
+    },
+    {
+      "id": "source-ch03-024",
+      "kind": "mcq",
+      "pages": [
+        22
+      ]
+    },
+    {
+      "id": "source-ch03-025",
+      "kind": "mcq",
+      "pages": [
+        22
+      ]
+    },
+    {
+      "id": "source-ch03-026",
+      "kind": "mcq",
+      "pages": [
+        22
+      ]
+    },
+    {
+      "id": "source-ch03-027",
+      "kind": "mcq",
+      "pages": [
+        22
+      ]
+    },
+    {
+      "id": "source-ch03-028",
+      "kind": "mcq",
+      "pages": [
+        22
+      ]
+    },
+    {
+      "id": "source-ch03-029",
+      "kind": "mcq",
+      "pages": [
+        22
+      ]
+    },
+    {
+      "id": "source-ch03-030",
+      "kind": "mcq",
+      "pages": [
+        23
+      ]
+    },
+    {
+      "id": "source-ch03-031",
+      "kind": "mcq",
+      "pages": [
+        23
+      ]
+    },
+    {
+      "id": "source-ch03-032",
+      "kind": "mcq",
+      "pages": [
+        23
+      ]
+    },
+    {
+      "id": "source-ch03-033",
+      "kind": "mcq",
+      "pages": [
+        23
+      ]
+    },
+    {
+      "id": "source-ch03-034",
+      "kind": "mcq",
+      "pages": [
+        23
+      ]
+    },
+    {
+      "id": "source-ch03-035",
+      "kind": "mcq",
+      "pages": [
+        23
+      ]
+    },
+    {
+      "id": "source-ch03-036",
+      "kind": "mcq",
+      "pages": [
+        23
+      ]
+    },
+    {
+      "id": "source-ch03-037",
+      "kind": "mcq",
+      "pages": [
+        23
+      ]
+    },
+    {
+      "id": "source-ch03-038",
+      "kind": "short",
+      "pages": [
+        23
+      ]
+    },
+    {
+      "id": "source-ch03-039",
+      "kind": "short",
+      "pages": [
+        24
+      ]
+    },
+    {
+      "id": "source-ch03-040",
+      "kind": "short",
+      "pages": [
+        24
+      ]
+    },
+    {
+      "id": "source-ch03-041",
+      "kind": "tf",
+      "pages": [
+        24
+      ]
+    },
+    {
+      "id": "source-ch03-042",
+      "kind": "tf",
+      "pages": [
+        24
+      ]
+    },
+    {
+      "id": "source-ch03-043",
+      "kind": "tf",
+      "pages": [
+        24
+      ]
+    },
+    {
+      "id": "source-ch03-044",
+      "kind": "tf",
+      "pages": [
+        25
+      ]
+    },
+    {
+      "id": "source-ch03-045",
+      "kind": "tf",
+      "pages": [
+        25
+      ]
+    },
+    {
+      "id": "source-ch04-001",
+      "kind": "mcq",
+      "pages": [
+        26
+      ]
+    },
+    {
+      "id": "source-ch04-002",
+      "kind": "mcq",
+      "pages": [
+        26
+      ]
+    },
+    {
+      "id": "source-ch04-003",
+      "kind": "mcq",
+      "pages": [
+        26
+      ]
+    },
+    {
+      "id": "source-ch04-004",
+      "kind": "mcq",
+      "pages": [
+        26
+      ]
+    },
+    {
+      "id": "source-ch04-005",
+      "kind": "mcq",
+      "pages": [
+        26
+      ]
+    },
+    {
+      "id": "source-ch04-006",
+      "kind": "mcq",
+      "pages": [
+        26
+      ]
+    },
+    {
+      "id": "source-ch04-007",
+      "kind": "mcq",
+      "pages": [
+        27
+      ]
+    },
+    {
+      "id": "source-ch04-008",
+      "kind": "mcq",
+      "pages": [
+        27
+      ]
+    },
+    {
+      "id": "source-ch04-009",
+      "kind": "mcq",
+      "pages": [
+        27
+      ]
+    },
+    {
+      "id": "source-ch04-010",
+      "kind": "mcq",
+      "pages": [
+        27
+      ]
+    },
+    {
+      "id": "source-ch04-011",
+      "kind": "mcq",
+      "pages": [
+        27
+      ]
+    },
+    {
+      "id": "source-ch04-012",
+      "kind": "mcq",
+      "pages": [
+        27
+      ]
+    },
+    {
+      "id": "source-ch04-013",
+      "kind": "mcq",
+      "pages": [
+        27,
+        28
+      ]
+    },
+    {
+      "id": "source-ch04-014",
+      "kind": "mcq",
+      "pages": [
+        28
+      ]
+    },
+    {
+      "id": "source-ch04-015",
+      "kind": "mcq",
+      "pages": [
+        28
+      ]
+    },
+    {
+      "id": "source-ch04-016",
+      "kind": "mcq",
+      "pages": [
+        28
+      ]
+    },
+    {
+      "id": "source-ch04-017",
+      "kind": "mcq",
+      "pages": [
+        28
+      ]
+    },
+    {
+      "id": "source-ch04-018",
+      "kind": "mcq",
+      "pages": [
+        28
+      ]
+    },
+    {
+      "id": "source-ch04-019",
+      "kind": "mcq",
+      "pages": [
+        28
+      ]
+    },
+    {
+      "id": "source-ch04-020",
+      "kind": "mcq",
+      "pages": [
+        28,
+        29
+      ]
+    },
+    {
+      "id": "source-ch04-021",
+      "kind": "mcq",
+      "pages": [
+        29
+      ]
+    },
+    {
+      "id": "source-ch04-022",
+      "kind": "mcq",
+      "pages": [
+        29
+      ]
+    },
+    {
+      "id": "source-ch04-023",
+      "kind": "mcq",
+      "pages": [
+        29
+      ]
+    },
+    {
+      "id": "source-ch04-024",
+      "kind": "mcq",
+      "pages": [
+        29
+      ]
+    },
+    {
+      "id": "source-ch04-025",
+      "kind": "mcq",
+      "pages": [
+        29
+      ]
+    },
+    {
+      "id": "source-ch04-026",
+      "kind": "mcq",
+      "pages": [
+        29,
+        30
+      ]
+    },
+    {
+      "id": "source-ch04-027",
+      "kind": "short",
+      "pages": [
+        31
+      ]
+    },
+    {
+      "id": "source-ch04-028",
+      "kind": "short",
+      "pages": [
+        31
+      ]
+    },
+    {
+      "id": "source-ch04-029",
+      "kind": "short",
+      "pages": [
+        31
+      ]
+    },
+    {
+      "id": "source-ch04-030",
+      "kind": "short",
+      "pages": [
+        31
+      ]
+    },
+    {
+      "id": "source-ch04-031",
+      "kind": "short",
+      "pages": [
+        31
+      ]
+    },
+    {
+      "id": "source-ch04-032",
+      "kind": "short",
+      "pages": [
+        31
+      ]
+    },
+    {
+      "id": "source-ch04-033",
+      "kind": "short",
+      "pages": [
+        31
+      ]
+    },
+    {
+      "id": "source-ch04-034",
+      "kind": "short",
+      "pages": [
+        31,
+        32
+      ]
+    },
+    {
+      "id": "source-ch04-035",
+      "kind": "short",
+      "pages": [
+        32
+      ]
+    },
+    {
+      "id": "source-ch04-036",
+      "kind": "short",
+      "pages": [
+        32
+      ]
+    },
+    {
+      "id": "source-ch04-037",
+      "kind": "tf",
+      "pages": [
+        33
+      ]
+    },
+    {
+      "id": "source-ch04-038",
+      "kind": "tf",
+      "pages": [
+        33
+      ]
+    },
+    {
+      "id": "source-ch04-039",
+      "kind": "tf",
+      "pages": [
+        33,
+        34
+      ]
+    },
+    {
+      "id": "source-ch04-040",
+      "kind": "tf",
+      "pages": [
+        34
+      ]
+    },
+    {
+      "id": "source-ch04-041",
+      "kind": "tf",
+      "pages": [
+        34
+      ]
+    },
+    {
+      "id": "source-ch05-001",
+      "kind": "mcq",
+      "pages": [
+        35
+      ]
+    },
+    {
+      "id": "source-ch05-002",
+      "kind": "mcq",
+      "pages": [
+        35
+      ]
+    },
+    {
+      "id": "source-ch05-003",
+      "kind": "short",
+      "pages": [
+        35
+      ]
+    },
+    {
+      "id": "source-ch05-004",
+      "kind": "short",
+      "pages": [
+        35
+      ]
+    },
+    {
+      "id": "source-ch05-005",
+      "kind": "tf",
+      "pages": [
+        35
+      ]
+    },
+    {
+      "id": "source-ch05-006",
+      "kind": "tf",
+      "pages": [
+        36
+      ]
+    },
+    {
+      "id": "source-ch05-007",
+      "kind": "mcq",
+      "pages": [
+        36
+      ]
+    },
+    {
+      "id": "source-ch05-008",
+      "kind": "mcq",
+      "pages": [
+        36
+      ]
+    },
+    {
+      "id": "source-ch05-009",
+      "kind": "mcq",
+      "pages": [
+        36
+      ]
+    },
+    {
+      "id": "source-ch05-010",
+      "kind": "mcq",
+      "pages": [
+        36
+      ]
+    },
+    {
+      "id": "source-ch05-011",
+      "kind": "mcq",
+      "pages": [
+        36,
+        37
+      ]
+    },
+    {
+      "id": "source-ch05-012",
+      "kind": "mcq",
+      "pages": [
+        37
+      ]
+    },
+    {
+      "id": "source-ch05-013",
+      "kind": "mcq",
+      "pages": [
+        37
+      ]
+    },
+    {
+      "id": "source-ch05-014",
+      "kind": "mcq",
+      "pages": [
+        37
+      ]
+    },
+    {
+      "id": "source-ch05-015",
+      "kind": "short",
+      "pages": [
+        37
+      ]
+    },
+    {
+      "id": "source-ch05-016",
+      "kind": "mcq",
+      "pages": [
+        37
+      ]
+    },
+    {
+      "id": "source-ch05-017",
+      "kind": "mcq",
+      "pages": [
+        37
+      ]
+    },
+    {
+      "id": "source-ch05-018",
+      "kind": "mcq",
+      "pages": [
+        37
+      ]
+    },
+    {
+      "id": "source-ch05-019",
+      "kind": "mcq",
+      "pages": [
+        37,
+        38
+      ]
+    },
+    {
+      "id": "source-ch05-020",
+      "kind": "mcq",
+      "pages": [
+        38
+      ]
+    },
+    {
+      "id": "source-ch05-021",
+      "kind": "mcq",
+      "pages": [
+        38
+      ]
+    },
+    {
+      "id": "source-ch05-022",
+      "kind": "mcq",
+      "pages": [
+        38
+      ]
+    },
+    {
+      "id": "source-ch05-023",
+      "kind": "mcq",
+      "pages": [
+        38
+      ]
+    },
+    {
+      "id": "source-ch05-024",
+      "kind": "short",
+      "pages": [
+        38
+      ]
+    },
+    {
+      "id": "source-ch05-025",
+      "kind": "short",
+      "pages": [
+        38
+      ]
+    },
+    {
+      "id": "source-ch05-026",
+      "kind": "short",
+      "pages": [
+        38
+      ]
+    },
+    {
+      "id": "source-ch05-027",
+      "kind": "tf",
+      "pages": [
+        39
+      ]
+    },
+    {
+      "id": "source-ch05-028",
+      "kind": "short",
+      "pages": [
+        39
+      ]
+    },
+    {
+      "id": "source-ch05-029",
+      "kind": "mcq",
+      "pages": [
+        39
+      ]
+    },
+    {
+      "id": "source-ch05-030",
+      "kind": "short",
+      "pages": [
+        39
+      ]
+    },
+    {
+      "id": "source-ch05-031",
+      "kind": "mcq",
+      "pages": [
+        39
+      ]
+    },
+    {
+      "id": "source-ch05-032",
+      "kind": "mcq",
+      "pages": [
+        39
+      ]
+    },
+    {
+      "id": "source-ch05-033",
+      "kind": "tf",
+      "pages": [
+        39,
+        40
+      ]
+    },
+    {
+      "id": "source-ch05-034",
+      "kind": "mcq",
+      "pages": [
+        40
+      ]
+    },
+    {
+      "id": "source-ch05-035",
+      "kind": "mcq",
+      "pages": [
+        40
+      ]
+    },
+    {
+      "id": "source-ch05-036",
+      "kind": "short",
+      "pages": [
+        40
+      ]
+    },
+    {
+      "id": "source-ch05-037",
+      "kind": "short",
+      "pages": [
+        40
+      ]
+    },
+    {
+      "id": "source-ch05-038",
+      "kind": "tf",
+      "pages": [
+        40
+      ]
+    },
+    {
+      "id": "source-ch05-039",
+      "kind": "mcq",
+      "pages": [
+        40,
+        41
+      ]
+    },
+    {
+      "id": "source-ch05-040",
+      "kind": "mcq",
+      "pages": [
+        41
+      ]
+    },
+    {
+      "id": "source-ch05-041",
+      "kind": "mcq",
+      "pages": [
+        41
+      ]
+    },
+    {
+      "id": "source-ch06-001",
+      "kind": "mcq",
+      "pages": [
+        42
+      ]
+    },
+    {
+      "id": "source-ch06-002",
+      "kind": "mcq",
+      "pages": [
+        42
+      ]
+    },
+    {
+      "id": "source-ch06-003",
+      "kind": "mcq",
+      "pages": [
+        42
+      ]
+    },
+    {
+      "id": "source-ch06-004",
+      "kind": "mcq",
+      "pages": [
+        42
+      ]
+    },
+    {
+      "id": "source-ch06-005",
+      "kind": "mcq",
+      "pages": [
+        42
+      ]
+    },
+    {
+      "id": "source-ch06-006",
+      "kind": "mcq",
+      "pages": [
+        42
+      ]
+    },
+    {
+      "id": "source-ch06-007",
+      "kind": "mcq",
+      "pages": [
+        42
+      ]
+    },
+    {
+      "id": "source-ch06-008",
+      "kind": "mcq",
+      "pages": [
+        42,
+        43
+      ]
+    },
+    {
+      "id": "source-ch06-009",
+      "kind": "short",
+      "pages": [
+        43
+      ]
+    },
+    {
+      "id": "source-ch06-010",
+      "kind": "mcq",
+      "pages": [
+        43
+      ]
+    },
+    {
+      "id": "source-ch06-011",
+      "kind": "mcq",
+      "pages": [
+        43
+      ]
+    },
+    {
+      "id": "source-ch06-012",
+      "kind": "mcq",
+      "pages": [
+        43
+      ]
+    },
+    {
+      "id": "source-ch06-013",
+      "kind": "mcq",
+      "pages": [
+        43
+      ]
+    },
+    {
+      "id": "source-ch06-014",
+      "kind": "mcq",
+      "pages": [
+        43
+      ]
+    },
+    {
+      "id": "source-ch06-015",
+      "kind": "mcq",
+      "pages": [
+        43,
+        44
+      ]
+    },
+    {
+      "id": "source-ch06-016",
+      "kind": "mcq",
+      "pages": [
+        44
+      ]
+    },
+    {
+      "id": "source-ch06-017",
+      "kind": "mcq",
+      "pages": [
+        44
+      ]
+    },
+    {
+      "id": "source-ch06-018",
+      "kind": "mcq",
+      "pages": [
+        44
+      ]
+    },
+    {
+      "id": "source-ch06-019",
+      "kind": "mcq",
+      "pages": [
+        44
+      ]
+    },
+    {
+      "id": "source-ch06-020",
+      "kind": "mcq",
+      "pages": [
+        44
+      ]
+    },
+    {
+      "id": "source-ch06-021",
+      "kind": "mcq",
+      "pages": [
+        44
+      ]
+    },
+    {
+      "id": "source-ch06-022",
+      "kind": "mcq",
+      "pages": [
+        44,
+        45
+      ]
+    },
+    {
+      "id": "source-ch06-023",
+      "kind": "mcq",
+      "pages": [
+        45
+      ]
+    },
+    {
+      "id": "source-ch06-024",
+      "kind": "mcq",
+      "pages": [
+        45
+      ]
+    },
+    {
+      "id": "source-ch06-025",
+      "kind": "mcq",
+      "pages": [
+        45
+      ]
+    },
+    {
+      "id": "source-ch06-026",
+      "kind": "mcq",
+      "pages": [
+        45
+      ]
+    },
+    {
+      "id": "source-ch06-027",
+      "kind": "short",
+      "pages": [
+        45
+      ]
+    },
+    {
+      "id": "source-ch06-028",
+      "kind": "short",
+      "pages": [
+        45
+      ]
+    },
+    {
+      "id": "source-ch06-029",
+      "kind": "short",
+      "pages": [
+        46
+      ]
+    },
+    {
+      "id": "source-ch06-030",
+      "kind": "short",
+      "pages": [
+        46
+      ]
+    },
+    {
+      "id": "source-ch06-031",
+      "kind": "short",
+      "pages": [
+        46
+      ]
+    },
+    {
+      "id": "source-ch06-032",
+      "kind": "short",
+      "pages": [
+        46
+      ]
+    },
+    {
+      "id": "source-ch06-033",
+      "kind": "short",
+      "pages": [
+        46
+      ]
+    },
+    {
+      "id": "source-ch06-034",
+      "kind": "short",
+      "pages": [
+        46
+      ]
+    },
+    {
+      "id": "source-ch06-035",
+      "kind": "short",
+      "pages": [
+        46
+      ]
+    },
+    {
+      "id": "source-ch06-036",
+      "kind": "short",
+      "pages": [
+        46
+      ]
+    },
+    {
+      "id": "source-ch06-037",
+      "kind": "tf",
+      "pages": [
+        46
+      ]
+    },
+    {
+      "id": "source-ch06-038",
+      "kind": "tf",
+      "pages": [
+        46,
+        47
+      ]
+    },
+    {
+      "id": "source-ch06-039",
+      "kind": "tf",
+      "pages": [
+        47
+      ]
+    },
+    {
+      "id": "source-ch06-040",
+      "kind": "tf",
+      "pages": [
+        47
+      ]
+    },
+    {
+      "id": "source-ch06-041",
+      "kind": "tf",
+      "pages": [
+        47
+      ]
+    }
+  ],
+  "notes": {
+    "lectureScope": "File bài giảng có 53 trang bìa, mục lục và nội dung; 3 trang cuối nối sang quyển bài tập. Phần giảng dừng giữa mục 5.3.3, chưa có phần còn lại của Quang học và Module 6.",
+    "duplicates": [
+      {
+        "document": "lectures",
+        "pages": [
+          54,
+          55,
+          56
+        ],
+        "correspondTo": {
+          "document": "exercises",
+          "pages": [
+            1,
+            2,
+            3
+          ]
+        }
+      }
+    ],
+    "answerKey": "Tài liệu bài tập không kèm bảng đáp án. Lựa chọn và ghi chú là bài làm tự lưu, không phải kết quả chấm."
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "id":"./", "name":"Ôn tập GDQPAN & Vật lý", "short_name":"Ôn tập",
+  "description":"Câu hỏi, công thức và mô phỏng để học cả khi không có mạng.",
+  "lang":"vi", "start_url":"./physics/index.html", "scope":"./", "display":"standalone",
+  "theme_color":"#151d2b", "background_color":"#151d2b",
+  "icons":[
+    {"src":"assets/icons/icon-192.png","sizes":"192x192","type":"image/png","purpose":"any maskable"},
+    {"src":"assets/icons/icon-512.png","sizes":"512x512","type":"image/png","purpose":"any maskable"}
+  ],
+  "shortcuts":[
+    {"name":"Vật lý","url":"./physics/index.html"},
+    {"name":"Quốc phòng","url":"./index.html"},
+    {"name":"Nội dung offline","url":"./offline.html"}
+  ]
+}

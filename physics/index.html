@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0c0c0e">
+  <title>VLĐC 1 · DC1TT23</title>
+  <link rel="stylesheet" href="../vendor/katex/katex.min.css">
+  <link rel="manifest" href="../manifest.webmanifest">
+  <link rel="apple-touch-icon" href="../assets/icons/icon-192.png">
+  <link rel="stylesheet" href="../css/app.css">
+  <link rel="stylesheet" href="css/app.css">
+  <link rel="stylesheet" href="css/source-library.css">
+  <link rel="stylesheet" href="css/study.css">
+  <link rel="stylesheet" href="css/lab.css">
+  <link rel="stylesheet" href="../css/offline.css">
+  <link rel="stylesheet" href="../css/exam.css">
+</head>
+<body>
+  <div class="app">
+    <header class="nav">
+      <a class="mark" href="./index.html" aria-label="Trang chủ Vật lý">
+        <span class="mark-dot"></span>
+        <span class="mark-text">
+          <strong>VLĐC 1</strong>
+          <em>Ôn tập · DC1TT23</em>
+        </span>
+      </a>
+      <nav class="nav-links" aria-label="Môn học">
+        <a href="../index.html">Quốc phòng</a>
+        <a href="./index.html" aria-current="page">Vật lý</a>
+      </nav>
+    </header>
+
+    <article class="card hero" id="heroCard">
+      <h1>Hiểu nguyên lý. Vững công thức.</h1>
+      <p>Sáu module ĐH Công nghệ GTVT (UTT) · mã DC1TT23 · ngành CNTT · lý thuyết · lab 2D/3D · trắc nghiệm ẩn đáp án đến khi kiểm tra.</p>
+      <div class="stats">
+        <div class="stat"><b>6</b><span>Module</span></div>
+        <div class="stat"><b>250</b><span>Bài tập PDF gốc</span></div>
+        <div class="stat"><b>2</b><span>Tài liệu đã nhập</span></div>
+      </div>
+      <p class="pair">Có thêm bộ luyện 24 câu trắc nghiệm và 6 bài tự luận có hướng dẫn cho mỗi module.</p>
+      <div class="actions"><a class="btn btn-primary" href="#ch01/progress">Tiến độ của tôi</a><a class="btn" href="#ch01/review">Ôn câu sai</a></div>
+    </article>
+
+    <section class="palette" aria-label="Module">
+      <div class="chips" id="chapterNav"></div>
+    </section>
+    <nav class="nav-links tabs" id="tabNav" aria-label="Phần ôn">
+      <button type="button" data-tab="theory" class="active">Lý thuyết</button>
+      <button type="button" data-tab="lab">Lab 2D / 3D</button>
+      <button type="button" data-tab="quiz">Trắc nghiệm</button>
+      <button type="button" data-tab="exam">Thi thử</button>
+      <button type="button" data-tab="essay">Tự luận</button>
+      <button type="button" data-tab="source">Bài tập gốc · 250</button>
+      <button type="button" data-tab="lecture">Bài giảng PDF</button>
+      <button type="button" data-tab="progress">Tiến độ cá nhân</button>
+      <button type="button" data-tab="review">Ôn câu sai</button>
+    </nav>
+
+    <p id="statusLine" class="status" role="status"></p>
+    <main id="main"></main>
+    <p class="pair foot-note">Hằng số làm tròn thường dùng: $k\approx9\times10^9\,\mathrm{N\,m^2/C^2}$; $\varepsilon_0\approx8{,}85\times10^{-12}\,\mathrm{C^2/(N\,m^2)}$. Nếu đề cho giá trị khác, dùng đúng giá trị của đề. <a href="answer-audit.html">Đối chiếu đáp án và nguồn tham khảo</a>.</p>
+  </div>
+
+  <script src="../vendor/katex/katex.min.js"></script>
+  <script src="../vendor/katex/auto-render.min.js"></script>
+  <script src="../vendor/three/three.min.js"></script>
+
+  <script src="data/ch01.js"></script>
+  <script src="data/ch02.js"></script>
+  <script src="data/ch03.js"></script>
+  <script src="data/ch04.js"></script>
+  <script src="data/ch05.js"></script>
+  <script src="data/ch06.js"></script>
+  <script src="data/source-library.js"></script>
+  <script src="data/source-solutions.js"></script>
+  <script src="data/solutions-ch01.js"></script>
+  <script src="data/solutions-ch02.js"></script>
+  <script src="data/solutions-ch03.js"></script>
+  <script src="data/solutions-ch04.js"></script>
+  <script src="data/solutions-ch05.js"></script>
+  <script src="data/solutions-ch06.js"></script>
+  <script src="js/study-store.js"></script>
+  <script src="js/study-ui.js"></script>
+  <script src="js/source-library.js"></script>
+
+  <script src="js/quiz-coach.js"></script>
+  <script src="js/sim-core.js"></script>
+  <script src="js/sim-models.js"></script>
+  <script src="js/lab-session.js"></script>
+  <script src="js/sims/ch01.js"></script>
+  <script src="js/sims/ch02.js"></script>
+  <script src="js/sims/ch03.js"></script>
+  <script src="js/sims/ch04.js"></script>
+  <script src="js/sims/ch05.js"></script>
+  <script src="js/sims/ch06.js"></script>
+  <script src="../js/exam-tools.js"></script>
+  <script src="js/exam.js"></script>
+  <script src="js/app.js"></script>
+  <script src="../js/pwa.js"></script>
+</body>
+</html>

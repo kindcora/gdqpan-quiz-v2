@@ -1,0 +1,1667 @@
+{
+  "date": "2026-09-12",
+  "baseline": "47489d4e4cc56aa4d83f9a6c212d2a7305101b08",
+  "scope": "144 existing MCQs and 36 worked essays. The 250 original PDF exercises are covered separately in source-solution-audit.json.",
+  "summary": {
+    "mcq": 144,
+    "essays": 36,
+    "answerKeyChanges": 1,
+    "mcqRevised": 71,
+    "essaysRevised": 19,
+    "sourcePdfQuestionsWithoutOfficialKey": 250
+  },
+  "hashes": {
+    "physics/data/ch01.js": "58f67eb8b1cc7d4c422b8410f2881ae98eda009ea401a3a3903f2fa9a3a047c1",
+    "physics/data/ch02.js": "d688d182a36a2bbfd0e63f4aa87a71d70ae3fe4dec25c71cea72d1d4454406cf",
+    "physics/data/ch03.js": "09b77f24e712b83003ab46cf2c39e15e217ea980497050676f79dab2379754ae",
+    "physics/data/ch04.js": "127eaae16f249433062d14d47e818519cca4fa358529bb715d5e75c545e67f15",
+    "physics/data/ch05.js": "263622ed0b0528efd7bcc5686f9a854e47958041c3daff7406beed7917debd85",
+    "physics/data/ch06.js": "862e44464365aa79a7c9beeeb41b6505a3d28a30bfb685cac88f2cb2e169c659"
+  },
+  "sources": [
+    [
+      "Gauss và điện môi",
+      "https://farside.ph.utexas.edu/teaching/em/lectures/node69.html"
+    ],
+    [
+      "Khoang dẫn và định lý duy nhất",
+      "https://farside.ph.utexas.edu/teaching/em/lectures/node62.html"
+    ],
+    [
+      "Năng lượng tụ điện",
+      "https://openstax.org/books/university-physics-volume-2/pages/8-3-energy-stored-in-a-capacitor"
+    ],
+    [
+      "Hạt chuyển động trong từ trường",
+      "https://openstax.org/books/university-physics-volume-2/pages/11-3-motion-of-a-charged-particle-in-a-magnetic-field"
+    ],
+    [
+      "Faraday và điện trường cảm ứng",
+      "https://openstax.org/books/university-physics-volume-2/pages/13-4-induced-electric-fields"
+    ],
+    [
+      "Tự cảm và từ thông móc vòng",
+      "https://openstax.org/books/university-physics-volume-2/pages/14-2-self-inductance-and-inductors"
+    ],
+    [
+      "Cộng hưởng RLC",
+      "https://openstax.org/books/university-physics-volume-2/pages/15-5-resonance-in-an-ac-circuit"
+    ],
+    [
+      "Giao thoa Young",
+      "https://openstax.org/books/university-physics-volume-3/pages/3-1-youngs-double-slit-interference"
+    ],
+    [
+      "Phân cực và Malus",
+      "https://openstax.org/books/university-physics-volume-3/pages/1-7-polarization"
+    ],
+    [
+      "Bức xạ vật đen",
+      "https://openstax.org/books/university-physics-volume-3/pages/6-1-blackbody-radiation"
+    ],
+    [
+      "Hiệu ứng quang điện ngoài",
+      "https://openstax.org/books/university-physics-volume-3/pages/6-2-photoelectric-effect"
+    ],
+    [
+      "Photodiode và vùng cấm bán dẫn",
+      "https://hub.hamamatsu.com/us/en/technical-notes/detector-selection/guide-to-detector-selection.html"
+    ],
+    [
+      "Hằng số Planck trong SI",
+      "https://www.nist.gov/si-redefinition/definitions-si-base-units"
+    ],
+    [
+      "Điện tích ảnh và cầu dẫn nối đất",
+      "https://www.feynmanlectures.caltech.edu/II_06.html"
+    ]
+  ],
+  "questions": [
+    {
+      "id": "ch01-mcq-01",
+      "chapter": "ch01",
+      "number": 1,
+      "answer": "D",
+      "previousAnswer": "D",
+      "changed": false,
+      "note": "Độ lớn lực Coulomb cần trị tuyệt đối tích điện tích và bình phương khoảng cách."
+    },
+    {
+      "id": "ch01-mcq-02",
+      "chapter": "ch01",
+      "number": 2,
+      "answer": "A",
+      "previousAnswer": "A",
+      "changed": false,
+      "note": "Điện tích nguyên tố xấp xỉ 1,6 × 10⁻¹⁹ C; đây là giá trị làm tròn."
+    },
+    {
+      "id": "ch01-mcq-03",
+      "chapter": "ch01",
+      "number": 3,
+      "answer": "A",
+      "previousAnswer": "A",
+      "changed": false,
+      "note": "F/q có đơn vị N/C; hiệu điện thế chia chiều dài có đơn vị V/m."
+    },
+    {
+      "id": "ch01-mcq-04",
+      "chapter": "ch01",
+      "number": 4,
+      "answer": "A",
+      "previousAnswer": "A",
+      "changed": true,
+      "note": "D = εε₀E cần môi trường tuyến tính, đẳng hướng."
+    },
+    {
+      "id": "ch01-mcq-05",
+      "chapter": "ch01",
+      "number": 5,
+      "answer": "A",
+      "previousAnswer": "A",
+      "changed": true,
+      "note": "Thông lượng D tính điện tích tự do; thông lượng E tính tổng điện tích chia ε₀."
+    },
+    {
+      "id": "ch01-mcq-06",
+      "chapter": "ch01",
+      "number": 6,
+      "answer": "B",
+      "previousAnswer": "B",
+      "changed": true,
+      "note": "Mặt tích điện không dẫn vô hạn tạo trường hai phía, mỗi phía σ/(2εε₀)."
+    },
+    {
+      "id": "ch01-mcq-07",
+      "chapter": "ch01",
+      "number": 7,
+      "answer": "A",
+      "previousAnswer": "A",
+      "changed": false,
+      "note": "Giữa hai mặt trái dấu, hai điện trường cùng chiều cộng lại."
+    },
+    {
+      "id": "ch01-mcq-08",
+      "chapter": "ch01",
+      "number": 8,
+      "answer": "A",
+      "previousAnswer": "A",
+      "changed": true,
+      "note": "Cân bằng dẫn và khoang kín không điện tích cho E = 0; chú ý điều kiện khoang."
+    },
+    {
+      "id": "ch01-mcq-09",
+      "chapter": "ch01",
+      "number": 9,
+      "answer": "A",
+      "previousAnswer": "A",
+      "changed": false,
+      "note": "Tụ phẳng bỏ hiệu ứng mép: C = εε₀S/d."
+    },
+    {
+      "id": "ch01-mcq-10",
+      "chapter": "ch01",
+      "number": 10,
+      "answer": "A",
+      "previousAnswer": "A",
+      "changed": true,
+      "note": "Vỏ kín đẳng thế che điện trường tĩnh; chắn RF/xung cần thêm điều kiện."
+    },
+    {
+      "id": "ch01-mcq-11",
+      "chapter": "ch01",
+      "number": 11,
+      "answer": "A",
+      "previousAnswer": "A",
+      "changed": true,
+      "note": "9e9 × abs(4e-8 × -6e-8) / 0,15² = 9,6e-4 N, hút."
+    },
+    {
+      "id": "ch01-mcq-12",
+      "chapter": "ch01",
+      "number": 12,
+      "answer": "B",
+      "previousAnswer": "B",
+      "changed": true,
+      "note": "9e9 × 5e-9 / 0,30² = 500 V/m; độ lớn không mang dấu âm."
+    },
+    {
+      "id": "ch01-mcq-13",
+      "chapter": "ch01",
+      "number": 13,
+      "answer": "C",
+      "previousAnswer": "C",
+      "changed": true,
+      "note": "r = 0,5 + 1,5 = 2 m; E = 9e9 × 8e-5 / 2² = 180000 V/m."
+    },
+    {
+      "id": "ch01-mcq-14",
+      "chapter": "ch01",
+      "number": 14,
+      "answer": "A",
+      "previousAnswer": "A",
+      "changed": true,
+      "note": "9e-8 / (6 × 8,85e-12) = 1694,915… V/m."
+    },
+    {
+      "id": "ch01-mcq-15",
+      "chapter": "ch01",
+      "number": 15,
+      "answer": "C",
+      "previousAnswer": "C",
+      "changed": false,
+      "note": "Giữ U, tăng d gấp đôi làm C và W giảm nửa."
+    },
+    {
+      "id": "ch01-mcq-16",
+      "chapter": "ch01",
+      "number": 16,
+      "answer": "B",
+      "previousAnswer": "B",
+      "changed": false,
+      "note": "Hai điện tích dương bằng nhau: trường tại trung điểm triệt tiêu theo vectơ."
+    },
+    {
+      "id": "ch01-mcq-17",
+      "chapter": "ch01",
+      "number": 17,
+      "answer": "C",
+      "previousAnswer": "C",
+      "changed": false,
+      "note": "Thế điểm có dấu Q và tỉ lệ 1/r, với gốc vô hạn."
+    },
+    {
+      "id": "ch01-mcq-18",
+      "chapter": "ch01",
+      "number": 18,
+      "answer": "A",
+      "previousAnswer": "A",
+      "changed": false,
+      "note": "Năng lượng điện tuyến tính có mật độ D·E/2, đơn vị J/m³."
+    },
+    {
+      "id": "ch01-mcq-19",
+      "chapter": "ch01",
+      "number": 19,
+      "answer": "B",
+      "previousAnswer": "A",
+      "changed": true,
+      "note": "C = 7,08 pF; W = C × 300² / 2 = 3,186e-7 J. Sửa A thành B."
+    },
+    {
+      "id": "ch01-mcq-20",
+      "chapter": "ch01",
+      "number": 20,
+      "answer": "A",
+      "previousAnswer": "A",
+      "changed": false,
+      "note": "Bụi được tích điện chịu lực điện qE tới điện cực thu."
+    },
+    {
+      "id": "ch01-mcq-21",
+      "chapter": "ch01",
+      "number": 21,
+      "answer": "A",
+      "previousAnswer": "A",
+      "changed": false,
+      "note": "Trong mô hình photocopy nêu ở đề, lực tĩnh điện giữ toner trên vùng ảnh."
+    },
+    {
+      "id": "ch01-mcq-22",
+      "chapter": "ch01",
+      "number": 22,
+      "answer": "A",
+      "previousAnswer": "A",
+      "changed": true,
+      "note": "Cùng điện tích tự do, hình học và điện môi đồng nhất lấp đầy: E giảm ε lần."
+    },
+    {
+      "id": "ch01-mcq-23",
+      "chapter": "ch01",
+      "number": 23,
+      "answer": "B",
+      "previousAnswer": "B",
+      "changed": false,
+      "note": "Điện tích cùng dấu đẩy nhau."
+    },
+    {
+      "id": "ch01-mcq-24",
+      "chapter": "ch01",
+      "number": 24,
+      "answer": "C",
+      "previousAnswer": "C",
+      "changed": true,
+      "note": "C sai khi bỏ điện tích liên kết trong định luật Gauss viết với E."
+    },
+    {
+      "id": "ch02-mcq-01",
+      "chapter": "ch02",
+      "number": 1,
+      "answer": "C",
+      "previousAnswer": "C",
+      "changed": false,
+      "note": "Dòng điện vĩ mô là chuyển dời có hướng của điện tích."
+    },
+    {
+      "id": "ch02-mcq-02",
+      "chapter": "ch02",
+      "number": 2,
+      "answer": "C",
+      "previousAnswer": "C",
+      "changed": false,
+      "note": "Mật độ dòng có đơn vị A/m²; C/s chính là A."
+    },
+    {
+      "id": "ch02-mcq-03",
+      "chapter": "ch02",
+      "number": 3,
+      "answer": "B",
+      "previousAnswer": "B",
+      "changed": false,
+      "note": "Suất điện động là công nguồn trên điện tích, không phải dung lượng."
+    },
+    {
+      "id": "ch02-mcq-04",
+      "chapter": "ch02",
+      "number": 4,
+      "answer": "A",
+      "previousAnswer": "A",
+      "changed": false,
+      "note": "H có đơn vị A/m."
+    },
+    {
+      "id": "ch02-mcq-05",
+      "chapter": "ch02",
+      "number": 5,
+      "answer": "A",
+      "previousAnswer": "A",
+      "changed": false,
+      "note": "B có đơn vị T = N/(A·m)."
+    },
+    {
+      "id": "ch02-mcq-06",
+      "chapter": "ch02",
+      "number": 6,
+      "answer": "A",
+      "previousAnswer": "A",
+      "changed": false,
+      "note": "Dây vô hạn trong môi trường đối xứng: H = I/(2πr)."
+    },
+    {
+      "id": "ch02-mcq-07",
+      "chapter": "ch02",
+      "number": 7,
+      "answer": "A",
+      "previousAnswer": "A",
+      "changed": false,
+      "note": "B = μμ₀I/(2πr) cho dây vô hạn, không phải mẫu 4πr."
+    },
+    {
+      "id": "ch02-mcq-08",
+      "chapter": "ch02",
+      "number": 8,
+      "answer": "B",
+      "previousAnswer": "B",
+      "changed": true,
+      "note": "2e-7 × 2 / 0,10 = 4e-6 T."
+    },
+    {
+      "id": "ch02-mcq-09",
+      "chapter": "ch02",
+      "number": 9,
+      "answer": "B",
+      "previousAnswer": "B",
+      "changed": true,
+      "note": "Dung lượng lý tưởng 20 A·h / 0,8 A = 25 giờ."
+    },
+    {
+      "id": "ch02-mcq-10",
+      "chapter": "ch02",
+      "number": 10,
+      "answer": "A",
+      "previousAnswer": "A",
+      "changed": false,
+      "note": "Hai dây dòng cùng chiều hút nhau theo lực từ."
+    },
+    {
+      "id": "ch02-mcq-11",
+      "chapter": "ch02",
+      "number": 11,
+      "answer": "A",
+      "previousAnswer": "A",
+      "changed": true,
+      "note": "Chỉ thành phần từ q(v × B) vuông góc v và không sinh công."
+    },
+    {
+      "id": "ch02-mcq-12",
+      "chapter": "ch02",
+      "number": 12,
+      "answer": "A",
+      "previousAnswer": "A",
+      "changed": true,
+      "note": "N = Bℓ/(μ₀I) = 0,0025 × 0,4 / (4πe-7 × 2) ≈ 398 vòng."
+    },
+    {
+      "id": "ch02-mcq-13",
+      "chapter": "ch02",
+      "number": 13,
+      "answer": "A",
+      "previousAnswer": "A",
+      "changed": true,
+      "note": "T = 2πm/(|q|B), độc lập v trong giới hạn phi tương đối tính."
+    },
+    {
+      "id": "ch02-mcq-14",
+      "chapter": "ch02",
+      "number": 14,
+      "answer": "A",
+      "previousAnswer": "A",
+      "changed": false,
+      "note": "Bàn tay trái: ngón cái theo lực; B đi vào lòng bàn tay."
+    },
+    {
+      "id": "ch02-mcq-15",
+      "chapter": "ch02",
+      "number": 15,
+      "answer": "A",
+      "previousAnswer": "A",
+      "changed": false,
+      "note": "Loa điện động: cuộn có dòng trong B chịu lực từ."
+    },
+    {
+      "id": "ch02-mcq-16",
+      "chapter": "ch02",
+      "number": 16,
+      "answer": "A",
+      "previousAnswer": "A",
+      "changed": false,
+      "note": "Mômen điện từ chuyển điện thành cơ; không đồng nhất mọi động cơ với loại cổ góp."
+    },
+    {
+      "id": "ch02-mcq-17",
+      "chapter": "ch02",
+      "number": 17,
+      "answer": "A",
+      "previousAnswer": "A",
+      "changed": false,
+      "note": "Ngoài ống dây dài lý tưởng, trường xấp xỉ 0."
+    },
+    {
+      "id": "ch02-mcq-18",
+      "chapter": "ch02",
+      "number": 18,
+      "answer": "A",
+      "previousAnswer": "A",
+      "changed": true,
+      "note": "3/(2π × 0,12) = 3,9789… A/m."
+    },
+    {
+      "id": "ch02-mcq-19",
+      "chapter": "ch02",
+      "number": 19,
+      "answer": "A",
+      "previousAnswer": "A",
+      "changed": true,
+      "note": "v cùng phương B làm tích có hướng bằng 0."
+    },
+    {
+      "id": "ch02-mcq-20",
+      "chapter": "ch02",
+      "number": 20,
+      "answer": "A",
+      "previousAnswer": "A",
+      "changed": false,
+      "note": "MRI dựa cộng hưởng hạt nhân; TMS dựa cảm ứng do xung từ."
+    },
+    {
+      "id": "ch02-mcq-21",
+      "chapter": "ch02",
+      "number": 21,
+      "answer": "A",
+      "previousAnswer": "A",
+      "changed": false,
+      "note": "Lực không tĩnh điện trong nguồn duy trì tách điện tích và dòng."
+    },
+    {
+      "id": "ch02-mcq-22",
+      "chapter": "ch02",
+      "number": 22,
+      "answer": "A",
+      "previousAnswer": "A",
+      "changed": true,
+      "note": "Hai thí nghiệm cùng v: R tỉ lệ nghịch B nên giảm nửa."
+    },
+    {
+      "id": "ch02-mcq-23",
+      "chapter": "ch02",
+      "number": 23,
+      "answer": "A",
+      "previousAnswer": "A",
+      "changed": true,
+      "note": "Đường Ampe trong xuyến có chiều dài 2πR; B ≈ μμ₀NI/(2πR)."
+    },
+    {
+      "id": "ch02-mcq-24",
+      "chapter": "ch02",
+      "number": 24,
+      "answer": "C",
+      "previousAnswer": "C",
+      "changed": true,
+      "note": "C sai: tesla thuộc B, không thuộc H."
+    },
+    {
+      "id": "ch03-mcq-01",
+      "chapter": "ch03",
+      "number": 1,
+      "answer": "A",
+      "previousAnswer": "A",
+      "changed": true,
+      "note": "Từ thông móc vòng biến đổi tạo suất điện động; dòng còn tùy mạch kín."
+    },
+    {
+      "id": "ch03-mcq-02",
+      "chapter": "ch03",
+      "number": 2,
+      "answer": "A",
+      "previousAnswer": "A",
+      "changed": false,
+      "note": "Lenz chống sự biến đổi từ thông, không luôn chống B ban đầu."
+    },
+    {
+      "id": "ch03-mcq-03",
+      "chapter": "ch03",
+      "number": 3,
+      "answer": "A",
+      "previousAnswer": "A",
+      "changed": true,
+      "note": "Một vòng: suất điện động = -dΦ/dt với quy ước hướng tương ứng."
+    },
+    {
+      "id": "ch03-mcq-04",
+      "chapter": "ch03",
+      "number": 4,
+      "answer": "A",
+      "previousAnswer": "A",
+      "changed": false,
+      "note": "Dòng xoáy là dòng dẫn trong vật dẫn do cảm ứng."
+    },
+    {
+      "id": "ch03-mcq-05",
+      "chapter": "ch03",
+      "number": 5,
+      "answer": "A",
+      "previousAnswer": "A",
+      "changed": true,
+      "note": "Tự cảm dùng Ψ = NΦ: 1 H = 1 Wb/A theo từ thông móc vòng."
+    },
+    {
+      "id": "ch03-mcq-06",
+      "chapter": "ch03",
+      "number": 6,
+      "answer": "A",
+      "previousAnswer": "A",
+      "changed": false,
+      "note": "Cùng di/dt, L càng lớn thì độ lớn suất điện động tự cảm càng lớn."
+    },
+    {
+      "id": "ch03-mcq-07",
+      "chapter": "ch03",
+      "number": 7,
+      "answer": "A",
+      "previousAnswer": "A",
+      "changed": true,
+      "note": "0,50 × 0,020 / 0,10 = 0,10 V."
+    },
+    {
+      "id": "ch03-mcq-08",
+      "chapter": "ch03",
+      "number": 8,
+      "answer": "A",
+      "previousAnswer": "A",
+      "changed": true,
+      "note": "0,40 × 5 = 2 V."
+    },
+    {
+      "id": "ch03-mcq-09",
+      "chapter": "ch03",
+      "number": 9,
+      "answer": "A",
+      "previousAnswer": "A",
+      "changed": true,
+      "note": "100 × 0,20 × 0,010 × 50 = 10 V."
+    },
+    {
+      "id": "ch03-mcq-10",
+      "chapter": "ch03",
+      "number": 10,
+      "answer": "A",
+      "previousAnswer": "A",
+      "changed": false,
+      "note": "Bếp từ tạo dòng xoáy và nhiệt trong đáy nồi tương thích."
+    },
+    {
+      "id": "ch03-mcq-11",
+      "chapter": "ch03",
+      "number": 11,
+      "answer": "A",
+      "previousAnswer": "A",
+      "changed": false,
+      "note": "Cực N tiến tới: mặt vòng gần là N để chống tăng từ thông."
+    },
+    {
+      "id": "ch03-mcq-12",
+      "chapter": "ch03",
+      "number": 12,
+      "answer": "A",
+      "previousAnswer": "A",
+      "changed": true,
+      "note": "0,05 × d(4t)/dt = 0,20 V."
+    },
+    {
+      "id": "ch03-mcq-13",
+      "chapter": "ch03",
+      "number": 13,
+      "answer": "A",
+      "previousAnswer": "A",
+      "changed": true,
+      "note": "0,20 × 3² / 2 = 0,90 J."
+    },
+    {
+      "id": "ch03-mcq-14",
+      "chapter": "ch03",
+      "number": 14,
+      "answer": "A",
+      "previousAnswer": "A",
+      "changed": false,
+      "note": "Đèn quay tay lấy cơ năng qua máy phát cảm ứng."
+    },
+    {
+      "id": "ch03-mcq-15",
+      "chapter": "ch03",
+      "number": 15,
+      "answer": "A",
+      "previousAnswer": "A",
+      "changed": true,
+      "note": "Mạch hở vẫn có suất điện động; không có dòng dẫn liên tục qua khe lý tưởng."
+    },
+    {
+      "id": "ch03-mcq-16",
+      "chapter": "ch03",
+      "number": 16,
+      "answer": "A",
+      "previousAnswer": "A",
+      "changed": false,
+      "note": "Hiệu ứng mặt da làm dòng AC tập trung gần bề mặt và tăng trở kháng tổn hao."
+    },
+    {
+      "id": "ch03-mcq-17",
+      "chapter": "ch03",
+      "number": 17,
+      "answer": "A",
+      "previousAnswer": "A",
+      "changed": true,
+      "note": "Micro điện động có suất điện động chuyển động của cuộn trong khe từ."
+    },
+    {
+      "id": "ch03-mcq-18",
+      "chapter": "ch03",
+      "number": 18,
+      "answer": "A",
+      "previousAnswer": "A",
+      "changed": true,
+      "note": "0,30 × 0,40 × 5 = 0,60 V."
+    },
+    {
+      "id": "ch03-mcq-19",
+      "chapter": "ch03",
+      "number": 19,
+      "answer": "A",
+      "previousAnswer": "A",
+      "changed": true,
+      "note": "Từ thông BA cosθ là vô hướng có dấu, θ tính với pháp tuyến."
+    },
+    {
+      "id": "ch03-mcq-20",
+      "chapter": "ch03",
+      "number": 20,
+      "answer": "A",
+      "previousAnswer": "A",
+      "changed": false,
+      "note": "Dòng xoáy trong phanh tạo lực cản, biến cơ năng thành nhiệt."
+    },
+    {
+      "id": "ch03-mcq-21",
+      "chapter": "ch03",
+      "number": 21,
+      "answer": "A",
+      "previousAnswer": "A",
+      "changed": true,
+      "note": "Dòng nguồn và hình học cố định làm dΦ/dt = 0; mọi lựa chọn khác phải sai rõ."
+    },
+    {
+      "id": "ch03-mcq-22",
+      "chapter": "ch03",
+      "number": 22,
+      "answer": "A",
+      "previousAnswer": "A",
+      "changed": false,
+      "note": "Sạc cảm ứng và bếp từ đều cần biến thiên từ thông liên kết."
+    },
+    {
+      "id": "ch03-mcq-23",
+      "chapter": "ch03",
+      "number": 23,
+      "answer": "A",
+      "previousAnswer": "A",
+      "changed": true,
+      "note": "Với mô hình nêu ở đề, nam châm tạo từ trường và khung quay nhận cảm ứng."
+    },
+    {
+      "id": "ch03-mcq-24",
+      "chapter": "ch03",
+      "number": 24,
+      "answer": "C",
+      "previousAnswer": "C",
+      "changed": true,
+      "note": "C sai dấu Faraday. Kết luận dòng chỉ tồn tại khi Φ đổi chỉ dùng mô hình thuần trở bỏ tự cảm."
+    },
+    {
+      "id": "ch04-mcq-01",
+      "chapter": "ch04",
+      "number": 1,
+      "answer": "A",
+      "previousAnswer": "A",
+      "changed": true,
+      "note": "Faraday quy định tuần hoàn, không buộc E phụ thuộc thời gian khi dB/dt hằng."
+    },
+    {
+      "id": "ch04-mcq-02",
+      "chapter": "ch04",
+      "number": 2,
+      "answer": "A",
+      "previousAnswer": "A",
+      "changed": true,
+      "note": "∂D/∂t là nguồn H; H không bắt buộc cũng phải biến thiên thời gian."
+    },
+    {
+      "id": "ch04-mcq-03",
+      "chapter": "ch04",
+      "number": 3,
+      "answer": "A",
+      "previousAnswer": "A",
+      "changed": false,
+      "note": "Tuần hoàn E bằng âm tốc độ biến thiên thông lượng B qua mặt tựa."
+    },
+    {
+      "id": "ch04-mcq-04",
+      "chapter": "ch04",
+      "number": 4,
+      "answer": "A",
+      "previousAnswer": "A",
+      "changed": true,
+      "note": "Mật độ dòng dịch bằng ∂D/∂t, đơn vị A/m²."
+    },
+    {
+      "id": "ch04-mcq-05",
+      "chapter": "ch04",
+      "number": 5,
+      "answer": "A",
+      "previousAnswer": "A",
+      "changed": true,
+      "note": "Khe chân không lý tưởng không có dòng dẫn gây Joule nhưng có dòng dịch tạo H."
+    },
+    {
+      "id": "ch04-mcq-06",
+      "chapter": "ch04",
+      "number": 6,
+      "answer": "A",
+      "previousAnswer": "A",
+      "changed": false,
+      "note": "Maxwell–Ampère bao gồm cả dòng dẫn và dòng dịch."
+    },
+    {
+      "id": "ch04-mcq-07",
+      "chapter": "ch04",
+      "number": 7,
+      "answer": "A",
+      "previousAnswer": "A",
+      "changed": false,
+      "note": "LC lý tưởng: T₀ = 2π√(LC)."
+    },
+    {
+      "id": "ch04-mcq-08",
+      "chapter": "ch04",
+      "number": 8,
+      "answer": "A",
+      "previousAnswer": "A",
+      "changed": true,
+      "note": "√(4e-3 × 10e-6) = 2e-4 s; T₀ = 4πe-4 s."
+    },
+    {
+      "id": "ch04-mcq-09",
+      "chapter": "ch04",
+      "number": 9,
+      "answer": "A",
+      "previousAnswer": "A",
+      "changed": true,
+      "note": "Dao động tắt dần RLC nối tiếp cần 0 < R < 2√(L/C)."
+    },
+    {
+      "id": "ch04-mcq-10",
+      "chapter": "ch04",
+      "number": 10,
+      "answer": "A",
+      "previousAnswer": "A",
+      "changed": false,
+      "note": "Nguồn áp biên độ cố định: dòng RLC nối tiếp cực đại khi ωL = 1/(ωC)."
+    },
+    {
+      "id": "ch04-mcq-11",
+      "chapter": "ch04",
+      "number": 11,
+      "answer": "A",
+      "previousAnswer": "A",
+      "changed": true,
+      "note": "Sóng phẳng trong chân không: E và B vuông góc nhau và hướng truyền."
+    },
+    {
+      "id": "ch04-mcq-12",
+      "chapter": "ch04",
+      "number": 12,
+      "answer": "A",
+      "previousAnswer": "A",
+      "changed": false,
+      "note": "Ánh sáng nhìn thấy có λ ngắn hơn, f cao hơn radio; cùng c trong chân không."
+    },
+    {
+      "id": "ch04-mcq-13",
+      "chapter": "ch04",
+      "number": 13,
+      "answer": "A",
+      "previousAnswer": "A",
+      "changed": false,
+      "note": "f₀ tỉ lệ 1/√L nên L gấp 4 làm f₀ giảm nửa."
+    },
+    {
+      "id": "ch04-mcq-14",
+      "chapter": "ch04",
+      "number": 14,
+      "answer": "A",
+      "previousAnswer": "A",
+      "changed": false,
+      "note": "Mạch cộng hưởng chọn tần số, anten ghép với trường bức xạ."
+    },
+    {
+      "id": "ch04-mcq-15",
+      "chapter": "ch04",
+      "number": 15,
+      "answer": "A",
+      "previousAnswer": "A",
+      "changed": true,
+      "note": "Mật độ năng lượng tuyến tính là (D·E + B·H)/2; Poynting là dòng năng lượng."
+    },
+    {
+      "id": "ch04-mcq-16",
+      "chapter": "ch04",
+      "number": 16,
+      "answer": "A",
+      "previousAnswer": "A",
+      "changed": false,
+      "note": "Tụ đang nạp có biến thiên D giữa bản, giải thích từ trường quanh tụ."
+    },
+    {
+      "id": "ch04-mcq-17",
+      "chapter": "ch04",
+      "number": 17,
+      "answer": "A",
+      "previousAnswer": "A",
+      "changed": false,
+      "note": "rot E = -∂B/∂t là dạng vi phân Faraday."
+    },
+    {
+      "id": "ch04-mcq-18",
+      "chapter": "ch04",
+      "number": 18,
+      "answer": "A",
+      "previousAnswer": "A",
+      "changed": true,
+      "note": "LC lý tưởng bảo toàn chính xác tổng q²/(2C) + Li²/2."
+    },
+    {
+      "id": "ch04-mcq-19",
+      "chapter": "ch04",
+      "number": 19,
+      "answer": "C",
+      "previousAnswer": "C",
+      "changed": false,
+      "note": "C sai: điện tích đứng yên không phải nguồn điện trường xoáy."
+    },
+    {
+      "id": "ch04-mcq-20",
+      "chapter": "ch04",
+      "number": 20,
+      "answer": "A",
+      "previousAnswer": "A",
+      "changed": true,
+      "note": "1/(2π√(1e-4 × 25e-12)) = 3,1831… MHz; 300 MHz cũng không phải ánh sáng."
+    },
+    {
+      "id": "ch04-mcq-21",
+      "chapter": "ch04",
+      "number": 21,
+      "answer": "A",
+      "previousAnswer": "A",
+      "changed": false,
+      "note": "Điều chế biên độ, pha hoặc tần số mang thông tin."
+    },
+    {
+      "id": "ch04-mcq-22",
+      "chapter": "ch04",
+      "number": 22,
+      "answer": "A",
+      "previousAnswer": "A",
+      "changed": false,
+      "note": "H vẫn có đơn vị A/m trong Maxwell–Ampère."
+    },
+    {
+      "id": "ch04-mcq-23",
+      "chapter": "ch04",
+      "number": 23,
+      "answer": "A",
+      "previousAnswer": "A",
+      "changed": false,
+      "note": "Điện trở tiêu tán năng lượng làm biên độ dao động tắt dần."
+    },
+    {
+      "id": "ch04-mcq-24",
+      "chapter": "ch04",
+      "number": 24,
+      "answer": "A",
+      "previousAnswer": "A",
+      "changed": false,
+      "note": "Hiệu ứng mặt da được mô tả bằng Maxwell và quan hệ dòng dẫn của vật liệu."
+    },
+    {
+      "id": "ch05-mcq-01",
+      "chapter": "ch05",
+      "number": 1,
+      "answer": "A",
+      "previousAnswer": "A",
+      "changed": false,
+      "note": "Bóng và nhật thực được mô tả bằng truyền thẳng trong quang hình."
+    },
+    {
+      "id": "ch05-mcq-02",
+      "chapter": "ch05",
+      "number": 2,
+      "answer": "A",
+      "previousAnswer": "A",
+      "changed": false,
+      "note": "Góc phản xạ bằng góc tới, cùng mặt phẳng pháp tuyến."
+    },
+    {
+      "id": "ch05-mcq-03",
+      "chapter": "ch05",
+      "number": 3,
+      "answer": "A",
+      "previousAnswer": "A",
+      "changed": true,
+      "note": "Không khí sang kính: với i > 0, Snell cho 0 < r < i và r tăng theo i."
+    },
+    {
+      "id": "ch05-mcq-04",
+      "chapter": "ch05",
+      "number": 4,
+      "answer": "A",
+      "previousAnswer": "A",
+      "changed": false,
+      "note": "Phản xạ toàn phần cần n₁ > n₂ và i lớn hơn góc giới hạn."
+    },
+    {
+      "id": "ch05-mcq-05",
+      "chapter": "ch05",
+      "number": 5,
+      "answer": "A",
+      "previousAnswer": "A",
+      "changed": false,
+      "note": "Ánh sáng là sóng điện từ theo Maxwell."
+    },
+    {
+      "id": "ch05-mcq-06",
+      "chapter": "ch05",
+      "number": 6,
+      "answer": "A",
+      "previousAnswer": "A",
+      "changed": true,
+      "note": "Quang lộ nd với môi trường đồng nhất; không nhầm d/n hoặc chiều dài d."
+    },
+    {
+      "id": "ch05-mcq-07",
+      "chapter": "ch05",
+      "number": 7,
+      "answer": "A",
+      "previousAnswer": "A",
+      "changed": false,
+      "note": "Huygens–Fresnel dùng chồng sóng thứ cấp để giải thích giao thoa/nhiễu xạ."
+    },
+    {
+      "id": "ch05-mcq-08",
+      "chapter": "ch05",
+      "number": 8,
+      "answer": "A",
+      "previousAnswer": "A",
+      "changed": true,
+      "note": "600e-9 × 1,5 / 0,30e-3 = 0,003 m = 3 mm."
+    },
+    {
+      "id": "ch05-mcq-09",
+      "chapter": "ch05",
+      "number": 9,
+      "answer": "A",
+      "previousAnswer": "A",
+      "changed": true,
+      "note": "Hai khe cùng pha: hiệu quang lộ kλ₀ cho cực đại; phân biệt λ₀ với bước sóng môi trường."
+    },
+    {
+      "id": "ch05-mcq-10",
+      "chapter": "ch05",
+      "number": 10,
+      "answer": "A",
+      "previousAnswer": "A",
+      "changed": false,
+      "note": "Nêm chiếu gần vuông góc có vân cùng độ dày song song cạnh nêm."
+    },
+    {
+      "id": "ch05-mcq-11",
+      "chapter": "ch05",
+      "number": 11,
+      "answer": "A",
+      "previousAnswer": "A",
+      "changed": false,
+      "note": "Newton là giao thoa trong lớp mỏng giữa mặt cầu kính và tấm phẳng."
+    },
+    {
+      "id": "ch05-mcq-12",
+      "chapter": "ch05",
+      "number": 12,
+      "answer": "A",
+      "previousAnswer": "A",
+      "changed": false,
+      "note": "Một khe vẫn nhiễu xạ; hiện tượng được mô tả bằng giao thoa sóng thứ cấp."
+    },
+    {
+      "id": "ch05-mcq-13",
+      "chapter": "ch05",
+      "number": 13,
+      "answer": "A",
+      "previousAnswer": "A",
+      "changed": false,
+      "note": "Ánh sáng tự nhiên không có một phương phân cực thẳng cố định."
+    },
+    {
+      "id": "ch05-mcq-14",
+      "chapter": "ch05",
+      "number": 14,
+      "answer": "A",
+      "previousAnswer": "A",
+      "changed": true,
+      "note": "Bản phân tích truyền thành phần E cosα; cường độ là I₀ cos²α."
+    },
+    {
+      "id": "ch05-mcq-15",
+      "chapter": "ch05",
+      "number": 15,
+      "answer": "A",
+      "previousAnswer": "A",
+      "changed": true,
+      "note": "I₀ được định nghĩa sau bản thứ nhất; qua bản thứ hai lệch 60° còn I₀/4."
+    },
+    {
+      "id": "ch05-mcq-16",
+      "chapter": "ch05",
+      "number": 16,
+      "answer": "A",
+      "previousAnswer": "A",
+      "changed": false,
+      "note": "Gương hoặc lăng kính phù hợp đổi đường tia trong kính tiềm vọng/ống nhòm."
+    },
+    {
+      "id": "ch05-mcq-17",
+      "chapter": "ch05",
+      "number": 17,
+      "answer": "A",
+      "previousAnswer": "A",
+      "changed": false,
+      "note": "Trong mô hình tia, lõi chiết suất lớn hơn vỏ và góc phù hợp giữ ánh sáng bằng TIR."
+    },
+    {
+      "id": "ch05-mcq-18",
+      "chapter": "ch05",
+      "number": 18,
+      "answer": "A",
+      "previousAnswer": "A",
+      "changed": false,
+      "note": "Nguồn kết hợp cần cùng tần số và hiệu pha ổn định."
+    },
+    {
+      "id": "ch05-mcq-19",
+      "chapter": "ch05",
+      "number": 19,
+      "answer": "A",
+      "previousAnswer": "A",
+      "changed": false,
+      "note": "i = λD/a nên tăng a gấp đôi làm i giảm nửa."
+    },
+    {
+      "id": "ch05-mcq-20",
+      "chapter": "ch05",
+      "number": 20,
+      "answer": "A",
+      "previousAnswer": "A",
+      "changed": false,
+      "note": "Máy tính đặt rad cần đổi góc độ sang rad bằng π/180."
+    },
+    {
+      "id": "ch05-mcq-21",
+      "chapter": "ch05",
+      "number": 21,
+      "answer": "A",
+      "previousAnswer": "A",
+      "changed": true,
+      "note": "Cách tử chiếu vuông góc: a sinθ = kλ, với |kλ/a| ≤ 1."
+    },
+    {
+      "id": "ch05-mcq-22",
+      "chapter": "ch05",
+      "number": 22,
+      "answer": "A",
+      "previousAnswer": "A",
+      "changed": true,
+      "note": "asin(1/1,33) × 180/π = 48,753… độ."
+    },
+    {
+      "id": "ch05-mcq-23",
+      "chapter": "ch05",
+      "number": 23,
+      "answer": "D",
+      "previousAnswer": "D",
+      "changed": false,
+      "note": "D sai vì phủ nhận bản chất sóng điện từ của ánh sáng."
+    },
+    {
+      "id": "ch05-mcq-24",
+      "chapter": "ch05",
+      "number": 24,
+      "answer": "A",
+      "previousAnswer": "A",
+      "changed": false,
+      "note": "LCD và kính Polaroid sử dụng phân cực; Malus mô tả cường độ trong mô hình lý tưởng."
+    },
+    {
+      "id": "ch06-mcq-01",
+      "chapter": "ch06",
+      "number": 1,
+      "answer": "A",
+      "previousAnswer": "A",
+      "changed": false,
+      "note": "Vật đen phát năng suất bức xạ σT⁴, T tính kelvin."
+    },
+    {
+      "id": "ch06-mcq-02",
+      "chapter": "ch06",
+      "number": 2,
+      "answer": "C",
+      "previousAnswer": "C",
+      "changed": true,
+      "note": "Không phải mọi sóng điện từ đều là bức xạ nhiệt ở cân bằng."
+    },
+    {
+      "id": "ch06-mcq-03",
+      "chapter": "ch06",
+      "number": 3,
+      "answer": "A",
+      "previousAnswer": "A",
+      "changed": false,
+      "note": "Wien cho λ cực đại theo bước sóng bằng b/T."
+    },
+    {
+      "id": "ch06-mcq-04",
+      "chapter": "ch06",
+      "number": 4,
+      "answer": "A",
+      "previousAnswer": "A",
+      "changed": true,
+      "note": "2,9e-3 / 600e-9 = 4833,33… K, gần 4800 K trong các lựa chọn."
+    },
+    {
+      "id": "ch06-mcq-05",
+      "chapter": "ch06",
+      "number": 5,
+      "answer": "A",
+      "previousAnswer": "A",
+      "changed": false,
+      "note": "Ước nhiệt độ sao xấp xỉ vật đen từ cực đại phổ là ứng dụng Wien."
+    },
+    {
+      "id": "ch06-mcq-06",
+      "chapter": "ch06",
+      "number": 6,
+      "answer": "A",
+      "previousAnswer": "A",
+      "changed": true,
+      "note": "Photon có năng lượng hf; hc/λ dùng λ chân không."
+    },
+    {
+      "id": "ch06-mcq-07",
+      "chapter": "ch06",
+      "number": 7,
+      "answer": "A",
+      "previousAnswer": "A",
+      "changed": true,
+      "note": "Ở f cố định, I = tốc độ photon × hf / diện tích; không đồng nhất I với số photon."
+    },
+    {
+      "id": "ch06-mcq-08",
+      "chapter": "ch06",
+      "number": 8,
+      "answer": "A",
+      "previousAnswer": "A",
+      "changed": true,
+      "note": "A trong phương trình Einstein là công thoát bề mặt."
+    },
+    {
+      "id": "ch06-mcq-09",
+      "chapter": "ch06",
+      "number": 9,
+      "answer": "A",
+      "previousAnswer": "A",
+      "changed": false,
+      "note": "K cực đại = hf − A trong mô hình quang điện một photon."
+    },
+    {
+      "id": "ch06-mcq-10",
+      "chapter": "ch06",
+      "number": 10,
+      "answer": "A",
+      "previousAnswer": "A",
+      "changed": true,
+      "note": "Ngưỡng hf ≥ A; tại hf = A thì K cực đại = 0, trên ngưỡng mới dương."
+    },
+    {
+      "id": "ch06-mcq-11",
+      "chapter": "ch06",
+      "number": 11,
+      "answer": "A",
+      "previousAnswer": "A",
+      "changed": true,
+      "note": "1240/400 − 2 = 1,10 eV."
+    },
+    {
+      "id": "ch06-mcq-12",
+      "chapter": "ch06",
+      "number": 12,
+      "answer": "A",
+      "previousAnswer": "A",
+      "changed": true,
+      "note": "1240/500 = 2,48 eV."
+    },
+    {
+      "id": "ch06-mcq-13",
+      "chapter": "ch06",
+      "number": 13,
+      "answer": "B",
+      "previousAnswer": "B",
+      "changed": true,
+      "note": "5,67e-8 × (250e-4) × 800⁴ = 580,608 W, làm tròn 581 W."
+    },
+    {
+      "id": "ch06-mcq-14",
+      "chapter": "ch06",
+      "number": 14,
+      "answer": "A",
+      "previousAnswer": "A",
+      "changed": false,
+      "note": "Kirchhoff so sánh hấp thụ và phát xạ ở cùng bước sóng, nhiệt độ và điều kiện."
+    },
+    {
+      "id": "ch06-mcq-15",
+      "chapter": "ch06",
+      "number": 15,
+      "answer": "A",
+      "previousAnswer": "A",
+      "changed": true,
+      "note": "Cấu hình tia trực tiếp bị chắn làm dòng quang giảm; đầu báo tán xạ có thể tăng tín hiệu."
+    },
+    {
+      "id": "ch06-mcq-16",
+      "chapter": "ch06",
+      "number": 16,
+      "answer": "A",
+      "previousAnswer": "A",
+      "changed": false,
+      "note": "Photodiode tạo hạt tải trong bán dẫn, khác việc electron thoát khỏi bề mặt kim loại."
+    },
+    {
+      "id": "ch06-mcq-17",
+      "chapter": "ch06",
+      "number": 17,
+      "answer": "A",
+      "previousAnswer": "A",
+      "changed": true,
+      "note": "2,9e-3 / 4300 = 674,419… nm; đây là vùng cực đại, không phải toàn bộ màu sao."
+    },
+    {
+      "id": "ch06-mcq-18",
+      "chapter": "ch06",
+      "number": 18,
+      "answer": "A",
+      "previousAnswer": "A",
+      "changed": true,
+      "note": "Mô hình Planck có các mức dao động tử cách nhau hf."
+    },
+    {
+      "id": "ch06-mcq-19",
+      "chapter": "ch06",
+      "number": 19,
+      "answer": "A",
+      "previousAnswer": "A",
+      "changed": false,
+      "note": "Dãy Lyman gồm chuyển về n = 1 của hydrogen, thuộc tử ngoại."
+    },
+    {
+      "id": "ch06-mcq-20",
+      "chapter": "ch06",
+      "number": 20,
+      "answer": "A",
+      "previousAnswer": "A",
+      "changed": true,
+      "note": "Cùng f và A: K và v cực đại không đổi khi tăng cường độ trong vùng tuyến tính."
+    },
+    {
+      "id": "ch06-mcq-21",
+      "chapter": "ch06",
+      "number": 21,
+      "answer": "C",
+      "previousAnswer": "C",
+      "changed": false,
+      "note": "C sai: A trong Einstein không phải công của khí."
+    },
+    {
+      "id": "ch06-mcq-22",
+      "chapter": "ch06",
+      "number": 22,
+      "answer": "A",
+      "previousAnswer": "A",
+      "changed": true,
+      "note": "SI ấn định h = 6,62607015e-34 J·s; h làm tròn của đề vẫn dùng khi tính."
+    },
+    {
+      "id": "ch06-mcq-23",
+      "chapter": "ch06",
+      "number": 23,
+      "answer": "A",
+      "previousAnswer": "A",
+      "changed": true,
+      "note": "Với h đề cho: 6,625e-34 × 3e8 / 300e-9 = 6,625e-19 J."
+    },
+    {
+      "id": "ch06-mcq-24",
+      "chapter": "ch06",
+      "number": 24,
+      "answer": "A",
+      "previousAnswer": "A",
+      "changed": true,
+      "note": "Hiệu suất ngoài là số hạt tải thu được / photon tới; từ 0 đến 1 trong mô hình không nhân hạt tải."
+    }
+  ],
+  "essays": [
+    {
+      "id": "ch01-essay-1",
+      "chapter": "ch01",
+      "number": 1,
+      "title": "Lồng Faraday / màn điện",
+      "note": "Đẳng thế thành khoang + định lý duy nhất cho E = 0; thông lượng 0 riêng lẻ không đủ.",
+      "changed": true
+    },
+    {
+      "id": "ch01-essay-2",
+      "chapter": "ch01",
+      "number": 2,
+      "title": "Hai điện tích trong không khí",
+      "note": "F = 9,6e-4 N, hút.",
+      "changed": false
+    },
+    {
+      "id": "ch01-essay-3",
+      "chapter": "ch01",
+      "number": 3,
+      "title": "Quả cầu dẫn và điểm ngoài",
+      "note": "r = 2 m; E = 180000 V/m hướng tâm.",
+      "changed": false
+    },
+    {
+      "id": "ch01-essay-4",
+      "chapter": "ch01",
+      "number": 4,
+      "title": "Năng lượng tụ và micro/phím",
+      "note": "C = 7,08 pF; W = 3,186e-7 J; tách điều kiện mạch micro khỏi nguồn áp lý tưởng.",
+      "changed": true
+    },
+    {
+      "id": "ch01-essay-5",
+      "chapter": "ch01",
+      "number": 5,
+      "title": "Điện trường tụ có điện môi",
+      "note": "E = 1694,915… V/m.",
+      "changed": false
+    },
+    {
+      "id": "ch01-essay-6",
+      "chapter": "ch01",
+      "number": 6,
+      "title": "Máy lọc bụi tĩnh điện",
+      "note": "F = 3,2e-11 N; chưa biết m thì chưa so được với trọng lực.",
+      "changed": true
+    },
+    {
+      "id": "ch02-essay-1",
+      "chapter": "ch02",
+      "number": 1,
+      "title": "Pin và nguồn đơn giản (DCCT)",
+      "note": "20 A·h / 4 A = 5 h lý tưởng; 20 A·h = 72000 C.",
+      "changed": false
+    },
+    {
+      "id": "ch02-essay-2",
+      "chapter": "ch02",
+      "number": 2,
+      "title": "$B$ dây thẳng",
+      "note": "B = 4e-6 T; H = 3,1831… A/m.",
+      "changed": false
+    },
+    {
+      "id": "ch02-essay-3",
+      "chapter": "ch02",
+      "number": 3,
+      "title": "Hạt trong $B$ đều",
+      "note": "R = 5,6875e-4 m; T = 3,57356e-9 s; phi tương đối tính.",
+      "changed": false
+    },
+    {
+      "id": "ch02-essay-4",
+      "chapter": "ch02",
+      "number": 4,
+      "title": "Động cơ một chiều có cổ góp",
+      "note": "F = 5 × 0,20 × 0,40 = 0,40 N; cổ góp chỉ cho động cơ tương ứng.",
+      "changed": true
+    },
+    {
+      "id": "ch02-essay-5",
+      "chapter": "ch02",
+      "number": 5,
+      "title": "Tương tác hai dòng",
+      "note": "F = 2e-7 × 10 × 10 × 1 / 0,02 = 0,001 N, hút.",
+      "changed": true
+    },
+    {
+      "id": "ch02-essay-6",
+      "chapter": "ch02",
+      "number": 6,
+      "title": "Loa và MRI (định tính)",
+      "note": "Loa dùng lực từ, MRI dùng cộng hưởng hạt nhân; không lẫn chuyển động cyclotron vĩ mô.",
+      "changed": false
+    },
+    {
+      "id": "ch03-essay-1",
+      "chapter": "ch03",
+      "number": 1,
+      "title": "Thí nghiệm Faraday (DCCT)",
+      "note": "NΦ: 200 × 4e-4 × 0,05 / 0,20 = 0,020 V.",
+      "changed": true
+    },
+    {
+      "id": "ch03-essay-2",
+      "chapter": "ch03",
+      "number": 2,
+      "title": "Chiều dòng khi tăng diện tích",
+      "note": "B vào trang tăng; trường cảm ứng ra trang; dòng ngược kim đồng hồ khi nhìn trang.",
+      "changed": true
+    },
+    {
+      "id": "ch03-essay-3",
+      "chapter": "ch03",
+      "number": 3,
+      "title": "Bếp từ",
+      "note": "Bếp thiết kế cho đáy nhiễm từ; không tuyên bố nhôm không thể có dòng xoáy.",
+      "changed": true
+    },
+    {
+      "id": "ch03-essay-4",
+      "chapter": "ch03",
+      "number": 4,
+      "title": "Đóng/ngắt cuộn",
+      "note": "Suất điện động trung bình 0,40 × 2 / 0,010 = 80 V; W = 0,80 J.",
+      "changed": false
+    },
+    {
+      "id": "ch03-essay-5",
+      "chapter": "ch03",
+      "number": 5,
+      "title": "Khung quay",
+      "note": "ω = 2π × 50; suất điện động cực đại = 62,8319… V.",
+      "changed": false
+    },
+    {
+      "id": "ch03-essay-6",
+      "chapter": "ch03",
+      "number": 6,
+      "title": "Đèn quay tay + phanh điện",
+      "note": "Máy phát lấy điện, phanh biến cơ thành nhiệt; cả hai tuân Lenz và bảo toàn năng lượng.",
+      "changed": false
+    },
+    {
+      "id": "ch04-essay-1",
+      "chapter": "ch04",
+      "number": 1,
+      "title": "Điện trường xoáy",
+      "note": "Đối xứng trụ: suất điện động = π × 0,05² × 0,20 = 0,0015708 V; E = 0,005 V/m.",
+      "changed": true
+    },
+    {
+      "id": "ch04-essay-2",
+      "chapter": "ch04",
+      "number": 2,
+      "title": "Tụ đang nạp",
+      "note": "100 cm² = 0,010 m²; I dịch = 0,00020 A.",
+      "changed": false
+    },
+    {
+      "id": "ch04-essay-3",
+      "chapter": "ch04",
+      "number": 3,
+      "title": "Chu kỳ Thomson",
+      "note": "T = 0,000397384 s; f = 2516,46 Hz; ω = 15811,39 rad/s.",
+      "changed": false
+    },
+    {
+      "id": "ch04-essay-4",
+      "chapter": "ch04",
+      "number": 4,
+      "title": "Chọn đài radio",
+      "note": "C = 1/(4π² × 1e12 × 2e-4) = 126,651 pF.",
+      "changed": false
+    },
+    {
+      "id": "ch04-essay-5",
+      "chapter": "ch04",
+      "number": 5,
+      "title": "Thang EM",
+      "note": "λ FM = 3 m; dài hơn 500 nm 6 triệu lần.",
+      "changed": false
+    },
+    {
+      "id": "ch04-essay-6",
+      "chapter": "ch04",
+      "number": 6,
+      "title": "Phát / thu và Maxwell",
+      "note": "Maxwell cho phương trình sóng; năng lượng bức xạ đến từ nguồn cấp anten.",
+      "changed": true
+    },
+    {
+      "id": "ch05-essay-1",
+      "chapter": "ch05",
+      "number": 1,
+      "title": "Kính tiềm vọng / ống nhòm",
+      "note": "Hai gương 45° song song: tia ngang → đứng xuống → ngang, dịch 40 cm.",
+      "changed": true
+    },
+    {
+      "id": "ch05-essay-2",
+      "chapter": "ch05",
+      "number": 2,
+      "title": "Giao thoa hai khe (DCCT)",
+      "note": "i = 2 mm; vân sáng k = 3 ở +6 mm theo chiều tọa độ đã chọn.",
+      "changed": false
+    },
+    {
+      "id": "ch05-essay-3",
+      "chapter": "ch05",
+      "number": 3,
+      "title": "Sợi quang",
+      "note": "asin(1,45/1,50) = 75,1649… độ, làm tròn 75,2°.",
+      "changed": false
+    },
+    {
+      "id": "ch05-essay-4",
+      "chapter": "ch05",
+      "number": 4,
+      "title": "Hai polarizer",
+      "note": "Bản thứ nhất còn I_n/2; bản thứ hai lệch 45° còn I_n/4.",
+      "changed": true
+    },
+    {
+      "id": "ch05-essay-5",
+      "chapter": "ch05",
+      "number": 5,
+      "title": "Vân nêm không khí",
+      "note": "600e-9/(2e-4) = 0,003 m = 3 mm; góc nhỏ, gần vuông góc.",
+      "changed": true
+    },
+    {
+      "id": "ch05-essay-6",
+      "chapter": "ch05",
+      "number": 6,
+      "title": "Nhật thực vs TIR vs I-âng",
+      "note": "Phân biệt mô hình quang hình với giao thoa và mô hình sóng dẫn.",
+      "changed": true
+    },
+    {
+      "id": "ch06-essay-1",
+      "chapter": "ch06",
+      "number": 1,
+      "title": "Nhiệt độ sao",
+      "note": "T = 2,898e-3/600e-9 = 4830 K; màu đỉnh 600 nm không quyết định màu tổng hợp.",
+      "changed": true
+    },
+    {
+      "id": "ch06-essay-2",
+      "chapter": "ch06",
+      "number": 2,
+      "title": "Công suất cửa lò",
+      "note": "P = 580,608 W với 800 K; 800,15 K cho khoảng 581,044 W.",
+      "changed": true
+    },
+    {
+      "id": "ch06-essay-3",
+      "chapter": "ch06",
+      "number": 3,
+      "title": "Công thoát — không nhầm nhiệt động",
+      "note": "K = 4,14 − 2,5 = 1,64 eV.",
+      "changed": true
+    },
+    {
+      "id": "ch06-essay-4",
+      "chapter": "ch06",
+      "number": 4,
+      "title": "Giới hạn $\\lambda_0$",
+      "note": "λ ngưỡng = 688,888… nm; 700 nm không đủ năng lượng một photon.",
+      "changed": true
+    },
+    {
+      "id": "ch06-essay-5",
+      "chapter": "ch06",
+      "number": 5,
+      "title": "Cửa tự động / dò khói",
+      "note": "Tách quang điện ngoài A khỏi bán dẫn E_g; phân biệt chắn tia với tán xạ khói.",
+      "changed": true
+    },
+    {
+      "id": "ch06-essay-6",
+      "chapter": "ch06",
+      "number": 6,
+      "title": "Dãy Lyman (sách BT)",
+      "note": "λ = 4/(3 × 1,097e7) = 121,5436… nm, Lyman-alpha.",
+      "changed": false
+    }
+  ]
+}
