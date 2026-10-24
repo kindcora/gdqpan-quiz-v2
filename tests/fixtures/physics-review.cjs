@@ -27,7 +27,7 @@ const notes = [
   'Hai điện tích dương bằng nhau: trường tại trung điểm triệt tiêu theo vectơ.',
   'Thế điểm có dấu Q và tỉ lệ 1/r, với gốc vô hạn.',
   'Năng lượng điện tuyến tính có mật độ D·E/2, đơn vị J/m³.',
-  'C = 7,08 pF; W = C × 300² / 2 = 3,186e-7 J. Sửa A thành B.',
+  'C = 7,08 pF; W = C × 300² / 2 = 3,186e-7 J. Đáp án B (đã sửa ở đợt 12/09/2026).',
   'Bụi được tích điện chịu lực điện qE tới điện cực thu.',
   'Trong mô hình photocopy nêu ở đề, lực tĩnh điện giữ toner trên vùng ảnh.',
   'Cùng điện tích tự do, hình học và điện môi đồng nhất lấp đầy: E giảm ε lần.',

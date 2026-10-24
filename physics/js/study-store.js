@@ -52,7 +52,7 @@
   }
   read();
   const revision = id => catalog[id]?.source ? window.SourceSolutions.revision : REV;
-  const current = e => e?.latest && e.latest.revision === revision(e.latest.id);
+  const current = e => e?.latest && e.latest.revision === revision(e.latest.id) && (!catalog[e.latest.id]?.source || window.SourceSolutions.records[e.latest.id]?.key != null);
   function entry(id) { return data.items[id] || {}; }
   function item(id) {
     if (!catalog[id]) throw new Error('Unknown question');
@@ -151,7 +151,7 @@
     let streak = 0;
     while (active.has(dateKey(cursor))) { streak++; cursor.setDate(cursor.getDate()-1); }
     return {...summarize(all),byChapter,byTopic,streak,days:days.length,seconds:Object.values(data.days).reduce((n,d)=>n+d.seconds,0),
-      repeated:all.filter(q=>count(entry(q.id).wrong)>=2).sort((a,b)=>entry(b.id).wrong-entry(a.id).wrong),
+      repeated:all.filter(q=>current(entry(q.id))&&count(entry(q.id).wrong)>=2).sort((a,b)=>entry(b.id).wrong-entry(a.id).wrong),
       stale:all.filter(q=>entry(q.id).latest&&!current(entry(q.id))).length};
   }
   // Import old work without fabricating dates, time or earlier attempts.

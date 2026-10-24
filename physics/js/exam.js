@@ -18,7 +18,7 @@
       for(const [k,values]of Object.entries({bank:['quiz','pdf','mixed'],kind:['all','mcq','short','tf'],level:['all','NB','TH','VD','VDC'],status:['all','new','wrong','correct','marked','skipped'],distribution:['balanced','random']}))if(values.includes(p[k]))filters[k]=p[k];
       if(typeof p.topic==='string'&&all.some(q=>filters.chapters.includes(q.chapter)&&q.topic===p.topic))filters.topic=p.topic;
       if(typeof p.query==='string')filters.query=p.query.slice(0,200);
-      if(Number.isInteger(p.count)&&p.count>0&&p.count<=377)filters.count=p.count;
+      if(Number.isInteger(p.count)&&p.count>0&&p.count<=all.length)filters.count=p.count;
       if(Number.isInteger(p.minutes)&&p.minutes>0&&p.minutes<=180)filters.minutes=p.minutes;
     }catch(_){}
   }
@@ -27,7 +27,7 @@
   function readExam() {
     try{
       const data=JSON.parse(localStorage.getItem(KEY));if(!data)return;
-      if(!['active','done'].includes(data.status)||!Array.isArray(data.items)||!data.items.length||data.items.length>377||!data.items.every(it=>S.catalog[it.id]&&gradeable(S.catalog[it.id]))||new Set(data.items.map(it=>it.id)).size!==data.items.length||!Number.isFinite(data.endsAt)||!Number.isFinite(data.startedAt)||typeof data.token!=='string'||data.token.length>100)throw Error('invalid');
+      if(!['active','done'].includes(data.status)||!Array.isArray(data.items)||!data.items.length||data.items.length>all.length||!data.items.every(it=>S.catalog[it.id]&&gradeable(S.catalog[it.id]))||new Set(data.items.map(it=>it.id)).size!==data.items.length||!Number.isFinite(data.endsAt)||!Number.isFinite(data.startedAt)||typeof data.token!=='string'||data.token.length>100)throw Error('invalid');
       if(data.signature!==signature(data.items.map(it=>it.id)))throw Error('content changed');
       data.items=data.items.map(it=>({id:it.id,flagged:it.flagged===true,answer:Object.fromEntries(Object.entries(it.answer||{}).filter(([k,v])=>['choice','numeric','a','b','c','d'].includes(k)&&typeof v==='string').map(([k,v])=>[k,v.slice(0,100)]))}));
       data.index=Number.isInteger(data.index)&&data.index>=0&&data.index<data.items.length?data.index:0;
@@ -56,7 +56,7 @@
   function builder() {
     return '<section class="card exam-builder"><p class="eyebrow">THI THỬ VẬT LÝ</p><h2>Tạo đề theo mục tiêu của bạn</h2><p>Chọn phạm vi, xem số câu phù hợp rồi bắt đầu. Đáp án và lời giải chỉ mở sau khi nộp.</p>'+
       (warning?'<p role="status" class="exam-warning">'+esc(warning)+'</p>':'')+
-      '<form id="physicsExamForm" class="exam-form"><div class="exam-fields"><label class="full-field">Ngân hàng<select id="peBank">'+options({quiz:'144 trắc nghiệm ôn tập',pdf:'233 bài PDF có thể tự chấm',mixed:'Kết hợp cả hai ngân hàng'},filters.bank)+'</select></label></div>'+
+      '<form id="physicsExamForm" class="exam-form"><div class="exam-fields"><label class="full-field">Ngân hàng<select id="peBank">'+options({quiz:'144 trắc nghiệm ôn tập',pdf:all.filter(q=>q.source).length+' bài PDF có thể tự chấm',mixed:'Kết hợp cả hai ngân hàng'},filters.bank)+'</select></label></div>'+
       '<fieldset class="exam-checks"><legend>Chương đưa vào đề</legend>'+chapters.map(c=>'<label><input type="checkbox" data-pe-chapter="'+c.id+'"'+(filters.chapters.includes(c.id)?' checked':'')+'>'+c.number+'. '+esc(c.short||c.title)+'</label>').join('')+'</fieldset>'+
       '<div class="exam-actions"><button class="btn" type="button" id="peAllChapters">Chọn tất cả chương</button><button class="btn" type="button" id="peClearChapters">Bỏ chọn chương</button></div>'+
       '<details class="exam-filters"'+([filters.kind,filters.level,filters.topic,filters.status].some(v=>v!=='all')||filters.query?' open':'')+'><summary>Bộ lọc chi tiết</summary><div class="exam-fields">'+
@@ -66,8 +66,8 @@
       '<label>Trạng thái học<select id="peStatus">'+options({all:'Tất cả câu',new:'Chưa trả lời',wrong:'Sai ở lần gần nhất',correct:'Đúng ở lần gần nhất',marked:'Đánh dấu cần xem lại',skipped:'Đã bỏ qua'},filters.status)+'</select></label>'+
       '<label class="full-field">Từ khóa hoặc số câu<input type="search" id="peQuery" maxlength="200" value="'+esc(filters.query)+'" placeholder="Ví dụ: dien truong, giao thoa…"></label></div><p class="hint">Tìm kiếm có hoặc không dấu. PDF chưa được gán mức độ; chọn một mức độ cụ thể sẽ chỉ lấy câu từ bộ ôn tập.</p></details>'+
       '<div class="exam-presets"><button type="button" class="btn" data-pe-preset="10,15">10 câu · 15 phút</button><button type="button" class="btn" data-pe-preset="20,30">20 câu · 30 phút</button><button type="button" class="btn" data-pe-preset="40,60">40 câu · 60 phút</button></div>'+
-      '<div class="exam-fields"><label>Số câu mong muốn<input id="peCount" type="number" min="1" max="377" required value="'+filters.count+'"></label><label>Thời gian (phút)<input id="peMinutes" type="number" min="1" max="180" required value="'+filters.minutes+'"></label><label class="full-field">Cách lấy câu<select id="peDistribution">'+options({balanced:'Trải đều các chương có câu phù hợp',random:'Ngẫu nhiên toàn bộ'},filters.distribution)+'</select></label></div>'+
-      '<div id="pePool" class="exam-pool" role="status"></div><p class="hint">Mỗi câu có trọng số bằng nhau, không trừ điểm. Câu Đúng/Sai phải đúng cả bốn ý. 17 bài PDF cần đối chiếu dữ kiện không dùng trong đề thi.</p>'+
+      '<div class="exam-fields"><label>Số câu mong muốn<input id="peCount" type="number" min="1" max="'+all.length+'" required value="'+filters.count+'"></label><label>Thời gian (phút)<input id="peMinutes" type="number" min="1" max="180" required value="'+filters.minutes+'"></label><label class="full-field">Cách lấy câu<select id="peDistribution">'+options({balanced:'Trải đều các chương có câu phù hợp',random:'Ngẫu nhiên toàn bộ'},filters.distribution)+'</select></label></div>'+
+      '<div id="pePool" class="exam-pool" role="status"></div><p class="hint">Mỗi câu có trọng số bằng nhau, không trừ điểm. Câu Đúng/Sai phải đúng cả bốn ý. '+Object.values(S.catalog).filter(q=>q.source&&!gradeable(q)).length+' bài PDF cần đối chiếu dữ kiện không dùng trong đề thi.</p>'+
       '<p class="hint">Nếu thi từ PDF khi mất mạng, hãy <a href="../offline.html" target="_blank" rel="noopener">tải trước ảnh đề theo chương</a>.</p>'+
       '<div class="actions"><button class="btn btn-primary" id="peStart">Bắt đầu thi</button><button class="btn btn-ghost" type="button" id="peResetFilters">Xóa bộ lọc</button></div><p class="exam-save-note" id="peSaveNote"></p></form></section>';
   }
@@ -77,8 +77,8 @@
     filters.count=Number(document.getElementById('peCount').value);filters.minutes=Number(document.getElementById('peMinutes').value);
   }
   function preview() {
-    const candidates=pool(),valid=Number.isInteger(filters.count)&&filters.count>0&&filters.count<=377&&Number.isInteger(filters.minutes)&&filters.minutes>0&&filters.minutes<=180;
-    document.getElementById('pePool').innerHTML='<strong>'+candidates.length+' câu phù hợp</strong><p>'+(!filters.chapters.length?'Chọn ít nhất một chương.':!candidates.length?'Không có câu khớp. Thử đổi ngân hàng, bỏ bớt điều kiện hoặc xóa bộ lọc.':!valid?'Nhập 1–377 câu và 1–180 phút.':'Đề sẽ có '+Math.min(filters.count,candidates.length)+' câu · '+filters.minutes+' phút'+(filters.count>candidates.length?' (giới hạn theo số câu đang có).':'.'))+'</p><div class="exam-candidate-chips">'+chapters.map(c=>{const n=candidates.filter(q=>q.chapter===c.id).length;return n?'<span>Ch. '+c.number+': '+n+' câu</span>':'';}).join('')+'</div>';
+    const candidates=pool(),valid=Number.isInteger(filters.count)&&filters.count>0&&filters.count<=all.length&&Number.isInteger(filters.minutes)&&filters.minutes>0&&filters.minutes<=180;
+    document.getElementById('pePool').innerHTML='<strong>'+candidates.length+' câu phù hợp</strong><p>'+(!filters.chapters.length?'Chọn ít nhất một chương.':!candidates.length?'Không có câu khớp. Thử đổi ngân hàng, bỏ bớt điều kiện hoặc xóa bộ lọc.':!valid?'Nhập 1–'+all.length+' câu và 1–180 phút.':'Đề sẽ có '+Math.min(filters.count,candidates.length)+' câu · '+filters.minutes+' phút'+(filters.count>candidates.length?' (giới hạn theo số câu đang có).':'.'))+'</p><div class="exam-candidate-chips">'+chapters.map(c=>{const n=candidates.filter(q=>q.chapter===c.id).length;return n?'<span>Ch. '+c.number+': '+n+' câu</span>':'';}).join('')+'</div>';
     document.getElementById('peStart').disabled=!valid||!candidates.length;
     document.getElementById('peSaveNote').textContent=saveFailed?'Trình duyệt không lưu được dữ liệu. Bài sẽ chỉ được giữ trong trang đang mở.':'Bài tự lưu trên trình duyệt này. Rời trang hoặc tải lại không đặt lại thời gian.';
   }

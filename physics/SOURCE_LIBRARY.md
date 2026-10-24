@@ -20,7 +20,7 @@ Hai bản PDF được sao chép nguyên byte. SHA-256, tên file gốc và ph�
 | 5 · Quang học | 41 | 35–41 | 48–53, chưa hết module |
 | 6 · Vật lý lượng tử | 41 | 42–47 | Chưa có trong file |
 
-Tổng cộng **161 câu nhiều lựa chọn, 58 câu trả lời ngắn và 31 bài đúng/sai**. Giữ số câu gốc theo từng module. Hai PDF không có bảng đáp án đi kèm. Từ 12/09/2026, [250 lời giải độc lập](SOURCE_SOLUTIONS.md) được lưu riêng: 233 câu tự chấm và 17 câu giải theo điều kiện, cần đối chiếu. Dữ liệu/ảnh/PDF nguyên bản không bị sửa theo lời giải.
+Tổng cộng **161 câu nhiều lựa chọn, 58 câu trả lời ngắn và 31 bài đúng/sai**. Giữ số câu gốc theo từng module. Hai PDF không có bảng đáp án đi kèm. Rà lại ngày 24/10/2026, [250 lời giải độc lập](SOURCE_SOLUTIONS.md) được lưu riêng: 228 câu tự chấm và 22 câu giải theo điều kiện, cần đối chiếu. Dữ liệu/ảnh/PDF nguyên bản không bị sửa theo lời giải.
 
 File bài giảng dừng giữa mục **5.3.3 – Bản mỏng hình nêm** ở trang PDF 53 (trang in 47). Trang PDF 54–56 lặp lại bìa và hai trang đầu bài tập. Cả 56 trang vẫn đọc được ở chế độ toàn tài liệu; phần lặp không được tính thành câu mới. Mục lục có Module 6 nhưng file không có nội dung bài giảng tương ứng.
 

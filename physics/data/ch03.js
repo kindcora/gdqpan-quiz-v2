@@ -252,7 +252,7 @@ window.VLDC_CHAPTERS.push({
       "whyWrong": {
         "B": "Ngược.",
         "C": "Ngắt dễ tia lửa.",
-        "D": "$\\Phi=Li$."
+        "D": "Trong mô hình cuộn cảm tuyến tính, từ thông móc vòng Ψ = NΦ = Li. Suất điện động tự cảm phụ thuộc tốc độ biến thiên dòng: |e| = L|di/dt|."
       }
     },
     {

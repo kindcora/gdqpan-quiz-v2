@@ -1,18 +1,18 @@
 {
-  "revision": "2026-09-12-pdf-1",
-  "date": "2026-09-12",
+  "revision": "2026-10-24-pdf-2",
+  "date": "2026-10-24",
   "count": 250,
-  "autograded": 233,
-  "conditional": 17,
+  "autograded": 228,
+  "conditional": 22,
   "hashes": {
     "physics/data/source-library.js": "8388d52b6bbf9824d3b532cc22b77ca9c9a7b0e3a91b45107bda7c2da081524a",
-    "physics/data/source-solutions.js": "009fb06792802dd5b464d983d587f9a61e44b6ee1d4521d21ab1505634c1b291",
+    "physics/data/source-solutions.js": "a217a8dafe58209c1842f23b855c12887098835b897870057f5059558261cfd5",
     "physics/data/solutions-ch01.js": "9822e7e2a034308c0ff6fe524d4b0ef8e366051cf4d2e772b9c27f92fd953e84",
     "physics/data/solutions-ch02.js": "d99d9edaab5020d9813df60d747dec3ceb22df9fce04473d5932847f5799ef0e",
     "physics/data/solutions-ch03.js": "c5d7fa66674691361a9a6dfc5b60e41a48f927acd06400020366671a09853139",
-    "physics/data/solutions-ch04.js": "a11082e254679dd58b36daa8a6ab4bba43fa451d34c6fd56cbea04904df70fa2",
-    "physics/data/solutions-ch05.js": "e6df80af3602d0b58d11035b2154e2fe64d5d43eb3f7535504f451e4b0ff0cfe",
-    "physics/data/solutions-ch06.js": "6017955de147fddb191f73d1a99ffb0058d35eadc5fee66d92958a9496a514f3"
+    "physics/data/solutions-ch04.js": "fb18f167929c476a37ee7413bbf535892d6ac1aad6d966515ccf04f2c4cf6cb2",
+    "physics/data/solutions-ch05.js": "406331c4d8048eecee8c1ed0b479462748ffa16a487e9bef786925a2f2b1412d",
+    "physics/data/solutions-ch06.js": "eb0740970ded3438852f2c11c4eb4f8baa66478c36abc6ddae087d886a29dd84"
   },
   "sources": [
     [
@@ -54,6 +54,10 @@
     [
       "Nhiễu xạ khe đơn",
       "https://openstax.org/books/university-physics-volume-3/pages/4-1-single-slit-diffraction"
+    ],
+    [
+      "Phản xạ toàn phần tại từng mặt phân cách",
+      "https://openstax.org/books/university-physics-volume-3/pages/1-4-total-internal-reflection"
     ],
     [
       "Phân cực và Malus",
@@ -2911,17 +2915,18 @@
       "id": "source-ch04-040",
       "chapter": "ch04",
       "number": 40,
-      "key": "TTFT",
-      "result": "a Đúng; b Đúng; c Sai nếu đòi tần số tắt dần; d xấp xỉ đúng.",
+      "key": null,
+      "result": "a và b đúng. Với mô hình RLC tắt dần: ω ≈ 783,30 rad/s, độ giảm lôga ≈ 0,6975; ý c cần thống nhất mức xấp xỉ.",
       "steps": [
-        "a) Không có ngoại lực tuần hoàn và R < 2√(L/C), nên đây là dao động tự do tắt dần. b) dW/dt = −Ri² ≤ 0.",
-        "c) β = R/(2L) ≈ 86,9565 s⁻¹; ω = √[1/(LC) − β²] ≈ 783,30 rad/s. Số 788,11 là ω₀ = 1/√(LC) của mạch không điện trở.",
-        "d) Giảm lượng lôga δ = βT = 2πβ/ω ≈ 0,69752, gần 0,697 của đề (làm tròn ba chữ số thập phân đúng là 0,698)."
+        "β = R/(2L) = 40/(2 × 0,23) ≈ 86,9565 s⁻¹; ω₀ = 1/√(LC) ≈ 788,1104 rad/s. Vì β < ω₀ và không có nguồn cưỡng bức, mạch dao động tự do tắt dần; năng lượng giảm do tỏa nhiệt trên R (a, b đúng).",
+        "Tần số góc có tắt dần ω = √(ω₀² − β²) ≈ 783,2985 rad/s. Số 788,11 ở ý c là ω₀, lớn hơn ω khoảng 0,61%. Nếu dùng mô hình có tắt dần đầy đủ thì c sai; nếu cho phép xấp xỉ ω ≈ ω₀ ở mức này thì c có thể được chấp nhận.",
+        "Độ giảm lôga δ = βT = 2πβ/ω ≈ 0,6975. Số 0,697 ở d gần giá trị này, nhưng làm tròn ba chữ số thập phân cho 0,698. Đề dùng “gần đúng” mà không quy định sai số; không ép chấm cả chuỗi Đúng/Sai trước khi thống nhất mức xấp xỉ."
       ],
       "pages": [
         34
       ],
-      "status": "solved"
+      "status": "review",
+      "issue": "Hai nhận định số dùng “gần đúng” nhưng chưa quy định sai số; ý c dùng tần số không tắt dần thay cho tần số có tắt dần."
     },
     {
       "id": "source-ch04-041",
@@ -3032,17 +3037,18 @@
       "id": "source-ch05-006",
       "chapter": "ch05",
       "number": 6,
-      "key": "FFTF",
-      "result": "a Sai; b Sai; c Đúng về sự rò ánh sáng vào vỏ; d Sai.",
+      "key": null,
+      "result": "a sai; b sai; d sai. Ý c phải phân biệt ánh sáng đi vào lớp vỏ với thoát ra ngoài lớp vỏ.",
       "steps": [
-        "a) i giới hạn = arcsin(1,4/1,5) ≈ 68,96°; phản xạ toàn phần cần i lớn hơn, không nhỏ hơn.",
-        "b) Khi n lõi = n vỏ không còn phản xạ toàn phần ở ranh giới đó. c) i < 68° khiến một phần ánh sáng khúc xạ từ lõi vào vỏ.",
-        "d) Ưu điểm truyền xa gắn với suy hao thấp, không phải cao. “Thoát ra” ở c hiểu là rời lõi vào vỏ, không khẳng định mọi tia đều ra khỏi toàn bộ sợi."
+        "Góc tới hạn ở mặt lõi–vỏ: ic = arcsin(1,4/1,5) ≈ 68,96°, không phải 65° (a sai). Nếu chiết suất lõi và vỏ bằng nhau thì không có phản xạ toàn phần ở mặt này (b sai).",
+        "Góc tới nhỏ hơn 68° cũng nhỏ hơn ic nên có ánh sáng khúc xạ từ lõi sang vỏ. Đề lại viết “thoát ra ngoài lớp vỏ”: muốn kết luận đó còn phải xét mặt vỏ–môi trường ngoài, chiết suất ngoài và hình học tia. Không thể tự thay cụm này bằng “ra khỏi lõi”.",
+        "Sợi quang dùng truyền xa nhờ suy hao thấp, không phải hấp thụ mạnh (d sai). Nếu sửa c thành “có ánh sáng truyền từ lõi vào vỏ” thì c đúng và chuỗi là Sai–Sai–Đúng–Sai; với nguyên văn hiện tại chưa chấm tự động."
       ],
       "pages": [
         36
       ],
-      "status": "solved"
+      "status": "review",
+      "issue": "Ý c đánh đồng ra khỏi lõi với ra khỏi lớp vỏ; thiếu điều kiện ở mặt ngoài sợi quang."
     },
     {
       "id": "source-ch05-007",
@@ -3313,37 +3319,35 @@
       "id": "source-ch05-023",
       "chapter": "ch05",
       "number": 23,
-      "key": "A",
-      "result": "15 vân sáng và 16 vân tối, nếu vùng rộng 15 mm đối xứng qua tâm và tính cả biên.",
+      "key": null,
+      "result": "Nếu vùng quan sát đối xứng qua vân trung tâm và tính cả biên: 15 vân sáng, 16 vân tối (A). Chỉ biết bề rộng chưa đủ.",
       "steps": [
-        "i = λD/a = 0,5 × 10⁻⁶ × 1/(0,5 × 10⁻³) = 1 mm.",
-        "Vùng [−7,5; 7,5] mm: vân sáng x = ki cho k = −7,…,7, tổng 15.",
-        "Vân tối ở ±0,5; ±1,5; …; ±7,5 mm, tổng 16. Hai vân tối ở đúng biên được tính; nếu không tính biên còn 14."
+        "Khoảng vân i = λD/a = 0,5 × 10⁻⁶ × 1/(0,5 × 10⁻³) = 1 mm. Vân sáng ở x = ki, vân tối ở x = (k + 1/2)i.",
+        "Nếu chọn đoạn kín [−7,5; 7,5] mm thì có 15 vân sáng (k từ −7 đến 7) và 16 vân tối, gồm hai vân tối trên biên: A theo giả thiết này.",
+        "Một đoạn kín cùng rộng 15 mm là [−7; 8] mm lại chứa 16 vân sáng và 15 vân tối. Nếu đoạn đối xứng không tính biên thì chỉ có 14 vân tối. Đề chưa chỉ vị trí đoạn quan sát và quy ước biên nên chưa xác định duy nhất số vân."
       ],
       "pages": [
         38
       ],
-      "status": "solved"
+      "status": "review",
+      "issue": "Thiếu vị trí vùng quan sát so với vân trung tâm và quy ước tính vân trên biên."
     },
     {
       "id": "source-ch05-024",
       "chapter": "ch05",
       "number": 24,
-      "key": {
-        "value": 5,
-        "tolerance": 0.01,
-        "unit": "vân"
-      },
-      "result": "Có 5 vân sáng trùng nhau trong vùng đối xứng qua tâm.",
+      "key": null,
+      "result": "Có 5 vân sáng trùng nếu vùng 20 mm đối xứng qua vân trung tâm; vị trí vùng quan sát chưa được nêu.",
       "steps": [
-        "i₁ = 0,48 × 10⁻⁶ × 2/(1,2 × 10⁻³) = 0,8 mm; i₂ = 1,0 mm.",
-        "Trùng sáng khi 0,8k₁ = 1,0k₂ ⇒ cặp nhỏ nhất k₁ = 5, k₂ = 4; khoảng giữa hai vân trùng là 4 mm.",
-        "Với vùng 20 mm lấy từ −10 đến +10 mm, các vị trí −8, −4, 0, 4, 8 mm cho 5 vân. Giả thiết vùng quan sát đối xứng qua tâm."
+        "i₁ = 0,48 × 10⁻⁶ × 2/(1,2 × 10⁻³) = 0,8 mm; i₂ = 1 mm. Hai vân sáng trùng khi 0,8k₁ = k₂, tức k₁ = 5m, k₂ = 4m.",
+        "Vân trùng cách nhau 4 mm, tại x = 4m mm. Đoạn [−10; 10] mm có các vị trí −8, −4, 0, 4, 8 mm: tổng cộng 5 vân trùng.",
+        "Đoạn kín [0; 20] mm cũng rộng 20 mm nhưng có 6 vân trùng nếu tính hai đầu. Cần bổ sung tâm/vị trí vùng quan sát và quy ước biên trước khi chấm một số duy nhất; kết quả 5 chỉ áp dụng với giả thiết ở bước 2."
       ],
       "pages": [
         38
       ],
-      "status": "solved"
+      "status": "review",
+      "issue": "Đề chỉ cho bề rộng, chưa cho vị trí vùng quan sát và quy ước biên."
     },
     {
       "id": "source-ch05-025",
@@ -3664,17 +3668,18 @@
       "id": "source-ch06-002",
       "chapter": "ch06",
       "number": 2,
-      "key": "B",
-      "result": "B sai: cân bằng nhiệt không yêu cầu nguồn khổng lồ hay vô tận.",
+      "key": null,
+      "result": "B sai rõ ràng; D cũng không đúng nếu hiểu là định nghĩa bức xạ nhiệt cân bằng. Cần sửa cách diễn đạt để có một đáp án.",
       "steps": [
-        "Cân bằng đòi hỏi các trao đổi năng lượng cân bằng, để nhiệt độ không thay đổi.",
-        "Nguồn có thể hữu hạn về kích thước và năng lượng.",
-        "B nêu một yêu cầu không cần thiết. D chỉ là tính chất chung của bức xạ điện từ, không đủ để định nghĩa trạng thái cân bằng."
+        "Bức xạ nhiệt cân bằng gắn với cân bằng trao đổi năng lượng; không yêu cầu nguồn có kích thước khổng lồ hoặc năng lượng gần như vô tận. Vì vậy B sai.",
+        "D viết “những sóng điện từ nói chung lan truyền trong không gian”. Nếu chỉ nói tính chất điện từ thì đó là tính chất chung; nếu dùng làm định nghĩa thì quá rộng: chẳng hạn sóng từ anten có thể không phải bức xạ nhiệt cân bằng.",
+        "Nhiệt độ không đổi riêng nó cũng chưa bảo đảm trường bức xạ cân bằng nhiệt động. B là đáp án dự kiến trong cách đọc hẹp của học phần, nhưng câu yêu cầu một phát biểu sai mà các mô tả A/D không đủ chặt; giữ lời giải có điều kiện và chờ đề được làm rõ."
       ],
       "pages": [
         42
       ],
-      "status": "solved"
+      "status": "review",
+      "issue": "Các phương án trộn tính chất chung với định nghĩa bức xạ cân bằng; không thể ép một lựa chọn sai duy nhất theo nguyên văn."
     },
     {
       "id": "source-ch06-003",

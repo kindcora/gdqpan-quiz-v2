@@ -1,19 +1,19 @@
-# Rà soát đáp án Vật lý đại cương — 12/09/2026
+# Rà soát đáp án Vật lý đại cương — 24/10/2026
 
 Đã rà 144 câu trắc nghiệm và 36 bài tự luận có lời giải của 6 module: kiểm tra dữ kiện, đáp án, đơn vị, dấu, điều kiện áp dụng và các phương án còn lại. Các phép tính dùng hằng số/làm tròn nêu trong đề. Đây là kết quả rà soát, không phải chứng nhận chính xác tuyệt đối hay đáp án chính thức của giảng viên.
 
-250 bài PDF có lời giải và báo cáo riêng tại source-solutions.html (233 câu tự chấm, 17 câu cần đối chiếu). Số câu trong bảng dưới đây là số tại tab Trắc nghiệm/Tự luận, không phải số câu của PDF. Xem mục 250 lời giải PDF để đối chiếu đúng ngân hàng.
+250 bài PDF có lời giải và báo cáo riêng tại source-solutions.html (228 câu tự chấm, 22 câu cần đối chiếu). Số câu trong bảng dưới đây là số tại tab Trắc nghiệm/Tự luận, không phải số câu của PDF. Xem mục 250 lời giải PDF để đối chiếu đúng ngân hàng.
 
 ## Các sửa đổi chính
 
-- Module 1, trắc nghiệm câu 19: đổi A → B. C = 7,08 pF, W = 3,186 × 10⁻⁷ J ≈ 3,19 × 10⁻⁷ J; trước đó chia đôi thêm một lần. Bài tự luận 4 và phần mẹo đã sửa đồng bộ.
-- Sửa phân biệt điện tích tự do/tổng điện tích trong Gauss và chứng minh E = 0 trong khoang dẫn; bổ sung điều kiện tuyến tính, đẳng hướng, phi tương đối tính khi cần.
-- Tách Φ một vòng và Ψ = NΦ móc vòng; sửa các khẳng định quá rộng về dòng cảm ứng, điện trường xoáy, dòng dịch và dao động tắt dần.
-- Làm rõ cường độ ngay trước bản phân tích trong Malus; sửa đường tia kính tiềm vọng, ngưỡng quang điện, hằng số Planck và phân biệt công thoát với vùng cấm photodiode.
-- Sửa mô phỏng khoảng vân Young, chiều từ trường quanh dây, cầu dẫn nối đất, pha/biên độ RLC và ngưỡng quang điện. Đồ họa dùng thang minh họa được ghi rõ; không coi độ dài mũi tên là đại lượng SI.
-- Phần mẹo lấy từ lời giải đã rà soát để tránh lưu hai bản đáp án khác nhau. Khi tải bài làm từ phiên bản cũ, giữ lựa chọn nhưng mở lại trạng thái chấm để người học kiểm tra với đề mới.
+- Rà lại ngày 24/10/2026 so với bản GitHub 6b1738e: giữ nguyên cả 144 ký tự đáp án và kết quả của 36 bài tự luận; không phát hiện thêm lỗi đổi đáp án trong ngân hàng này.
+- Module 1, câu 18: nêu rõ điện môi tuyến tính, không tổn hao; câu 8: giải thích E = 0 bằng cân bằng vật dẫn, không coi kim loại là điện môi tuyến tính.
+- Module 1, tự luận 3: bổ sung quả cầu dẫn cô lập và không có trường ngoài vào đề; khi đó mới dùng đối xứng cầu và E = 0 bên trong.
+- Module 3, câu 6: sửa ký hiệu trong giải thích phương án D thành từ thông móc vòng Ψ = NΦ = Li.
+- Bộ PDF: thêm 5 câu cần đối chiếu (Ch.4 #40; Ch.5 #6, #23, #24; Ch.6 #2). Giữ lời giải có điều kiện, bỏ chấm tự động và loại khỏi thi thử; tổng cộng 22 câu cần đối chiếu.
+- Lịch sử: lỗi năng lượng tụ ở Module 1 câu 19 (A → B) đã được sửa từ 12/09/2026, không phải lỗi mới phát hiện trong đợt này.
 
-Có **1 câu đổi ký tự đáp án**, **71 câu trắc nghiệm** và **19 bài tự luận** được sửa nội dung/lời giải/điều kiện so với bản trước. Sửa nội dung không đồng nghĩa từng mục trước đó đều có đáp án sai.
+Có **0 câu đổi ký tự đáp án**, **3 câu trắc nghiệm** và **1 bài tự luận** được sửa nội dung/lời giải/điều kiện so với bản trước. Sửa nội dung không đồng nghĩa từng mục trước đó đều có đáp án sai.
 
 ## Module 1 · Điện học
 
@@ -39,7 +39,7 @@ Nguồn đối chiếu nguyên lý: [Gauss và điện môi](https://farside.ph.
 | 16 | **B** | Hai điện tích dương bằng nhau: trường tại trung điểm triệt tiêu theo vectơ. |
 | 17 | **C** | Thế điểm có dấu Q và tỉ lệ 1/r, với gốc vô hạn. |
 | 18 | **A** | Năng lượng điện tuyến tính có mật độ D·E/2, đơn vị J/m³. |
-| 19 | **B** (sửa từ A) | C = 7,08 pF; W = C × 300² / 2 = 3,186e-7 J. Sửa A thành B. |
+| 19 | **B** | C = 7,08 pF; W = C × 300² / 2 = 3,186e-7 J. Đáp án B (đã sửa ở đợt 12/09/2026). |
 | 20 | **A** | Bụi được tích điện chịu lực điện qE tới điện cực thu. |
 | 21 | **A** | Trong mô hình photocopy nêu ở đề, lực tĩnh điện giữ toner trên vùng ảnh. |
 | 22 | **A** | Cùng điện tích tự do, hình học và điện môi đồng nhất lấp đầy: E giảm ε lần. |

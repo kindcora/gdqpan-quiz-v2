@@ -26,9 +26,9 @@ test('250 separate worked solutions have valid keys and exact original page refe
    assert.equal(S.grade(id,{a:'true'}).state,'incomplete');
   }else{assert.ok(Number.isFinite(s.key.value)&&s.key.tolerance>0&&s.key.unit,id);assert.equal(S.grade(id,{numeric:String(s.key.value)}).correct,true,id);}
  }
- assert.equal(Object.values(solutions).filter(s=>s.key===null).length,17);
+ assert.equal(Object.values(solutions).filter(s=>s.key===null).length,22);
 });
-test('all 57 gradeable numeric PDF answers agree with independent calculations and accept unrounded values',()=>{
+test('all 56 gradeable numeric PDF answers agree with independent calculations and accept unrounded values',()=>{
  const {S,solutions}=environment();let n=0;
  for(const [ch,rows] of Object.entries(fixture))for(const [number,[raw,precision]] of Object.entries(rows)){
   const id='source-'+ch+'-'+number.padStart(3,'0'),s=solutions[id];n++;
@@ -37,12 +37,40 @@ test('all 57 gradeable numeric PDF answers agree with independent calculations a
   assert.equal(S.grade(id,{numeric:String(raw)}).correct,true,id+' should accept the accurate unrounded calculation');
   assert.equal(S.grade(id,{numeric:String(s.key.value+10*s.key.tolerance+1)}).correct,false,id);
  }
- assert.equal(n,57);
+ assert.equal(n,56);
 });
 test('strict numeric parser supports decimal commas, exponents and rejects units/junk',()=>{
  const {S}=environment();for(const v of ['0,25','2.5e-1','2,5 × 10^-1','.25'])assert.equal(S.parseNumber(v),.25);
  for(const v of ['', '1 mV','1abc','1/0','NaN','Infinity','1e999','1,2,3','0x10'])assert.equal(S.parseNumber(v),null,v);
  assert.equal(S.parseNumber('−5e-6'),-5e-6);
+});
+
+test('re-audit counterexamples explain why five formerly graded PDF questions need clarification',()=>{
+ const {S,solutions}=environment();
+ const ids=['source-ch04-040','source-ch05-006','source-ch05-023','source-ch05-024','source-ch06-002'];
+ for(const id of ids){assert.equal(solutions[id].key,null,id);assert.equal(S.record(id,{choice:'A',numeric:'5',a:'true',b:'true',c:'false',d:'true'}).state,'review',id);assert.equal(S.entry(id).attempts,0);}
+ const count=(left,right,spacing,offset=0)=>Math.floor((right-offset)/spacing+1e-10)-Math.ceil((left-offset)/spacing-1e-10)+1;
+ const spacing=.5e-6*1/.5e-3*1000;
+ assert.equal(spacing,1);assert.deepEqual([count(-7.5,7.5,spacing),count(-7.5,7.5,spacing,.5)],[15,16]);
+ assert.deepEqual([count(-7,8,spacing),count(-7,8,spacing,.5)],[16,15]);
+ assert.equal(.48e-6*2/1.2e-3*1000,0.8);assert.equal(count(-10,10,4),5);assert.equal(count(0,20,4),6);
+ const w0=1/Math.sqrt(.23*7e-6),beta=40/(2*.23),w=Math.sqrt(w0*w0-beta*beta);
+ assert.ok(Math.abs(w-783.2985227545066)<1e-9);assert.ok((w0/w-1)>.006);assert.equal((2*Math.PI*beta/w).toFixed(3),'0.698');
+ const critical=Math.asin(1.4/1.5)*180/Math.PI;assert.ok(critical>68.9&&critical<69);
+ // An allowed ray enters the cladding at the first boundary but is internally reflected at a parallel cladding-air boundary.
+ const incidence=60*Math.PI/180,claddingAngle=Math.asin(1.5*Math.sin(incidence)/1.4);
+ assert.ok(incidence<critical*Math.PI/180);assert.ok(claddingAngle>Math.asin(1/1.4));
+});
+
+test('withdrawn answer keys preserve drafts and history but cannot retain scores or repeated-error recommendations',()=>{
+ const id='source-ch05-024',old={migrated:true,items:{[id]:{attempted:true,locked:true,wrong:3,attempts:4,mark:'review',draft:{numeric:'5'},latest:{id,correct:false,revision:'2026-09-12-pdf-1'}}}};
+ for(const revision of ['2026-09-12-pdf-1','2026-10-24-pdf-2']){
+  old.items[id].latest.revision=revision;
+  const {S}=environment({'vldc-study-v1':JSON.stringify(old)});
+  assert.equal(S.entry(id).draft.numeric,'5');assert.equal(S.entry(id).attempts,4);assert.equal(S.entry(id).mark,'review');
+  assert.equal(S.stats().graded,0);assert.equal(S.stats().repeated.length,0);assert.equal(S.queue('wrong').length,0);
+  assert.equal(S.record(id,{numeric:'5'}).state,'review');assert.equal(S.entry(id).attempts,4);
+ }
 });
 test('latest-result accuracy, explicit retry, repeated mistakes and all review sources stay distinct',()=>{
  const {S,solutions}=environment(),id='source-ch01-001',key=solutions[id].key,wrong=[...'ABCD'].find(x=>x!==key);

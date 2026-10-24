@@ -65,10 +65,11 @@ test('GDQP flags and question views survive reload; result filters and long-term
  await p.selectOption('#practiceFilter','correct');assert.match(await p.locator('#filterCount').innerText(),/^1 câu/);
  await p.selectOption('#practiceFilter','skipped');assert.match(await p.locator('#filterCount').innerText(),/^1 câu/);
 });
-test('physics filters expose 144/233/377 gradeable questions, omit conditional answers and preserve chosen scope',async t=>{
+test('physics filters expose 144/228/372 gradeable questions, omit conditional answers and preserve chosen scope',async t=>{
  const p=await physics(t);assert.match(await p.locator('#pePool').innerText(),/^144 câu/);
- await p.selectOption('#peBank','pdf');assert.match(await p.locator('#pePool').innerText(),/^233 câu/);
- await p.selectOption('#peBank','mixed');assert.match(await p.locator('#pePool').innerText(),/^377 câu/);
+ await p.selectOption('#peBank','pdf');assert.match(await p.locator('#pePool').innerText(),/^228 câu/);
+ await p.selectOption('#peBank','mixed');assert.match(await p.locator('#pePool').innerText(),/^372 câu/);
+ assert.equal(await p.locator('#peCount').getAttribute('max'),'372');await p.locator('#peCount').fill('373');assert.equal(await p.locator('#peStart').isDisabled(),true);assert.match(await p.locator('#pePool').innerText(),/1–372/);await p.locator('#peCount').fill('20');
  await p.locator('.exam-filters summary').click();await p.selectOption('#peLevel','VDC');
  assert.ok(await p.evaluate(()=>PhysicsExam.pool().every(q=>!q.source&&q.level==='VDC')));
  await p.locator('#peQuery').fill('zzzzzzzz');assert.equal(await p.locator('#peStart').isDisabled(),true);

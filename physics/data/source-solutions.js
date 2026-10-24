@@ -2,7 +2,7 @@
   'use strict';
   const records = {};
   window.SourceSolutions = {
-    revision: '2026-09-12-pdf-1', records,
+    revision: '2026-10-24-pdf-2', records,
     add(chapter, rows) {
       rows.forEach(([number, key, result, steps, extra = {}]) => {
         const id = 'source-' + chapter + '-' + String(number).padStart(3, '0');

@@ -7,10 +7,10 @@ Cập nhật 14/09/2026 cho cả Quốc phòng và Vật lý. Chạy trực ti�
 | | Quốc phòng | Vật lý |
 | --- | --- | --- |
 | Mở | **Tạo đề thi thử** trong phạm vi ôn tập | Tab **Thi thử** |
-| Ngân hàng | 419 câu đủ điều kiện của HP1/HP2 | 144 trắc nghiệm, 233 bài PDF tự chấm, hoặc 377 câu kết hợp |
+| Ngân hàng | 419 câu đủ điều kiện của HP1/HP2 | 144 trắc nghiệm, 228 bài PDF tự chấm, hoặc 372 câu kết hợp |
 | Phạm vi | Học phần và bài | Một hoặc nhiều chương |
 | Lọc | Từ khóa, chưa trả lời, đúng/sai lần gần nhất, bỏ trống | Thêm dạng câu, mức độ, chủ đề, đánh dấu xem lại |
-| Số câu | 1–419 | 1–377 |
+| Số câu | 1–419 | 1–372 |
 | Thời gian | 1–180 phút | 1–180 phút |
 | Phân bố | Trải đều các bài hoặc ngẫu nhiên | Trải đều các chương hoặc ngẫu nhiên |
 
@@ -20,7 +20,7 @@ Số câu phù hợp và số câu thực tế của đề được hiển thị
 
 Cấu hình và bộ lọc tự lưu trên trình duyệt. **Xóa bộ lọc** không xóa kết quả học. Bộ lọc mới không thay thế đề đang làm; cần nộp đề hiện tại trước khi tạo đề khác.
 
-PDF chưa được gán NB/TH/VD/VDC. Khi chọn mức độ cụ thể, chỉ câu trong bộ 144 trắc nghiệm có thể khớp. 17 bài PDF cần đối chiếu dữ kiện và HP1 #194 được loại khỏi đề chấm điểm.
+PDF chưa được gán NB/TH/VD/VDC. Khi chọn mức độ cụ thể, chỉ câu trong bộ 144 trắc nghiệm có thể khớp. 22 bài PDF cần đối chiếu dữ kiện và HP1 #194 được loại khỏi đề chấm điểm.
 
 ## Trong và sau khi thi
 

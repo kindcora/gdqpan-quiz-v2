@@ -450,7 +450,7 @@ window.VLDC_CHAPTERS.push({
       "whyWrong": {
         "B": "Chỉ đúng ngoài quả cầu.",
         "C": "Điện tự do ra mặt.",
-        "D": "$D=\\varepsilon\\varepsilon_0 E=0$ nếu $E=0$."
+        "D": "Cân bằng tĩnh điện buộc E = 0 trong phần kim loại: nếu E khác 0 thì điện tích tự do còn dịch chuyển. Không áp dụng máy móc quan hệ điện môi tuyến tính cho kim loại."
       }
     },
     {
@@ -608,7 +608,7 @@ window.VLDC_CHAPTERS.push({
     },
     {
       "level": "TH",
-      "stem": "Mật độ năng lượng điện trường theo bài giảng",
+      "stem": "Trong điện môi tuyến tính, không tổn hao, mật độ năng lượng điện trường là",
       "choices": {
         "A": "$\\omega_e=\\vec{D}\\cdot\\vec{E}/2$",
         "B": "$\\omega_e=\\vec{D}\\times\\vec{E}$",
@@ -754,10 +754,10 @@ window.VLDC_CHAPTERS.push({
     {
       "kind": "O-G",
       "title": "Quả cầu dẫn và điểm ngoài",
-      "problem": "<p>$R=0{,}5$ m, $q=-8\\times 10^{-5}$ C. Tính độ lớn $E$ cách mặt $150$ cm (không khí).</p>",
+      "problem": "<p>Một quả cầu dẫn cô lập trong không khí, cân bằng tĩnh điện và không có điện trường ngoài, có $R=0{,}5$ m, $q=-8\\times 10^{-5}$ C. Tính độ lớn $E$ tại điểm cách mặt cầu $150$ cm.</p>",
       "tip": "$r$ đo từ tâm. Ngoài cầu: như điện tích điểm tại tâm.",
       "steps": {
-        "s1": "<p>Mặt cầu đều / dẫn: đối xứng cầu.</p>",
+        "s1": "<p>Quả cầu dẫn cô lập, không có trường ngoài: điện tích phân bố đều trên mặt, hệ có đối xứng cầu. Điện trường trong phần dẫn bằng 0.</p>",
         "s2": "<p>$r=0{,}5+1{,}5=2$ m. $\\varepsilon=1$.</p>",
         "s3": "<p>O-G: $D\\cdot 4\\pi r^2=|q|$, $E=D/\\varepsilon_0=k|q|/r^2$ ($r>R$). Trong lòng $E=0$.</p>",
         "s4": "<p>$E=9\\times 10^9\\cdot 8\\times 10^{-5}/4=1{,}8\\times 10^5$ V/m, hướng vào tâm vì $q<0$.</p>"

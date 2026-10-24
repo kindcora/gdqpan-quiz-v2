@@ -1,6 +1,6 @@
 # 250 lời giải bài tập PDF
 
-Đủ 250 bài có lời giải từng bước, liên kết đến trang PDF và kết luận theo dữ kiện gốc. 233 bài được chấm tự động; 17 bài có dữ kiện hoặc cách diễn đạt chưa xác định đáp án duy nhất, được giải theo điều kiện và không đưa vào tỷ lệ đúng.
+Đủ 250 bài có lời giải từng bước, liên kết đến trang PDF và kết luận theo dữ kiện gốc. 228 bài được chấm tự động; 22 bài có dữ kiện hoặc cách diễn đạt chưa xác định đáp án duy nhất, được giải theo điều kiện và không đưa vào tỷ lệ đúng.
 
 Đây là lời giải biên soạn độc lập, không phải bảng đáp án chính thức của giảng viên. Đã đọc ảnh đề gốc để kiểm tra ký hiệu, đơn vị và hình vẽ; không dùng OCR làm nguồn tính toán. Kiểm thử phần mềm không chứng minh nội dung đúng tuyệt đối. Các câu nêu giả thiết lý tưởng chỉ kết luận trong phạm vi giả thiết đó.
 
@@ -1362,11 +1362,13 @@ Cần đối chiếu: Thiếu góc phát/giả thiết đẳng hướng của ng
 
 ### Câu 40 · PDF 34
 
-**a Đúng; b Đúng; c Sai nếu đòi tần số tắt dần; d xấp xỉ đúng.**
+**a và b đúng. Với mô hình RLC tắt dần: ω ≈ 783,30 rad/s, độ giảm lôga ≈ 0,6975; ý c cần thống nhất mức xấp xỉ.**
 
-1. a) Không có ngoại lực tuần hoàn và R < 2√(L/C), nên đây là dao động tự do tắt dần. b) dW/dt = −Ri² ≤ 0.
-2. c) β = R/(2L) ≈ 86,9565 s⁻¹; ω = √[1/(LC) − β²] ≈ 783,30 rad/s. Số 788,11 là ω₀ = 1/√(LC) của mạch không điện trở.
-3. d) Giảm lượng lôga δ = βT = 2πβ/ω ≈ 0,69752, gần 0,697 của đề (làm tròn ba chữ số thập phân đúng là 0,698).
+Cần đối chiếu: Hai nhận định số dùng “gần đúng” nhưng chưa quy định sai số; ý c dùng tần số không tắt dần thay cho tần số có tắt dần.
+
+1. β = R/(2L) = 40/(2 × 0,23) ≈ 86,9565 s⁻¹; ω₀ = 1/√(LC) ≈ 788,1104 rad/s. Vì β < ω₀ và không có nguồn cưỡng bức, mạch dao động tự do tắt dần; năng lượng giảm do tỏa nhiệt trên R (a, b đúng).
+2. Tần số góc có tắt dần ω = √(ω₀² − β²) ≈ 783,2985 rad/s. Số 788,11 ở ý c là ω₀, lớn hơn ω khoảng 0,61%. Nếu dùng mô hình có tắt dần đầy đủ thì c sai; nếu cho phép xấp xỉ ω ≈ ω₀ ở mức này thì c có thể được chấp nhận.
+3. Độ giảm lôga δ = βT = 2πβ/ω ≈ 0,6975. Số 0,697 ở d gần giá trị này, nhưng làm tròn ba chữ số thập phân cho 0,698. Đề dùng “gần đúng” mà không quy định sai số; không ép chấm cả chuỗi Đúng/Sai trước khi thống nhất mức xấp xỉ.
 
 ### Câu 41 · PDF 34
 
@@ -1422,11 +1424,13 @@ Cần đối chiếu: Thiếu giả thiết nguồn đẳng hướng; ngưỡng 
 
 ### Câu 6 · PDF 36
 
-**a Sai; b Sai; c Đúng về sự rò ánh sáng vào vỏ; d Sai.**
+**a sai; b sai; d sai. Ý c phải phân biệt ánh sáng đi vào lớp vỏ với thoát ra ngoài lớp vỏ.**
 
-1. a) i giới hạn = arcsin(1,4/1,5) ≈ 68,96°; phản xạ toàn phần cần i lớn hơn, không nhỏ hơn.
-2. b) Khi n lõi = n vỏ không còn phản xạ toàn phần ở ranh giới đó. c) i < 68° khiến một phần ánh sáng khúc xạ từ lõi vào vỏ.
-3. d) Ưu điểm truyền xa gắn với suy hao thấp, không phải cao. “Thoát ra” ở c hiểu là rời lõi vào vỏ, không khẳng định mọi tia đều ra khỏi toàn bộ sợi.
+Cần đối chiếu: Ý c đánh đồng ra khỏi lõi với ra khỏi lớp vỏ; thiếu điều kiện ở mặt ngoài sợi quang.
+
+1. Góc tới hạn ở mặt lõi–vỏ: ic = arcsin(1,4/1,5) ≈ 68,96°, không phải 65° (a sai). Nếu chiết suất lõi và vỏ bằng nhau thì không có phản xạ toàn phần ở mặt này (b sai).
+2. Góc tới nhỏ hơn 68° cũng nhỏ hơn ic nên có ánh sáng khúc xạ từ lõi sang vỏ. Đề lại viết “thoát ra ngoài lớp vỏ”: muốn kết luận đó còn phải xét mặt vỏ–môi trường ngoài, chiết suất ngoài và hình học tia. Không thể tự thay cụm này bằng “ra khỏi lõi”.
+3. Sợi quang dùng truyền xa nhờ suy hao thấp, không phải hấp thụ mạnh (d sai). Nếu sửa c thành “có ánh sáng truyền từ lõi vào vỏ” thì c đúng và chuỗi là Sai–Sai–Đúng–Sai; với nguyên văn hiện tại chưa chấm tự động.
 
 ### Câu 7 · PDF 36
 
@@ -1564,19 +1568,23 @@ Cần đối chiếu: A và C cùng mô tả cơ chế; điều kiện “toàn 
 
 ### Câu 23 · PDF 38
 
-**15 vân sáng và 16 vân tối, nếu vùng rộng 15 mm đối xứng qua tâm và tính cả biên.**
+**Nếu vùng quan sát đối xứng qua vân trung tâm và tính cả biên: 15 vân sáng, 16 vân tối (A). Chỉ biết bề rộng chưa đủ.**
 
-1. i = λD/a = 0,5 × 10⁻⁶ × 1/(0,5 × 10⁻³) = 1 mm.
-2. Vùng [−7,5; 7,5] mm: vân sáng x = ki cho k = −7,…,7, tổng 15.
-3. Vân tối ở ±0,5; ±1,5; …; ±7,5 mm, tổng 16. Hai vân tối ở đúng biên được tính; nếu không tính biên còn 14.
+Cần đối chiếu: Thiếu vị trí vùng quan sát so với vân trung tâm và quy ước tính vân trên biên.
+
+1. Khoảng vân i = λD/a = 0,5 × 10⁻⁶ × 1/(0,5 × 10⁻³) = 1 mm. Vân sáng ở x = ki, vân tối ở x = (k + 1/2)i.
+2. Nếu chọn đoạn kín [−7,5; 7,5] mm thì có 15 vân sáng (k từ −7 đến 7) và 16 vân tối, gồm hai vân tối trên biên: A theo giả thiết này.
+3. Một đoạn kín cùng rộng 15 mm là [−7; 8] mm lại chứa 16 vân sáng và 15 vân tối. Nếu đoạn đối xứng không tính biên thì chỉ có 14 vân tối. Đề chưa chỉ vị trí đoạn quan sát và quy ước biên nên chưa xác định duy nhất số vân.
 
 ### Câu 24 · PDF 38
 
-**Có 5 vân sáng trùng nhau trong vùng đối xứng qua tâm.**
+**Có 5 vân sáng trùng nếu vùng 20 mm đối xứng qua vân trung tâm; vị trí vùng quan sát chưa được nêu.**
 
-1. i₁ = 0,48 × 10⁻⁶ × 2/(1,2 × 10⁻³) = 0,8 mm; i₂ = 1,0 mm.
-2. Trùng sáng khi 0,8k₁ = 1,0k₂ ⇒ cặp nhỏ nhất k₁ = 5, k₂ = 4; khoảng giữa hai vân trùng là 4 mm.
-3. Với vùng 20 mm lấy từ −10 đến +10 mm, các vị trí −8, −4, 0, 4, 8 mm cho 5 vân. Giả thiết vùng quan sát đối xứng qua tâm.
+Cần đối chiếu: Đề chỉ cho bề rộng, chưa cho vị trí vùng quan sát và quy ước biên.
+
+1. i₁ = 0,48 × 10⁻⁶ × 2/(1,2 × 10⁻³) = 0,8 mm; i₂ = 1 mm. Hai vân sáng trùng khi 0,8k₁ = k₂, tức k₁ = 5m, k₂ = 4m.
+2. Vân trùng cách nhau 4 mm, tại x = 4m mm. Đoạn [−10; 10] mm có các vị trí −8, −4, 0, 4, 8 mm: tổng cộng 5 vân trùng.
+3. Đoạn kín [0; 20] mm cũng rộng 20 mm nhưng có 6 vân trùng nếu tính hai đầu. Cần bổ sung tâm/vị trí vùng quan sát và quy ước biên trước khi chấm một số duy nhất; kết quả 5 chỉ áp dụng với giả thiết ở bước 2.
 
 ### Câu 25 · PDF 38
 
@@ -1728,11 +1736,13 @@ Cần đối chiếu: Thiếu trạng thái phân cực đầu vào và ý nghĩ
 
 ### Câu 2 · PDF 42
 
-**B sai: cân bằng nhiệt không yêu cầu nguồn khổng lồ hay vô tận.**
+**B sai rõ ràng; D cũng không đúng nếu hiểu là định nghĩa bức xạ nhiệt cân bằng. Cần sửa cách diễn đạt để có một đáp án.**
 
-1. Cân bằng đòi hỏi các trao đổi năng lượng cân bằng, để nhiệt độ không thay đổi.
-2. Nguồn có thể hữu hạn về kích thước và năng lượng.
-3. B nêu một yêu cầu không cần thiết. D chỉ là tính chất chung của bức xạ điện từ, không đủ để định nghĩa trạng thái cân bằng.
+Cần đối chiếu: Các phương án trộn tính chất chung với định nghĩa bức xạ cân bằng; không thể ép một lựa chọn sai duy nhất theo nguyên văn.
+
+1. Bức xạ nhiệt cân bằng gắn với cân bằng trao đổi năng lượng; không yêu cầu nguồn có kích thước khổng lồ hoặc năng lượng gần như vô tận. Vì vậy B sai.
+2. D viết “những sóng điện từ nói chung lan truyền trong không gian”. Nếu chỉ nói tính chất điện từ thì đó là tính chất chung; nếu dùng làm định nghĩa thì quá rộng: chẳng hạn sóng từ anten có thể không phải bức xạ nhiệt cân bằng.
+3. Nhiệt độ không đổi riêng nó cũng chưa bảo đảm trường bức xạ cân bằng nhiệt động. B là đáp án dự kiến trong cách đọc hẹp của học phần, nhưng câu yêu cầu một phát biểu sai mà các mô tả A/D không đủ chặt; giữ lời giải có điều kiện và chờ đề được làm rõ.
 
 ### Câu 3 · PDF 42
 
@@ -2062,6 +2072,7 @@ Cần đối chiếu: Kết luận về đồng đổi khi dùng bộ hằng s�
 - [Giao thoa Young](https://openstax.org/books/university-physics-volume-3/pages/3-1-youngs-double-slit-interference)
 - [Bản mỏng và độ lệch pha](https://openstax.org/books/university-physics-volume-3/pages/3-4-interference-in-thin-films)
 - [Nhiễu xạ khe đơn](https://openstax.org/books/university-physics-volume-3/pages/4-1-single-slit-diffraction)
+- [Phản xạ toàn phần tại từng mặt phân cách](https://openstax.org/books/university-physics-volume-3/pages/1-4-total-internal-reflection)
 - [Phân cực và Malus](https://openstax.org/books/university-physics-volume-3/pages/1-7-polarization)
 - [Bức xạ vật đen](https://openstax.org/books/university-physics-volume-3/pages/6-1-blackbody-radiation)
 - [Phương trình quang điện](https://openstax.org/books/university-physics-volume-3/pages/6-2-photoelectric-effect)
